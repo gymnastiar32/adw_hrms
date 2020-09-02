@@ -9925,7 +9925,7 @@ body{
   .middle-box .form-group,
   .login-action,
   .middle-box form .btn{
-    width: 95%;
+    width: 95% !important;
   }
 }
 /* @media (max-width:1275px)
