@@ -9922,45 +9922,12 @@ body{
 }
 @media (max-width:420px)
 {
-  .middle-box .form-group,
+  .middle-box .form-group.input-group,
   .login-action,
   .middle-box form .btn{
     width: 95% !important;
   }
 }
-/* @media (max-width:1275px)
-{
-  .login-bg
-  {
-    width: 373px;
-    height: 293px;
-  }
-}
-@media (max-width:1275px)
-{
-  .login-bg
-  {
-    width: 373px;
-    height: 293px;
-  }
-}
-@media (max-width:1080px)
-{
-  .login-bg
-  {
-    width: 273px;
-    height: 193px;
-  }
-}
-@media (max-width:875px)
-{
-  .login-bg
-  {
-    width: 203px;
-    height: 123px;
-  }
-}
-*/
 @media (max-width:768px)
 {
   .login-bg
