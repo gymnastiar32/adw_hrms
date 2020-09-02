@@ -9882,10 +9882,10 @@ html{
 }
 main{
   margin-top: 10%;
+  margin-bottom: auto;
 }
 footer
 {
-  margin-top: auto;
   z-index: 100;
 }
 footer p{
