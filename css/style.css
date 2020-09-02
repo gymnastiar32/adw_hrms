@@ -5745,51 +5745,6 @@ body.mini-navbar.fixed-sidebar .logo-element {
   font-weight: 900;
   margin: 12px 0;
 }
-.middle-box h3 {
-  margin: 12px 0;
-  font-size: 20px;
-}
-.middle-box input,
-.middle-box input:focus {
-  border:0;
-  background-color: transparent;
-}
-.middle-box .form-group{
-  width: 400px;
-  padding:5px 20px;
-  border-radius: 100px;
-  border: 2px solid #BABABA;
-}
-.middle-box .form-group .fa{
-  font-size: 18px;
-}
-.middle-box .form-group .form-icon{
-  width: 40px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.login-action{
-  width: 400px;
-  margin-bottom: 15px;
-}
-.middle-box form .btn{
-  width: 400px;
-  padding:15px;
-  border-radius: 100px;
-  background-color: #005DB5;
-  border: 0;
-}
-.dark-link{
-  color: #686B6D;
-}
-.dark-link:hover{
-  color: #005DB5;
-}
-.blue-link{
-  color: #005DB5;
-  font-weight: 700;
-}
 .wrapper .middle-box {
   margin-top: 140px;
 }
@@ -9863,6 +9818,65 @@ body.md-skin {
 }
 
 /* Custom Styles  */
+
+.middle-box h3 {
+  margin: 12px 0;
+  font-size: 20px;
+}
+.middle-box input{
+  background-color: transparent;
+  height: auto;
+  margin:0;
+}
+.middle-box input:focus {
+}
+.middle-box .form-group.input-group{
+  width: 400px;
+  height: 46px;
+  background-color: transparent;
+}
+.input-group-prepend .input-group-text{
+  border-left: 2px solid #E3E3E3 !important;
+  border-top: 2px solid #E3E3E3 !important;
+  border-bottom: 2px solid #E3E3E3 !important;
+}
+.input-group.input-group-focus .input-group-prepend .input-group-text,
+.form-group.input-group-focus .input-group-prepend .input-group-text {
+  border-left: 2px solid #005db5 !important;
+  border-top: 2px solid #005db5 !important;
+  border-bottom: 2px solid #005db5 !important;
+}
+main .middle-box .input-group-text{
+  background-color: transparent;
+}
+.middle-box .form-group .fa{
+  font-size: 18px;
+}
+.login-icon{
+  width: 16px;
+}
+.login-action{
+  width: 400px;
+  margin-bottom: 15px;
+}
+.middle-box form .btn{
+  width: 400px;
+  padding:15px;
+  border-radius: 100px;
+  background-color: #005DB5;
+  border: 0;
+}
+.dark-link{
+  color: #686B6D;
+}
+.dark-link:hover{
+  color: #005DB5;
+}
+.blue-link,
+.blue-link:hover{
+  color: #005DB5;
+  font-weight: 700;
+}
 html{
   height: 100%;
   overflow: hidden;
@@ -9874,6 +9888,9 @@ footer
 {
   margin-top: auto;
   z-index: 100;
+}
+footer p{
+  font-size: 13px;
 }
 footer img{
   width: 90px;
@@ -9888,6 +9905,9 @@ footer img{
 }
 body{
   background-color: white;
+}
+.middle-box p{
+  font-size: 13px;
 }
 @media (max-width:600px)
 {
@@ -9956,6 +9976,9 @@ body{
 .loginscreen .btn-primary:hover{
   animation: pulse; /* referring directly to the animation's @keyframe declaration */
   animation-duration: .7s; /* don't forget to set a duration! */
+  border: 2px solid #005DB5;
+  background-color: white;
+  color: #005DB5;
 }
 .navbar-default{
   background-color: #005DB5;
