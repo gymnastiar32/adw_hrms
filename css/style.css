@@ -9904,6 +9904,7 @@ main .middle-box .input-group-text{
 }
 .login-bg{
   width: 100%;
+  height: 100vh;
   background-image: url("../img/login_bg.svg");
   background-repeat: no-repeat;
   background-size:100%;
