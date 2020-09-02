@@ -9817,8 +9817,34 @@ body.md-skin {
   }
 }
 
-/* Custom Styles  */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+                     /* Custom Styles  */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
+/* Start Login Page */
+html{
+  overflow: hidden;
+}
+body{
+  background-color: white;
+}
+/* main.loginpage{
+  margin-top: 10%;
+  margin-bottom: auto;
+} */
+footer.loginpage
+{
+  z-index: 100;
+}
+footer.loginpage p{
+  font-size: 13px;
+}
+footer.loginpage img{
+  width: 90px;
+}
+.none{
+ display: none;
+}
 .middle-box h3 {
   margin: 12px 0;
   font-size: 20px;
@@ -9835,16 +9861,15 @@ body.md-skin {
   height: 46px;
   background-color: transparent;
 }
-.input-group-prepend .input-group-text{
-  border-left: 2px solid #E3E3E3 !important;
-  border-top: 2px solid #E3E3E3 !important;
-  border-bottom: 2px solid #E3E3E3 !important;
+#showPassword{
+  display: none;
 }
-.input-group.input-group-focus .input-group-prepend .input-group-text,
-.form-group.input-group-focus .input-group-prepend .input-group-text {
-  border-left: 2px solid #005db5 !important;
-  border-top: 2px solid #005db5 !important;
-  border-bottom: 2px solid #005db5 !important;
+.middle-box .form-control{
+  font-size: 13px;
+}
+.middle-box form .btn
+{
+  font-size: 13px ;
 }
 main .middle-box .input-group-text{
   background-color: transparent;
@@ -9877,23 +9902,6 @@ main .middle-box .input-group-text{
   color: #005DB5;
   font-weight: 700;
 }
-html{
-  overflow: hidden;
-}
-main{
-  margin-top: 10%;
-  margin-bottom: auto;
-}
-footer
-{
-  z-index: 100;
-}
-footer p{
-  font-size: 13px;
-}
-footer img{
-  width: 90px;
-}
 .login-bg{
   width: 100%;
   background-image: url("../img/login_bg.svg");
@@ -9901,9 +9909,6 @@ footer img{
   background-size:100%;
   background-position: bottom;
   position: absolute;
-}
-body{
-  background-color: white;
 }
 .middle-box p{
   font-size: 13px;
@@ -9946,6 +9951,8 @@ body{
   background-color: white;
   color: #005DB5;
 }
+/* End Login Page */
+
 .navbar-default{
   background-color: #005DB5;
 }

@@ -9,16 +9,16 @@
     <title>HRMS | Login</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="font-awesome/css/all.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/now-ui-kit.css">
 
 </head>
 
-<body class="full-height d-flex flex-column align-items-center">
+<body class="d-flex flex-column align-items-center">
     <div class="login-bg full-height"></div>
-    <main>
+    <main class="loginpage my-auto">
         <div class="middle-box text-center loginscreen animated fadeInDown">
             <div>
                 <div>
@@ -32,19 +32,26 @@
                     labore et dolore magna aliquyam erat, sed diam voluptua. </p>
                 <form class="m-t d-flex justify-content-center align-items-center flex-column" role="form"
                     action="empty_page.html">
-
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><img class="login-icon" src="img/person-outline.svg" alt="">
-                            </span>
+                            <span class="input-group-text"><img class="login-icon" src="img/person-outline.svg" alt=""></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Username">
+                        <input type="text" class="form-control " placeholder="Username">
+                        <div class="input-group-append">
+                            <div class="input-group-text" style="width: 37px;"></div>
+                        </div>
                     </div>
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><img class="login-icon" src="img/lock.svg" alt=""></span>
                         </div>
-                        <input type="password" class="form-control " placeholder="Password">
+                        <input id="password" type="password" class="form-control " placeholder="Password">
+                        <div class="input-group-append">
+                            <div class="input-group-text" onclick="passwordToggle()">
+                                <i class="far fa-eye-slash" id="hidePassword"></i>
+                                <i class="far fa-eye" id="showPassword"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="login-action d-flex justify-content-between align-items-center">
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-center">
@@ -61,7 +68,7 @@
             </div>
         </div>
     </main>
-    <footer class="d-flex flex-column justify-content-center align-items-center">
+    <footer class="loginpage d-flex flex-column justify-content-center align-items-center">
         <img src="img/adw.png" alt="logo adw">
         <p class="text-center">Copyright 2020 &copy; ADW Consulting, All Rights Reserved</p>
     </footer>
@@ -88,6 +95,25 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
     <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
     <script src="js/now-ui-kit.js?v=1.2.2" type="text/javascript"></script>
+
+    <!-- Show/Hide Password Function -->
+    <script>
+        function passwordToggle(){
+            var password = document.getElementById("password");
+            var showPassword = document.getElementById("showPassword");
+            var hidePassword = document.getElementById("hidePassword");
+
+            if (password.type === 'password') {
+                password.type = 'text';
+                showPassword.style.display = 'block';
+                hidePassword.style.display = 'none';
+            } else {
+                password.type = 'password';
+                showPassword.style.display = 'none';
+                hidePassword.style.display = 'block';
+            }
+        }
+    </script>
 
 </body>
 

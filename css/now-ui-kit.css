@@ -5187,7 +5187,7 @@ fieldset[disabled] .btn-link.active {
 
 .input-group-text {
   background-color: #FFFFFF;
-  border: 1px solid #E3E3E3;
+  border: 2px solid #E3E3E3;
   border-radius: 30px;
   color: #555555;
   -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -5199,7 +5199,8 @@ fieldset[disabled] .btn-link.active {
 
 .input-group-focus .input-group-text {
   background-color: #FFFFFF;
-  border-color: #f96332;
+  border-width: 2px;
+  border-color: #005db5;
 }
 
 .has-success .input-group-text,
@@ -5242,23 +5243,23 @@ fieldset[disabled] .btn-link.active {
 
 .input-group .input-group-prepend .input-group-text,
 .form-group .input-group-prepend .input-group-text {
-  border-left: 1px solid #E3E3E3;
+  border-left: 2px solid #E3E3E3;
 }
 
 .input-group .input-group-append .input-group-text,
 .form-group .input-group-append .input-group-text {
-  border-right: 1px solid #E3E3E3;
+  border-right: 2px solid #E3E3E3;
   padding: 10px 18px 10px 0;
 }
 
 .input-group.input-group-focus .input-group-prepend .input-group-text,
 .form-group.input-group-focus .input-group-prepend .input-group-text {
-  border-left: 1px solid #005db5;
+  border-left: 2px solid #005db5;
 }
 
 .input-group.input-group-focus .input-group-append .input-group-text,
 .form-group.input-group-focus .input-group-append .input-group-text {
-  border-right: 1px solid #005db5;
+  border-right: 2px solid #005db5;
 }
 
 .input-group.input-group-focus.no-border .input-group-prepend .input-group-text,
@@ -5266,14 +5267,14 @@ fieldset[disabled] .btn-link.active {
   border-left: transparent;
 }
 
-.input-group .form-control:first-child,
+.input-group .form-control:nth-child(2),
 .input-group-text:first-child,
 .input-group-btn:first-child>.dropdown-toggle,
 .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
   border-right: 0 none;
 }
 
-.input-group .form-control:last-child,
+.input-group .form-control:nth-child(2),
 .input-group-text:last-child,
 .input-group-btn:last-child>.dropdown-toggle,
 .input-group-btn:first-child>.btn:not(:first-child) {
