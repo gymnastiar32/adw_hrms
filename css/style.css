@@ -9922,7 +9922,7 @@ body{
 }
 @media (max-width:420px)
 {
-  .middle-box .form-group,
+  .middle-box .form-group.input-group,
   .login-action,
   .middle-box form .btn{
     width: 95% !important;
