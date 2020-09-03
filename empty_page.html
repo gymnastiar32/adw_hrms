@@ -22,26 +22,28 @@
 
     <div class="d-flex">
         <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-brand d-flex align-items-center">
-                <span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
-            </div>
-            <div class="navbar-header d-flex align-items-center">
-                <ul class="nav navbar-mainmenu">
-                    <li><a href="">Talent</a></li>
-                    <li><a href="">Pengajuan Cuti</a></li>
-                    <li><a href="">Asset</a></li>
-                    <li><a href="">e-KPI</a></li>
-                    <li><a href="">Master Data</a></li>
-                </ul>
-                <form class="search-form">
-                    <div class="form-group input-group no-border">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-search" style="color: #878F92 ;"></i></span>
+            <div class="d-flex">
+                <div class="navbar-brand d-flex align-items-center justify-content-center">
+                    <span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
+                </div>
+                <div class="navbar-header d-flex align-items-center">
+                    <ul class="nav navbar-mainmenu">
+                        <li><a href="">Talent</a></li>
+                        <li><a href="">Pengajuan Cuti</a></li>
+                        <li><a href="">Asset</a></li>
+                        <li><a href="">e-KPI</a></li>
+                        <li><a href="">Master Data</a></li>
+                    </ul>
+                    <form class="search-form">
+                        <div class="form-group input-group no-border">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-search" style="color: #878F92 ;"></i></span>
+                            </div>
+                            <input type="text" class="form-control " placeholder="Search...">
+    
                         </div>
-                        <input type="text" class="form-control " placeholder="Search...">
-
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
             <ul class="nav navbar-top-links navbar-right d-flex align-items-center">
                 <li class="dropdown">
@@ -141,6 +143,30 @@
                         </li>
                     </ul>
                 </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <img class="cog-icon" src="img/cog.svg" alt="cog-icon">
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts dropdown-menu-right">
+                        <li>
+                            <a href="mailbox.html" class="dropdown-item">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="float-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a href="profile.html" class="dropdown-item">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="float-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="dropdown profile">
                     <button class="btn-link d-flex align-items-center justify-content-between dropdown-toggle" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -165,15 +191,39 @@
                     <li>
                         <h2>Master Data</h2>
                     </li>
-                    <li>
-                        <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a>
+                    <li class="nav-link">
+                        <a href="layouts.html"><span class="nav-label">Posisi</span></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="layouts.html"><span class="nav-label">job Title</span></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="layouts.html"><span class="nav-label">Divisi/Departement</span></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="layouts.html"><span class="nav-label">Template Email</span></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="layouts.html"><span class="nav-label">Tingkat Pendidikan Terakhir</span></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="layouts.html"><span class="nav-label">Domisili</span></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="layouts.html"><span class="nav-label">Hirarki</span></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="layouts.html"><span class="nav-label">Proyek</span></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="layouts.html"><span class="nav-label">Menu Management</span></a>
                     </li>
                 </ul>
 
             </div>
         </nav>
         <div id="page-wrapper">
-            <div class="row wrapper border-bottom white-bg page-heading p-0 py-4">
+            <div class="row wrapper border-bottom white-bg page-heading p-0 pb-4">
                 <div class="col-sm-4 p-0">
                     <h2>Divisi/Department</h2>
                     <ol class="breadcrumb">

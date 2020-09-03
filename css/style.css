@@ -9946,20 +9946,33 @@ main .middle-box .input-group-text{
 /* End Login Page */
 
 /* Start Top Navbar and Sidebar */
+#page-wrapper {
+  padding: 0 15px;
+  position: relative !important;
+  flex-shrink: 1;
+  width: calc(100% - 270px);
+}
 .navbar-static-side{
   background-color: #005DB5;
   border-radius: 0 25px 0 0;
 }
-.nav > li > a {
+@media (min-width: 768px){
+.navbar-static-side {
+    z-index: 2001;
+    width: 270px;
+  }
+}
+.nav > .nav-link > a {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
+  padding-right: 0 ;
 }
 .nav > li > h2 {
   color: white;
   font-weight: 600;
-  padding: 20px 20px 20px 25px;
+  padding: 50px 20px 20px 30px;
   display: block;
-  font-size: 24px;
+  font-size: 20px;
   margin:0;
 }
 .navbar{
@@ -9967,10 +9980,12 @@ main .middle-box .input-group-text{
 }
 .navbar-brand{
   margin-left: 1rem;
+  min-width: calc(270px - 32px);
   
 }
 .navbar-mainmenu > li > a{
   color: #878F92 !important;
+  font-size: 16px;
 }
 .search-form{
   padding: 14px 20px 14px 25px;
@@ -10002,7 +10017,7 @@ ul.nav-second-level
   margin: 0 10px;
   background-color: transparent;
   position: relative;
-  width: 200px;
+  min-width: 150px;
 }
 .navbar-top-links  .profile span{
   margin: 0 8px;
@@ -10013,7 +10028,6 @@ ul.nav-second-level
   padding:0;
   width: 100%;
 }
-
 .dropdown-toggle .fas,
 [data-toggle="collapse"][data-parent="#accordion"] i {
   -webkit-transition: transform 150ms ease 0s;
@@ -10022,7 +10036,6 @@ ul.nav-second-level
   -ms-transition: all 150ms ease 0s;
   transition: transform 150ms ease 0s;
 }
-
 .dropdown-toggle[aria-expanded="true"] .fas,
 [data-toggle="collapse"][data-parent="#accordion"][aria-expanded="true"] .fas {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
@@ -10030,7 +10043,6 @@ ul.nav-second-level
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-
 .profile.dropdown .dropdown-menu{
   width: 100%;
   top: 130% !important;
@@ -10062,6 +10074,16 @@ ul.nav-second-level
 }
 .navbar{
   box-shadow:none !important;
+}
+.nav-link{
+  padding:  0 0 0 5px;
+}
+.nav-link a{
+  border-radius: 100px 0 0 100px;
+}
+.cog-icon{
+  margin-top: -7px;
+  width: 20px;
 }
 /* End Top Navbar and Sidebar */
 
