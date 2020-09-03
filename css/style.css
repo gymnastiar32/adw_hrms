@@ -9822,16 +9822,12 @@ body.md-skin {
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 /* Start Login Page */
-html{
+/* html{
   overflow: hidden;
-}
+} */
 body{
   background-color: white;
 }
-/* main.loginpage{
-  margin-top: 10%;
-  margin-bottom: auto;
-} */
 footer.loginpage
 {
   z-index: 100;
@@ -9842,9 +9838,6 @@ footer.loginpage p{
 footer.loginpage img{
   width: 90px;
 }
-.none{
- display: none;
-}
 .middle-box h3 {
   margin: 12px 0;
   font-size: 20px;
@@ -9853,8 +9846,6 @@ footer.loginpage img{
   background-color: transparent;
   height: auto;
   margin:0;
-}
-.middle-box input:focus {
 }
 .middle-box .form-group.input-group{
   width: 400px;
@@ -9954,11 +9945,43 @@ main .middle-box .input-group-text{
 }
 /* End Login Page */
 
-.navbar-default{
+/* Start Top Navbar and Sidebar */
+.navbar-static-side{
   background-color: #005DB5;
+  border-radius: 0 25px 0 0;
 }
 .nav > li > a {
   color: white;
+  font-size: 16px;
+}
+.nav > li > h2 {
+  color: white;
+  font-weight: 600;
+  padding: 20px 20px 20px 25px;
+  display: block;
+  font-size: 24px;
+  margin:0;
+}
+.navbar{
+  background-color: white;
+}
+.navbar-brand{
+  margin-left: 1rem;
+  
+}
+.navbar-mainmenu > li > a{
+  color: #878F92 !important;
+}
+.search-form{
+  padding: 14px 20px 14px 25px;
+}
+.navbar-header .input-group .form-control
+{
+  color: #878F92 !important;
+  height: auto;
+  margin: 0;
+  font-size: 13px;
+  width: 300px !important;
 }
 ul.nav-second-level
 {
@@ -9972,26 +9995,58 @@ ul.nav-second-level
   border-left: 4px solid white;
   background: #004f99;
 }
-.nav-header
-{
-  background-color: white;
-  background-image: none;
-  
+.navbar-top-links  .profile{
+  border:2px solid #9FA4A4;
+  border-radius: 50px;
+  padding: 5px 0;
+  margin: 0 10px;
+  background-color: transparent;
+  position: relative;
+  width: 200px;
 }
-.nav-header span
-{
-  font-size: 36px;
-  color: #005DB5;
+.navbar-top-links  .profile span{
+  margin: 0 8px;
+  color: #9FA4A4;
   font-weight: 700;
+}
+.navbar-top-links  .profile .btn-link{
+  padding:0;
+  width: 100%;
+}
+
+.dropdown-toggle .fas,
+[data-toggle="collapse"][data-parent="#accordion"] i {
+  -webkit-transition: transform 150ms ease 0s;
+  -moz-transition: transform 150ms ease 0s;
+  -o-transition: transform 150ms ease 0s;
+  -ms-transition: all 150ms ease 0s;
+  transition: transform 150ms ease 0s;
+}
+
+.dropdown-toggle[aria-expanded="true"] .fas,
+[data-toggle="collapse"][data-parent="#accordion"][aria-expanded="true"] .fas {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.profile.dropdown .dropdown-menu{
+  width: 100%;
+  top: 130% !important;
 }
 .profile-img
 {
-  width: 30px;
+  width: 26px;
   margin: 0 8px;
+  border-radius: 50px;
 }
 .navbar
 {
   box-shadow: none;
+}
+.navbar-top-links i{
+  font-size: 20px;
 }
 .navbar-top-links i,
 .navbar-top-links li > a
@@ -10002,3 +10057,27 @@ ul.nav-second-level
 {
   top: 130%;
 }
+.count-info .label{
+  border-radius: 50px;
+}
+.navbar{
+  box-shadow:none !important;
+}
+/* End Top Navbar and Sidebar */
+
+/* Start Page Heading */
+.page-heading h2{
+  color: #005Db5;
+  margin: 20px 0;
+  font-weight: 700;
+}
+#page-wrapper{
+  padding-left: 100px;
+}
+#page-wrapper .border-bottom{
+  border-width: 2px !important;
+}
+.p-0{
+  padding: 0;
+}
+/* End Page Heading */
