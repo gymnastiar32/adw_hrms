@@ -9980,15 +9980,17 @@ main .middle-box .input-group-text{
 }
 .navbar-brand{
   margin-left: 1rem;
-  min-width: calc(270px - 32px);
+  width: calc(270px - 32px);
   
 }
 .navbar-mainmenu > li > a{
   color: #878F92 !important;
   font-size: 16px;
+  padding: 14px 16px;
 }
 .search-form{
   padding: 14px 20px 14px 25px;
+  width: 400px;
 }
 .navbar-header .input-group .form-control
 {
@@ -9996,7 +9998,6 @@ main .middle-box .input-group-text{
   height: auto;
   margin: 0;
   font-size: 13px;
-  width: 300px !important;
 }
 ul.nav-second-level
 {
@@ -10083,8 +10084,51 @@ ul.nav-second-level
 }
 .cog-icon{
   margin-top: -7px;
-  width: 20px;
+  width: 20px !important;
 }
+@media (max-width:1470px){
+  .search-form{
+    width: 35%;
+  }
+  .navbar-header .input-group{
+    width: 100% !important;
+  }
+  .navbar-header .input-group .form-control{
+    max-width:100%;
+  }
+  .navbar-mainmenu > li > a{
+    font-size:14px !important;
+  }
+}
+@media (max-width:1280px){
+  #page-wrapper{
+    width :calc(100% - 200px);
+  }
+  .navbar-brand{
+    width: calc(200px - 32px) !important;
+  }
+  .navbar-static-side{
+    width: 200px;
+  }
+}
+
+@media (max-width:1280px){
+  .navbar-mainmenu > li > a{
+    font-size:12px !important;
+    padding: 10px 12px;
+  }
+  .navbar-top-links i{
+    font-size: 16px;
+  }
+  .cog-icon{
+    margin-top: -7px;
+    width: 16px !important;
+  }
+  .input-group-text i {
+    width: 10px;
+}
+}
+
 /* End Top Navbar and Sidebar */
 
 /* Start Page Heading */

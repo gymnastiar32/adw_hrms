@@ -6260,7 +6260,7 @@ textarea.form-control:active {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
   border-radius: 1px;
 }
 
