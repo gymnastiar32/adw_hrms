@@ -911,9 +911,9 @@ h5 {
   border-radius: 3px;
   box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
   display: none;
-  float: left;
+  /* float: left; */
   font-size: 12px;
-  left: 0;
+  /* left: 0; */
   list-style: none outside none;
   padding: 0;
   position: absolute;
@@ -9962,10 +9962,30 @@ main .middle-box .input-group-text{
     width: 270px;
   }
 }
-.nav > .nav-link > a {
+.nav > .nav-link > a,
+.nav > .nav-link > span {
   color: white;
   font-size: 14px;
   padding-right: 0 ;
+}
+.nav > .nav-link > span{
+  width: 100%;
+  padding-left: 25px ;
+  font-size :10px ;
+}
+.sidebar-collapse {
+  height: 100%;
+}
+.sidebar-collapse .nav:last-child{
+  margin-top: auto ;
+  margin-bottom:50px;
+}
+.sidebar-collapse .nav:last-child .logout{
+  font-size: 16px;
+  margin-left: 10px;
+}
+.sidebar-collapse .nav:last-child .logout-icon{
+  width: 20px;
 }
 .nav > li > h2 {
   color: white;
@@ -10018,7 +10038,6 @@ ul.nav-second-level
   margin: 0 10px;
   background-color: transparent;
   position: relative;
-  min-width: 150px;
 }
 .navbar-top-links  .profile span{
   margin: 0 8px;
@@ -10047,6 +10066,11 @@ ul.nav-second-level
 .profile.dropdown .dropdown-menu{
   width: 100%;
   top: 130% !important;
+  padding: 10px;
+  border-radius: 20px;
+  float: none;
+  left: auto !important;
+  right: none;
 }
 .profile-img
 {
@@ -10111,7 +10135,6 @@ ul.nav-second-level
     width: 200px;
   }
 }
-
 @media (max-width:1280px){
   .navbar-mainmenu > li > a{
     font-size:12px !important;
@@ -10126,7 +10149,50 @@ ul.nav-second-level
   }
   .input-group-text i {
     width: 10px;
+  }
 }
+.navbar-top-links .dropdown-menu{
+  padding: 10px;
+  border-radius: 20px;
+  float: none;
+  left: -170% !important;
+  width: 200px !important;
+}
+.navbar-top-links .dropdown-menu .dropdown-item{
+  font-weight: 700;
+  color: #808F9D;
+}
+.navbar-top-links .dropdown-menu .role{
+  background-color:#005db5;
+  color: white;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+}
+.navbar-top-links .dropdown-menu .role span{
+  color: white;
+  font-weight: 700;
+}
+.navbar-top-links .dropdown-menu:before{
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  content: "";
+  top: -3px;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  color: #005db5;
+  border: 4px solid #005DB5;
+  border-radius: 100px;
+}
+.dropdown-item{
+  font-size: 12px !important;
+  text-align: center !important;
+  padding: 0 !important;
+  white-space: normal !important;
 }
 
 /* End Top Navbar and Sidebar */
@@ -10147,3 +10213,93 @@ ul.nav-second-level
   padding: 0;
 }
 /* End Page Heading */
+
+/* Start Content */
+.wrapper-content .middle-box{
+  box-shadow:  0 0 5px 2px #00000015;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+.wrapper-content .search-form{
+  width: 300px !important;
+}
+.wrapper-content .search-form .form-group .form-control{
+  height: auto;
+}
+.wrapper-content .add{
+  border-radius: 100px;
+  border: 2px solid #e3e3e3;
+  padding: 5px 15px;
+  
+}
+.wrapper-content .add i{
+  font-size:12px;
+  color: white;
+}
+.wrapper-content .add > a > div{
+  background-color: #03E612;
+  width: 25px;
+  height: 25px;
+}
+.wrapper-content .add span{
+  font-size:20px;
+  margin-left:10px;
+  color: #878F92;
+  font-weight: 600;
+}
+.table-manage{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.table-manage > li {
+  margin: 10px 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #F0F2F8;
+}
+.table-manage > li > img{
+  width: 20px;
+}
+.table-action > div{
+  margin:0 10px;
+  font-size: 20px; 
+  width: 35px;
+  height: 35px;
+  border-radius: 10px ;
+}
+.table-action > div > a > i{
+  color: white;
+}
+.table-action > div:first-child{
+  background-color: #FFBB1D;
+}
+.table-action > div:last-child{
+  background-color: #FF257F;
+}
+thead > tr{
+  border:none;
+}
+thead > tr > th:first-child{
+  border-radius: 100px 0 0 100px;
+  overflow: hidden;
+}
+thead > tr > th:last-child{
+  border-radius:  0 100px 100px 0;
+  overflow: hidden;
+}
+.borderless tr:first-child th,
+.borderless tr:first-child td{
+  border:none;
+}
+
+table td,
+table th{
+  border-width: 2px !important;
+  padding: 20px 7px !important;
+}
+/* End Content */

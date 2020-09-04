@@ -14,6 +14,7 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/now-ui-kit.css">
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
 
 
 </head>
@@ -27,7 +28,7 @@
                     <span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
                 </div>
                 <div class="navbar-header d-flex align-items-center ">
-                    <ul class="nav navbar-mainmenu flex-nowrap">
+                    <ul class="nav navbar-mainmenu">
                         <li><a href="">Talent</a></li>
                         <li><a href="">Pengajuan Cuti</a></li>
                         <li><a href="">Asset</a></li>
@@ -37,7 +38,8 @@
                     <form class="search-form">
                         <div class="form-group input-group no-border flex-nowrap">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-search" style="color: #878F92 ;"></i></span>
+                                <span class="input-group-text"><i class="fa fa-search"
+                                        style="color: #878F92 ;"></i></span>
                             </div>
                             <input type="text" class="form-control " placeholder="Search...">
                         </div>
@@ -49,52 +51,11 @@
                     <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
                         <i class="far fa-envelope"></i> <span class="label label-warning">16</span>
                     </a>
-                    <ul class="dropdown-menu dropdown-messages dropdown-menu-right">
+                    <ul class="dropdown-menu">
                         <li>
-                            <div class="dropdown-messages-box">
-                                <a class="dropdown-item float-left" href="profile.html">
-                                    <img alt="image" class="rounded-circle" src="img/a7.jpg">
-                                </a>
-                                <div class="media-body">
-                                    <small class="float-right">46h ago</small>
-                                    <strong>Mike Loreipsum</strong> started following <strong>Monica
-                                        Smith</strong>. <br>
-                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <div class="dropdown-messages-box">
-                                <a class="dropdown-item float-left" href="profile.html">
-                                    <img alt="image" class="rounded-circle" src="img/a4.jpg">
-                                </a>
-                                <div class="media-body ">
-                                    <small class="float-right text-navy">5h ago</small>
-                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica
-                                        Smith</strong>. <br>
-                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <div class="dropdown-messages-box">
-                                <a class="dropdown-item float-left" href="profile.html">
-                                    <img alt="image" class="rounded-circle" src="img/profile.jpg">
-                                </a>
-                                <div class="media-body ">
-                                    <small class="float-right">23h ago</small>
-                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
-                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <div class="text-center link-block">
-                                <a href="mailbox.html" class="dropdown-item">
-                                    <i class="far fa-envelope"></i> <strong>Read All Messages</strong>
+                            <div class="dropdown-messages-box d-flex justify-content-center">
+                                <a class="dropdown-item" href="#">
+                                    1 Notification
                                 </a>
                             </div>
                         </li>
@@ -104,41 +65,17 @@
                     <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
                         <i class="far fa-bell"></i> <span class="label label-primary">8</span>
                     </a>
-                    <ul class="dropdown-menu dropdown-alerts dropdown-menu-right">
+                    <ul class="dropdown-menu">
                         <li>
                             <a href="mailbox.html" class="dropdown-item">
-                                <div>
-                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
-                                    <span class="float-right text-muted small">4 minutes ago</span>
-                                </div>
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, qui!</span>
                             </a>
                         </li>
                         <li class="dropdown-divider"></li>
                         <li>
                             <a href="profile.html" class="dropdown-item">
-                                <div>
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="float-right text-muted small">12 minutes ago</span>
-                                </div>
+                                New Message
                             </a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <a href="grid_options.html" class="dropdown-item">
-                                <div>
-                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span class="float-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <div class="text-center link-block">
-                                <a href="notifications.html" class="dropdown-item">
-                                    <strong>See All Alerts</strong>
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
                         </li>
                     </ul>
                 </li>
@@ -146,38 +83,46 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <img class="cog-icon" src="img/cog.svg" alt="cog-icon">
                     </a>
-                    <ul class="dropdown-menu dropdown-alerts dropdown-menu-right">
+                    <ul class="dropdown-menu">
                         <li>
-                            <a href="mailbox.html" class="dropdown-item">
-                                <div>
-                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
-                                    <span class="float-right text-muted small">4 minutes ago</span>
+                            <div class="dropdown-messages-box d-flex justify-content-center">
+                                <a class="dropdown-item" href="#">
+                                    HRD
+                                </a>
+                                <div class="role d-flex justify-content-center align-items-center">
+                                    <span>H</span>
                                 </div>
-                            </a>
+                            </div>
                         </li>
                         <li class="dropdown-divider"></li>
                         <li>
-                            <a href="profile.html" class="dropdown-item">
-                                <div>
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="float-right text-muted small">12 minutes ago</span>
+                            <div class="dropdown-messages-box d-flex justify-content-center align-items-center">
+                                <a class="dropdown-item" href="#">
+                                    USER
+                                </a>
+                                <div class="role d-flex justify-content-center align-items-center">
+                                    <span>U</span>
                                 </div>
-                            </a>
+                            </div>
                         </li>
                     </ul>
                 </li>
-                <li class="dropdown profile">
-                    <button class="btn-link d-flex align-items-center justify-content-between dropdown-toggle" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="dropdown profile d-flex flex-column">
+                    <button class="btn-link d-flex align-items-center justify-content-between dropdown-toggle"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="fas fa-chevron-down"></span>
                         <span>Admin</span>
                         <img class="profile-img" src="img/a4.jpg" alt="">
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="#">Change Username</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" href="#">Change Password</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
 
@@ -185,7 +130,7 @@
     </div>
     <div id="wrapper">
         <nav class="navbar-default navbar-static-side" role="navigation">
-            <div class="sidebar-collapse">
+            <div class="sidebar-collapse d-flex flex-column">
                 <ul class="nav metismenu" id="side-menu">
                     <li>
                         <h2>Master Data</h2>
@@ -218,7 +163,17 @@
                         <a href="layouts.html"><span class="nav-label">Menu Management</span></a>
                     </li>
                 </ul>
-
+                <ul class="nav metismenu">
+                    <li class="nav-link">
+                        <a href="">
+                            <img class="logout-icon" src="img/logout.svg" alt="">
+                            <span class="logout">Log Out</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <span class="copy">&copy; 2020 ADW Consulting, All Rights Reserved</span>
+                    </li>
+                </ul>
             </div>
         </nav>
         <div id="page-wrapper">
@@ -236,23 +191,85 @@
                 </div>
             </div>
             <div class="wrapper wrapper-content">
-                <div class="middle-box text-center animated fadeInRightBig">
-                    <h3 class="font-bold">This is page content</h3>
-                    <div class="error-desc">
-                        You can create here any grid layout you want. And any variation layout you imagine:) Check
-                        out
-                        main dashboard and other site. It use many different layout.
-                        <br /><a href="index.html" class="btn btn-primary m-t">Dashboard</a>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="add d-flex align-items-center">
+                        <a href="#" class="d-flex align-items-center">
+                            <div class="rounded-circle inline-block d-flex justify-content-center align-items-center">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <span>Add</span>
+                        </a>
+                    </div>
+                    <div class="d-flex align-center">
+                        <form class="search-form">
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-search"
+                                            style="color:#878F92;"></i></span>
+                                </div>
+                                <input type="text" class="form-control " placeholder="Username">
+                                <div class="input-group-append">
+                                    <div class="input-group-text" style="width: 37px;"></div>
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="table-manage align-items-center">
+                            <li>
+                                <img src="img/refresh.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/list.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/grid.svg" alt="">
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="footer">
-                <div class="float-right">
-                    10GB of <strong>250GB</strong> Free.
+                <div class="middle-box text-center animated fadeInRightBig ">
+                    <table class="table borderless">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td class="table-action d-flex justify-content-center">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a href="">
+                                            <i class="far fa-edit"></i>
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a href="">
+                                            <i class="fas fa-times"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div>
-                    <strong>Copyright</strong> Example Company &copy; 2014-2018
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>tes</div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
                 </div>
+                
             </div>
         </div>
     </div>

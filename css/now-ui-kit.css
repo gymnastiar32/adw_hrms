@@ -5968,7 +5968,7 @@ textarea.form-control:active {
   content: "";
   top: -5px;
   left: 10px;
-  right: auto;
+  /* right: auto; */
   color: #FFFFFF;
   border-bottom: .4em solid;
   border-right: .4em solid transparent;
