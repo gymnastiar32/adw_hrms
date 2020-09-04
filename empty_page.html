@@ -191,7 +191,7 @@
                 </div>
             </div>
             <div class="wrapper wrapper-content">
-                <div class="d-flex justify-content-between align-items-center">
+                <!-- <div class="d-flex justify-content-between align-items-center">
                     <div class="add d-flex align-items-center">
                         <a href="#" class="d-flex align-items-center">
                             <div class="rounded-circle inline-block d-flex justify-content-center align-items-center">
@@ -268,13 +268,14 @@
                             <li class="page-item"><a class="page-link" href="#">Next</a></li>
                         </ul>
                     </nav>
-                </div>
+                </div> -->
 
 
 
-                <!-- <table class="table" id="tablekelas" data-toggle="table" data-search="true" data-show-refresh="true"
-                    data-pagination="true" data-show-toggle="true" data-side-pagination="server"
-                    data-show-pagination-switch="true" data-detail-formatter="detailFormatter" data-show-export="true"
+                <table class="table border-0" id="tablekelas" data-toggle="table" data-search="true"
+                    data-show-refresh="true" data-pagination="true" data-show-toggle="true"
+                    data-side-pagination="server" data-show-pagination-switch="true"
+                    data-detail-formatter="detailFormatter" data-show-export="true"
                     data-export-types="['pdf', 'csv', 'excel']" data-export-options='{"fileName": "data_kelas"}'
                     data-click-to-select="true">
                     <thead>
@@ -287,7 +288,7 @@
                             <th data-formatter="actionFormatter" data-field="id" data-force-hide="true">Aksi</th>
                         </tr>
                     </thead>
-                </table> -->
+                </table>
             </div>
         </div>
     </div>
@@ -307,6 +308,49 @@
     <script src="js/bootstrap-table.js"></script>
     <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
     <script src="js/now-ui-kit.js?v=1.2.2" type="text/javascript"></script>
+
+    <script>
+        function numberFormatter(value, row, index) {
+            var options = $('#tablekelas').bootstrapTable('getOptions')
+            // alert(options["pageNumber"] + " " + options["pageSize"])
+            //  console.log(options["pageSize"]);
+            var tes = 0
+            if (!isNaN(options['pageSize'])) { //cek pagesize angka atau tidak, klo angka jalankan kode dibawah
+                tes = ((options["pageNumber"] - 1) * options["pageSize"])
+            }
+            return index + 1 + tes;
+        }
+
+        function actionFormatter(value, row, index) {
+            return [
+                '<a href="<?= site_url("Kelas/detail_kelas/") ?>' + value + '" class="btn btn-primary ">Detail</a>',
+                ' ',
+                '<a href="<?= site_url("Kelas/updateform/") ?>' + value + '" class="btn btn-success ">Edit</a>',
+                ' ',
+                '<a href="<?= site_url("Kelas/delete_kelas/") ?>' + value + '" class="btn btn-danger"  >Hapus</a>',
+            ].join('');
+        }
+
+        function detailFormatter(index, row) {
+            var html = []
+            const excludeType = ["Undefined", "object"];
+            $.each(row, function (key, value) {
+                if (!excludeType.includes(typeof value)) {
+                    html.push('<p><b>' + key + ':</b>' + value + '</p>')
+                }
+            })
+            return html.join('')
+        }
+
+        $(document).ready(function () {
+            var table = $('#tablekelas')
+            var $button = $('#button')
+
+            $button.click(function () {
+                alert('Kelasnnya :  ' + JSON.stringify(table.bootstrapTable('getSelections')[0]["nama_kelas"]))
+            })
+        })
+    </script>
 
 </body>
 

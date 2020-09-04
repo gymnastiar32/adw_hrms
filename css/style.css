@@ -10292,9 +10292,9 @@ thead > tr > th:last-child{
   border-radius:  0 100px 100px 0;
   overflow: hidden;
 }
-.borderless tr:first-child th,
-.borderless tr:first-child td{
-  border:none;
+.borderless thead tr:first-child th,
+.borderless thead tr:first-child td{
+  border:none !important;
 }
 
 table td,
@@ -10317,5 +10317,9 @@ table th{
 }
 .fixed-table-toolbar .btn.btn-secondary i{
   color:#878F92;
+  font-size: 16px;
+}
+.th-inner{
+  padding: 0 !important;
 }
 /* End Content */
