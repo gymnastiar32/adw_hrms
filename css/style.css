@@ -10231,7 +10231,6 @@ ul.nav-second-level
   border-radius: 100px;
   border: 2px solid #e3e3e3;
   padding: 5px 15px;
-  
 }
 .wrapper-content .add i{
   font-size:12px;
@@ -10319,11 +10318,6 @@ table tbody tr:first-child td{
 table tbody tr:not(:first-child) td{
   border: 0;
   border-top: 2px solid #e7eaec;
-}
-.fixed-table-toolbar{
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
 }
 .fixed-table-toolbar .btn.btn-secondary{
   padding: 0;
@@ -10423,5 +10417,29 @@ tbody > tr > td > button > i{
   background-color: #005db5 !important;
   border-radius: 100px;
   margin-right: 10px;
+}
+.page-list .dropdown-menu{
+  border-radius:10px !important;
+  left: -50% !important;
+  padding: 10px 30px;
+}
+.page-list .dropdown-menu:after{
+  border:0 !important;
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #005DB5;
+  border-radius: 100px;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+.page-list .dropdown-menu .dropdown-item{
+  padding: 5px !important;
+  font-size:14px !important;
+  color: #6c757d !important;
+  font-weight: 700;
+}
+.page-list .dropdown-menu .dropdown-item:not(:first-child){
+  border-top: 2px solid #e3e3e3;
+  margin-top: 0;
 }
 /* End Content */

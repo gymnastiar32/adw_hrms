@@ -272,11 +272,22 @@
 
 
 
+                <div id="toolbar">
+                    <div class="add d-flex align-items-center">
+                        <a href="#" class="d-flex align-items-center">
+                            <div class="rounded-circle inline-block d-flex justify-content-center align-items-center">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <span>Add</span>
+                        </a>
+                    </div>
+                </div>
                 <table class="table border-0 mt-4 mb-4" id="tablekelas" data-toggle="table" data-search="true"
                     data-show-refresh="true" data-pagination="true" data-page-size="5" data-page-list="[5,10, All]"
-                    data-show-columns="true" data-show-toggle="true" data-side-pagination="client"
-                    data-show-pagination-switch="true" data-resizable="false" data-show-export="true" data-export-types="['pdf', 'csv', 'excel']"
-                    data-export-options='{"fileName": "data_kelas"}' data-click-to-select="true">
+                    data-show-toggle="true" data-side-pagination="client" data-show-pagination-switch="true"
+                    data-resizable="false" data-show-export="true" data-export-types="['pdf', 'csv', 'excel']"
+                    data-export-options='{"fileName": "data_kelas"}' data-click-to-select="true"
+                    data-toolbar="#toolbar">
                     <thead>
                         <tr>
                             <th data-formatter="numberFormatter">No</th>
@@ -491,6 +502,19 @@
             })
         })
     </script>
+
+    <script>
+        var $table = $('#table')
+        var $button = $('#button')
+
+        $(function () {
+            $button.click(function () {
+                $table.bootstrapTable('refresh')
+            })
+        })
+    </script>
+
+
 
 </body>
 
