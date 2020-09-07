@@ -10608,6 +10608,10 @@ label{
  border-radius: 100px;
  padding: 0 !important;
 }
+.middle-box.addPage .action .kembali a,
+.middle-box.editPage .action .kembali a{
+  color: #808F9D !important;
+}
 .form-check-label{
   padding-left: 10px !important;
 }
