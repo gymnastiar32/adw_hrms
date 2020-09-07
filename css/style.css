@@ -10241,6 +10241,7 @@ ul.nav-second-level
   border-radius: 100px;
   border: 2px solid #e3e3e3;
   padding: 7px 15px;
+  margin-right: 20px;
 }
 .wrapper-content .add i{
   font-size:10px;
@@ -10349,8 +10350,7 @@ table tbody tr:not(:first-child) td{
 }
 .fixed-table-toolbar .form-control{
   padding: 10px 12px;
-  height: auto;
-  margin-right: 10px;
+  height: auto; 
   width: 300px;
 }
 .fixed-table-toolbar .btn.btn-secondary{
@@ -10361,6 +10361,9 @@ table tbody tr:not(:first-child) td{
   margin:0; 
   background-color: #F0F2F8;
   box-shadow: none !important;
+}
+.fixed-table-toolbar .columns-right{
+  margin-left: 20px !important;
 }
 .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle){
   border-top-right-radius: 0;
@@ -10429,15 +10432,15 @@ tbody > tr > td > button:focus,
 }
 tbody > tr > td > button:first-child,
 .card-view-value > button:first-child{
-  background-color: #FFBB1D;
-  margin-right: 10px !important;
+  background-color: #FFBB1D !important;
 }
 tbody > tr > td > button:last-child,
 .card-view-value > button:last-child{
   background-color: #FF257F;
+  margin-left: 10px;
 }
-tbody > tr > td > button > i{
-  color: white;
+tbody > tr > td > button i{
+  color: white !important;
   font-size: 16px;
 }
 @media (max-width:1050px){
@@ -10549,3 +10552,66 @@ tbody > tr > td > button > i{
   text-align: left !important;
 }
 /* End Content */
+
+/* Start Add and Edit Page */
+.middle-box.addPage,
+.middle-box.editPage{
+  padding: 20px 100px !important;
+}
+.middle-box.addPage .col-md-6,
+.middle-box.editPage .col-md-6{
+  padding-right: 50px;
+}
+.middle-box.addPage h3,
+.middle-box.addPage h3{
+  padding: 20px 0;
+  font-weight: 700;
+}
+.middle-box.addPage .form-row,
+.middle-box.editPage .form-row{
+  margin: 20px 0;
+}
+label{
+  font-weight: 700 !important;
+}
+.middle-box.addPage .form-control,
+.middle-box.editPage .form-control{
+ height: 45px;
+ background-color: #F0F2F8;
+ border: 0;
+}
+.middle-box.addPage .action,
+.middle-box.editPage .action{
+ margin-top: 50px;
+}
+.middle-box.addPage .action .simpan,
+.middle-box.editPage .action .simpan{
+  color: white;
+  border: none ;
+  text-transform:none;
+  font-size: 16px;
+  width: 100px !important;
+  height: 40px !important;
+  border-radius: 100px;
+  padding: 0 !important;
+  margin-left: 20px ;
+}
+.middle-box.addPage .action .kembali,
+.middle-box.editPage .action .kembali{
+ color: #808F9D;
+ border: 2px solid #808F9D;
+ text-transform:none;
+ font-size: 16px;
+ background-color: white;
+ width: 100px !important;
+ height: 40px !important;
+ border-radius: 100px;
+ padding: 0 !important;
+}
+.form-check-label{
+  padding-left: 10px !important;
+}
+.form-check{
+  margin-right: 20px;
+}
+/* End Add and Edit Page */
