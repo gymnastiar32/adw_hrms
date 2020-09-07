@@ -179,38 +179,62 @@
         <div id="page-wrapper">
             <div class="wrapper border-bottom white-bg page-heading p-0 pb-4">
                 <div class="col-sm-4 p-0">
-                    <h2>Posisi</h2>
+                    <h2>Job Title</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
                             <a href="index.html">Master Data</a>
                         </li>
-                        <li class="breadcrumb-item ">
-                            <a href="posisi.html">Posisi</a>
-                        </li>
                         <li class="breadcrumb-item active">
-                            <strong>Edit Posisi</strong>
+                            <a href="jobtitle.html">Job title</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <strong>Tambah Job Title</strong>
                         </li>
                     </ol>
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRightBig">
                 <div class="middle-box addPage">
-                    <h3 class="border-bottom">Tambah Posisi</h3>
+                    <h3 class="border-bottom">Edit Tingkat Pendidikan Akhir</h3>
                     <form>
                         <div class="form-row">
-                            <div class="col-md-6">
-                                <label for="namaPosisi">Nama Posisi</label>
-                                <input type="text" class="form-control no-border" name="namaPosisi" id="namaPosisi">
+                            <div class="col-md-4">
+                                <label for="inputState">Tingkat Pendidikan Akhir</label>
+                                <select id="inputState" class="form-control">
+                                  <option selected>Pilih...</option>
+                                  <option>SD</option>
+                                  <option>SMP</option>
+                                  <option>SMA</option>
+                                  <option>Diploma</option>
+                                  <option>S1</option>
+                                  <option>S2</option>
+                                  <option>S3</option>
+                                </select>
+                              </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12">
+                                <span>Status</span>
                             </div>
-                            <div class="col-md-6">
-                                <label for="namaDivisi">Nama Divisi/Departement</label>
-                                <input type="text" class="form-control no-border" name="namaDivisi" id="namaDivisi">
+                            <div class="form-check form-check-radio form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1"> Aktif
+                                    <span class="form-check-sign"></span>
+                                </label>
+                            </div>
+                            <div class="form-check form-check-radio form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2"> Nonaktif
+                                    <span class="form-check-sign"></span>
+                                </label>
                             </div>
                         </div>
                         <div class="action clearfix">
                             <button class="btn simpan float-right">Simpan</button>
                             <button class="btn kembali float-right" type="submit">
-                                <a href="posisi.html">Kembali</a>
+                                <a href="tingkat_pddk.html">Kembali</a>
                             </button>
                         </div>
                     </form>

@@ -179,38 +179,43 @@
         <div id="page-wrapper">
             <div class="wrapper border-bottom white-bg page-heading p-0 pb-4">
                 <div class="col-sm-4 p-0">
-                    <h2>Posisi</h2>
+                    <h2>Tingkat Pendidikan Akhir</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
                             <a href="index.html">Master Data</a>
                         </li>
-                        <li class="breadcrumb-item ">
-                            <a href="posisi.html">Posisi</a>
-                        </li>
                         <li class="breadcrumb-item active">
-                            <strong>Edit Posisi</strong>
+                            <a href="tingkat_pddk.html">Job title</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <strong>Tambah Tingkat Pendidikan Akhir</strong>
                         </li>
                     </ol>
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRightBig">
                 <div class="middle-box addPage">
-                    <h3 class="border-bottom">Tambah Posisi</h3>
+                    <h3 class="border-bottom">Tambah Tingkat Pendidikan Akhir</h3>
                     <form>
                         <div class="form-row">
-                            <div class="col-md-6">
-                                <label for="namaPosisi">Nama Posisi</label>
-                                <input type="text" class="form-control no-border" name="namaPosisi" id="namaPosisi">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="namaDivisi">Nama Divisi/Departement</label>
-                                <input type="text" class="form-control no-border" name="namaDivisi" id="namaDivisi">
-                            </div>
+                            <div class="col-md-4">
+                                <label for="inputState">Tingkat Pendidikan Akhir</label>
+                                <select id="inputState" class="form-control">
+                                  <option selected>Pilih...</option>
+                                  <option>SD</option>
+                                  <option>SMP</option>
+                                  <option>SMA</option>
+                                  <option>Diploma</option>
+                                  <option>S1</option>
+                                  <option>S2</option>
+                                  <option>S3</option>
+                                </select>
+                              </div>
                         </div>
                         <div class="action clearfix">
                             <button class="btn simpan float-right">Simpan</button>
                             <button class="btn kembali float-right" type="submit">
-                                <a href="posisi.html">Kembali</a>
+                                <a href="tingkat_pddk.html">Kembali</a>
                             </button>
                         </div>
                     </form>

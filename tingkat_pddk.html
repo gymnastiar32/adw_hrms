@@ -148,7 +148,8 @@
                         <a href="template_email.html"><span class="nav-label">Template Email</span></a>
                     </li>
                     <li class="nav-link">
-                        <a class="active" href="tingkat_pddk.html"><span class="nav-label">Tingkat Pendidikan Terakhir</span></a>
+                        <a class="active" href="tingkat_pddk.html"><span class="nav-label">Tingkat Pendidikan
+                                Terakhir</span></a>
                     </li>
                     <li class="nav-link">
                         <a href="domisili.html"><span class="nav-label">Domisili</span></a>
@@ -274,7 +275,7 @@
 
                 <div id="toolbar">
                     <div class="add d-flex align-items-center">
-                        <a href="#" class="d-flex align-items-center">
+                        <a href="tingkat_pddk_add.html" class="d-flex align-items-center">
                             <div class="rounded-circle inline-block d-flex justify-content-center align-items-center">
                                 <i class="fas fa-plus"></i>
                             </div>
@@ -284,32 +285,31 @@
                 </div>
                 <table class="table border-0 mt-4 mb-4" id="tablekelas" data-toggle="table" data-search="true"
                     data-show-refresh="true" data-pagination="true" data-page-size="5" data-page-list="[5,10, All]"
-                    data-show-toggle="true" data-side-pagination="client"
-                    data-resizable="false" data-show-export="true" data-export-types="['pdf', 'csv', 'excel']"
-                    data-export-options='{"fileName": "data_kelas"}' data-click-to-select="true"
-                    data-toolbar="#toolbar" data-show-columns="true" data-show-pagination-switch="true">
+                    data-show-toggle="true" data-side-pagination="client" data-resizable="false" data-show-export="true"
+                    data-export-types="['pdf', 'csv', 'excel']" data-export-options='{"fileName": "data_kelas"}'
+                    data-click-to-select="true" data-toolbar="#toolbar" data-show-columns="true"
+                    data-show-pagination-switch="true">
                     <thead>
                         <tr>
-                            <th data-field="tipe_divisi">Nomor</th>
                             <th data-field="status_divisi">Tingkat Pendidikan Akhir</th>
+                            <th data-field="tipe_divisi">Status</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
-                    <!-- <tbody>
+                    <tbody>
                         <tr>
-                            <td></td>
-                            <td></td>
+                            <td>S3</td>
+                            <td>Aktif</td>
                             <td>
                                 <button class="btn">
-                                    <i class="fa fa-edit"></i>
+                                    <a href="tingkat_pddk_edit.html">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
                                 </button>
-                                <button class="btn">
-                                    <i class="fa fa-times"></i>
-                                </button>
-                        </td>
+                            </td>
                         </tr>
-                    </tbody> -->
-                    
+                    </tbody>
+
                 </table>
             </div>
         </div>
