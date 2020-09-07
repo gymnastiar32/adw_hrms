@@ -10439,7 +10439,8 @@ tbody > tr > td > button:last-child,
   background-color: #FF257F;
   margin-left: 10px;
 }
-tbody > tr > td > button i{
+tbody > tr > td > button i,
+.card-view-value > button i{
   color: white !important;
   font-size: 16px;
 }
@@ -10571,7 +10572,8 @@ tbody > tr > td > button i{
 .middle-box.editPage .form-row{
   margin: 20px 0;
 }
-label{
+label,
+.form-row span{
   font-weight: 700 !important;
 }
 .middle-box.addPage .form-control,
