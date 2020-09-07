@@ -142,13 +142,13 @@
                         <a href="jobtitle.html"><span class="nav-label">job Title</span></a>
                     </li>
                     <li class="nav-link">
-                        <a class="active" href="divisi.html"><span class="nav-label">Divisi/Departement</span></a>
+                        <a href="divisi.html"><span class="nav-label">Divisi/Departement</span></a>
                     </li>
                     <li class="nav-link">
                         <a href="template_email.html"><span class="nav-label">Template Email</span></a>
                     </li>
                     <li class="nav-link">
-                        <a href="tingkat_pddk.html"><span class="nav-label">Tingkat Pendidikan Terakhir</span></a>
+                        <a class="active" href="tingkat_pddk.html"><span class="nav-label">Tingkat Pendidikan Terakhir</span></a>
                     </li>
                     <li class="nav-link">
                         <a href="domisili.html"><span class="nav-label">Domisili</span></a>
@@ -287,169 +287,28 @@
                     data-show-toggle="true" data-side-pagination="client"
                     data-resizable="false" data-show-export="true" data-export-types="['pdf', 'csv', 'excel']"
                     data-export-options='{"fileName": "data_kelas"}' data-click-to-select="true"
-                    data-toolbar="#toolbar">
+                    data-toolbar="#toolbar" data-show-columns="true" data-show-pagination-switch="true">
                     <thead>
                         <tr>
-                            <th data-field="kode_divisi">Kode</th>
-                            <th data-field="nama_divisi">Nama</th>
-                            <th data-field="kantor_divisi">Kantor</th>
-                            <th data-field="tipe_divisi">Tipe</th>
-                            <th data-field="status_divisi">Status</th>
+                            <th data-field="tipe_divisi">Nomor</th>
+                            <th data-field="status_divisi">Tingkat Pendidikan Akhir</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <!-- <tbody>
                         <tr>
-                            <td>LTA28</td>
-                            <td>example1</td>
-                            <td>Kantor Pusat</td>
-                            <td>Divisi/Departement</td>
-                            <td>Aktif</td>
+                            <td></td>
+                            <td></td>
                             <td>
-                                    <button class="btn">
-                                        <i class="fa fa-edit"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                            </td>
+                                <button class="btn">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                                <button class="btn">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                        </td>
                         </tr>
-                        <tr>
-                            <td>LTA28</td>
-                            <td>example2</td>
-                            <td>Kantor Pusat</td>
-                            <td>Divisi/Departement</td>
-                            <td>Aktif</td>
-                            <td>
-                                    <button class="btn">
-                                        <i class="fa fa-edit"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>LTA28</td>
-                            <td>example3</td>
-                            <td>Kantor Pusat</td>
-                            <td>Divisi/Departement</td>
-                            <td>Aktif</td>
-                            <td>
-                                    <button class="btn">
-                                        <i class="fa fa-edit"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>LTA28</td>
-                            <td>example4</td>
-                            <td>Kantor Pusat</td>
-                            <td>Divisi/Departement</td>
-                            <td>Aktif</td>
-                            <td>
-                                    <button class="btn">
-                                        <i class="fa fa-edit"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>LTA28</td>
-                            <td>example5</td>
-                            <td>Kantor Pusat</td>
-                            <td>Divisi/Departement</td>
-                            <td>Aktif</td>
-                            <td>
-                                    <button class="btn">
-                                        <i class="fa fa-edit"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>LTA28</td>
-                            <td>example6</td>
-                            <td>Kantor Pusat</td>
-                            <td>Divisi/Departement</td>
-                            <td>Aktif</td>
-                            <td>
-                                    <button class="btn">
-                                        <i class="fa fa-edit"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>LTA28</td>
-                            <td>example7</td>
-                            <td>Kantor Pusat</td>
-                            <td>Divisi/Departement</td>
-                            <td>Aktif</td>
-                            <td>
-                                    <button class="btn">
-                                        <i class="fa fa-edit"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>LTA28</td>
-                            <td>example8</td>
-                            <td>Kantor Pusat</td>
-                            <td>Divisi/Departement</td>
-                            <td>Aktif</td>
-                            <td>
-                                    <button class="btn">
-                                        <i class="fa fa-edit"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>LTA28</td>
-                            <td>example9</td>
-                            <td>Kantor Pusat</td>
-                            <td>Divisi/Departement</td>
-                            <td>Aktif</td>
-                            <td>
-                                    <button class="btn">
-                                        <i class="fa fa-edit"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>LTA28</td>
-                            <td>example10</td>
-                            <td>Kantor Pusat</td>
-                            <td>Divisi/Departement</td>
-                            <td>Aktif</td>
-                            <td>
-                                    <button class="btn">
-                                        <i class="fa fa-edit"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                            </td>
-                        </tr>
-                    </tbody>
+                    </tbody> -->
                     
                 </table>
             </div>
