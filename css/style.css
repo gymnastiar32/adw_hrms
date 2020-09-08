@@ -9944,6 +9944,25 @@ main .middle-box .input-group-text{
   background-color: white;
   color: #005DB5;
 }
+.loginscreen .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+  background-image: none;
+  width: .5rem;
+  height: .5rem;
+  background-color: #005db5;
+  border-radius: 100px;
+  top: 8px;
+  left: -20px;
+}
+.custom-control-label::after{
+  fill: #005db5 !important;
+}
+.loginscreen .custom-checkbox .custom-control-label::before{
+  border-radius: 100px;
+}
+.loginscreen .custom-control-input:checked~.custom-control-label::before{
+  background-color: transparent;
+  border: 1px solid #8095a8;
+}
 /* End Login Page */
 
 /* Start Top Navbar and Sidebar */
@@ -10638,10 +10657,19 @@ label,
 .middle-box.editPage .action .kembali a{
   color: #808F9D !important;
 }
-.form-check-label{
+.addPage .form-check-label,
+.editPage .form-check-label{
   padding-left: 10px !important;
 }
 .form-check{
   margin-right: 20px;
 }
+.form-check-radio input[type="radio"]:checked+.form-check-sign::after
+{
+  transform: scale(2.5);
+  color: #005DB5 !important;
+  background-color: #005DB5 !important;
+  border-color: #005db5 !important;
+}
+
 /* End Add and Edit Page */
