@@ -29,13 +29,13 @@
                 </div>
                 <div class="navbar-header d-flex align-items-center ">
                     <ul class="nav navbar-mainmenu">
-                        <li class="mr-1"><a href="karyawan.html">Talent</a></li>
+                        <li class="mr-1"><a class="active" href="karyawan.html">Talent</a></li>
                         <li class="mr-1"><a href="form_cuti.html">Pengajuan Cuti</a></li>
                         <li class="mr-1"><a href="master_asset.html">Asset</a></li>
                         <li class="mr-1"><a href="ekpi_master">e-KPI</a></li>
-                        <li><a class="active" href="posisi.html">Master Data</a></li>
+                        <li><a href="posisi.html">Master Data</a></li>
                     </ul>
-                    <!-- <form class="search-form">
+                    <form class="search-form">
                         <div class="form-group input-group no-border flex-nowrap">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fa fa-search"
@@ -43,7 +43,7 @@
                             </div>
                             <input type="text" class="form-control " placeholder="Search...">
                         </div>
-                    </form> -->
+                    </form>
                 </div>
             </div>
             <ul class="nav navbar-top-links navbar-right d-flex align-items-center flex-nowrap">
@@ -133,39 +133,21 @@
             <div class="sidebar-collapse d-flex flex-column">
                 <ul class="nav metismenu" id="side-menu">
                     <li>
-                        <h2>Master Data</h2>
+                        <h2>Talent</h2>
                     </li>
                     <li class="nav-link">
-                        <a href="posisi.html"><span class="nav-label">Posisi</span></a>
+                        <a class="active" href="#"><span class="nav-label">Karyawan</span></a>
                     </li>
                     <li class="nav-link">
-                        <a href="jobtitle.html"><span class="nav-label">Job Title</span></a>
+                        <a href="#"><span class="nav-label">Calon Karyawan</span></a>
                     </li>
                     <li class="nav-link">
-                        <a class="active" href="divisi.html"><span class="nav-label">Divisi/Departement</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="template_email.html"><span class="nav-label">Template Email</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="tingkat_pddk.html"><span class="nav-label">Tingkat Pendidikan Terakhir</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="domisili.html"><span class="nav-label">Domisili</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="hirarki.html"><span class="nav-label">Hirarki</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="proyek.html"><span class="nav-label">Proyek</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="menu_management.html"><span class="nav-label">Menu Management</span></a>
+                        <a href="#"><span class="nav-label">Pengajuan Training</span></a>
                     </li>
                 </ul>
                 <ul class="nav metismenu">
                     <li class="nav-link">
-                        <a href="">
+                        <a href="login.html">
                             <img class="logout-icon" src="img/logout.svg" alt="">
                             <span class="logout">Log Out</span>
                         </a>
@@ -179,52 +161,60 @@
         <div id="page-wrapper">
             <div class="wrapper border-bottom white-bg page-heading p-0 pb-4">
                 <div class="col-sm-4 p-0">
-                    <h2>Divisi/Department</h2>
+                    <h2>Karyawan</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="index.html">Master Data</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="divisi.html">Divisi/Department</a>
+                            <a href="#">Talent</a>
                         </li>
                         <li class="breadcrumb-item active">
-                            <strong>Tambah Divisi/Department</strong>
+                            <strong>Karyawan</strong>
                         </li>
                     </ol>
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRightBig">
-                <div class="middle-box addPage">
-                    <h3 class="border-bottom">Tambah Divisi/Department</h3>
-                    <form>
-                        <div class="form-row">
-                            <div class="col-md-6">
-                                <label for="kode">Kode</label>
-                                <input type="text" class="form-control no-border" name="kode" id="kode">
+                <div id="toolbar">
+                    <div class="add d-flex align-items-center">
+                        <a href="karyawan_add.html" class="d-flex align-items-center">
+                            <div class="rounded-circle inline-block d-flex justify-content-center align-items-center">
+                                <i class="fas fa-plus"></i>
                             </div>
-                            <div class="col-md-6">
-                                <label for="nama">Nama</label>
-                                <input type="text" class="form-control no-border" name="nama" id="nama">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-6">
-                                <label for="kantor">Kantor</label>
-                                <input type="text" class="form-control no-border" name="kantor" id="kantor">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="tipe">Tipe</label>
-                                <input type="text" class="form-control no-border" name="tipe" id="tipe">
-                            </div>
-                        </div>
-                        <div class="action clearfix">
-                            <button class="btn simpan float-right">Simpan</button>
-                            <button class="btn kembali float-right" type="submit">
-                                <a href="divisi.html">Kembali</a>
-                            </button>
-                        </div>
-                    </form>
+                            <span>Tambah Data</span>
+                        </a>
+                    </div>
                 </div>
+                <table class="table border-0 mt-4 mb-4" id="tablekelas" data-toggle="table" data-search="true"
+                    data-show-refresh="true" data-pagination="true" data-page-size="5" data-page-list="[5,10, All]"
+                    data-show-toggle="true" data-side-pagination="client" data-resizable="false" data-show-export="true"
+                    data-export-types="['pdf', 'csv', 'excel']" data-export-options='{"fileName": "data_kelas"}'
+                    data-click-to-select="true" data-toolbar="#toolbar" data-show-columns="true"
+                    data-show-pagination-switch="true">
+                    <thead>
+                        <tr>
+                            <th data-field="kode_divisi">NIK</th>
+                            <th data-field="nama_divisi">Nama</th>
+                            <th data-field="kantor_divisi">Alamat</th>
+                            <th data-field="status_divisi">Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>35171112010007</td>
+                            <td>example</td>
+                            <td>No. 45 RT/RW 001/01 Jl. Jalanan Kel. Lurah Kec. Camat Jakarta Timur DKI Jakarta 13720</td>
+                            <td>Aktif</td>
+                            <td>
+                                <a class="badge" href="karyawan_edit.html">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                                <a class="badge" href="#">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -240,9 +230,9 @@
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
-
     <script src="js/bootstrap-table.js"></script>
     <script src="js/bootstrap-table-export.js"></script>
+
     <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
     <script src="js/now-ui-kit.js?v=1.2.2" type="text/javascript"></script>
 

@@ -9842,6 +9842,7 @@ footer.loginpage img{
 .middle-box h3 {
   margin: 12px 0;
   font-size: 20px;
+  font-weight: 700;
 }
 .middle-box input{
   background-color: transparent;
@@ -9876,12 +9877,35 @@ main .middle-box .input-group-text{
   width: 400px;
   margin-bottom: 15px;
 }
-.middle-box form .btn{
+.middle-box form button.btn{
   width: 400px;
   padding:15px;
   border-radius: 100px;
   background-color: #005DB5;
   border: 0;
+  font-weight: 700;
+}
+.middle-box form a.btn{
+  width: 400px;
+  padding:15px;
+  border-radius: 100px;
+  background-color: transparent;
+  font-weight: 700;
+  color: #005db5;
+}
+.loginscreen button.btn:hover{
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: .7s; /* don't forget to set a duration! */
+  border: 2px solid #005DB5;
+  background-color: white;
+  color: #005DB5;
+}
+.loginscreen a.btn:hover{
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: .7s; /* don't forget to set a duration! */
+  border: 0;
+  background-color: #005db5;
+  color: white ;
 }
 .dark-link{
   color: #686B6D;
@@ -9904,7 +9928,8 @@ main .middle-box .input-group-text{
   position: absolute;
 }
 .middle-box p{
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: 600;
 }
 @media (max-width:600px)
 {
@@ -9937,13 +9962,6 @@ main .middle-box .input-group-text{
   border-color: none !important;
   background-color: #005Db5 !important;
 }
-.loginscreen .btn-primary:hover{
-  animation: pulse; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: .7s; /* don't forget to set a duration! */
-  border: 2px solid #005DB5;
-  background-color: white;
-  color: #005DB5;
-}
 .loginscreen .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
   background-image: none;
   width: .5rem;
@@ -9962,6 +9980,12 @@ main .middle-box .input-group-text{
 .loginscreen .custom-control-input:checked~.custom-control-label::before{
   background-color: transparent;
   border: 1px solid #8095a8;
+}
+.recoveryImg{
+  width: 80px;
+}
+.recoveryImg:hover{
+  cursor: unset !important;
 }
 /* End Login Page */
 
@@ -10334,12 +10358,8 @@ thead > tr > th:last-child{
 }
 @media (min-width:1200px){
  thead > tr > th:last-child{
-  min-width: 250px !important;
+  min-width: 150px !important;
  }
-}
-.borderless thead tr:first-child th,
-.borderless thead tr:first-child td{
-  border: none !important;
 }
 table{
   width: 100%;
@@ -10578,6 +10598,12 @@ tbody > tr > td > .badge i,
   color: #6c757d !important;
   font-weight: 700;
 }
+.page-list .dropdown-toggle .fas{
+  transform: rotateZ(180deg);
+}
+.page-list .dropdown-toggle[aria-expanded="true"] .fas{
+  transform: rotateZ(360deg);
+}
 .page-list .dropdown-menu .dropdown-item:not(:first-child){
   border-top: 2px solid #e3e3e3;
   margin-top: 0;
@@ -10597,7 +10623,7 @@ tbody > tr > td > .badge i,
   padding-right: 50px;
 }
 .middle-box.addPage h3,
-.middle-box.addPage h3{
+.middle-box.editPage h3{
   padding: 20px 0;
   font-weight: 700;
 }
@@ -10611,7 +10637,7 @@ label,
 }
 .middle-box.addPage .form-control,
 .middle-box.editPage .form-control{
- height: 45px;
+ height: 45px !important;
  background-color: #F0F2F8;
  border: 0;
 }
@@ -10633,13 +10659,13 @@ label,
 }
 .middle-box.addPage .action .simpan:hover,
 .middle-box.editPage .action .simpan:hover{
-  background-color: #004c94;
-  box-shadow: inset 2px 0 5px #00000015;
+  background-color: #0057a8;
+  box-shadow: inset 2px 0 5px #00000025;
 } 
 .middle-box.addPage .action .kembali,
 .middle-box.editPage .action .kembali{
  color: #808F9D;
- border: 2px solid #808F9D;
+ border: 2px solid #e3e3e3;
  text-transform:none;
  font-size: 16px !important;
  background-color: white;
@@ -10651,7 +10677,7 @@ label,
 .middle-box.addPage .action .kembali:hover,
 .middle-box.editPage .action .kembali:hover{
   background-color: #f3f3f3;
-  box-shadow: inset 2px 0 5px #00000030;
+  box-shadow: inset 2px 0 5px #00000015;
 }
 .middle-box.addPage .action .kembali a,
 .middle-box.editPage .action .kembali a{
