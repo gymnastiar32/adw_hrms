@@ -10589,23 +10589,17 @@ table tbody tr td:not(:nth-child(1)){
 }
 .page-list .dropdown-menu{
   border-radius:10px !important;
-  left: -50% !important;
   padding: 10px 30px;
 }
-.page-list .dropdown-menu:after{
-  border:0 !important;
-  width: 10px !important;
-  height: 10px !important;
-  background-color: #005DB5;
-  border-radius: 100px;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
+.page-list .dropdown-menu::after{
+  display: none !important;
 }
 .page-list .dropdown-menu .dropdown-item{
   padding: 5px !important;
   font-size:14px !important;
-  color: #6c757d !important;
-  font-weight: 700;
+  color: #565656 !important;
+  font-weight: 600;
+  text-align: center;
 }
 .page-list .dropdown-toggle .fas{
   transform: rotateZ(180deg);
@@ -10614,7 +10608,7 @@ table tbody tr td:not(:nth-child(1)){
   transform: rotateZ(360deg);
 }
 .page-list .dropdown-menu .dropdown-item:not(:first-child){
-  border-top: 2px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
   margin-top: 0;
 }
 .keep-open .dropdown-item{
