@@ -5906,7 +5906,7 @@ textarea.form-control:active {
   display: block;
   opacity: 0;
   filter: alpha(opacity=0);
-  top: 100% !important;
+  top: 100%;
 }
 
 .dropdown.show .dropdown-menu,

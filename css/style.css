@@ -9981,7 +9981,7 @@ main .middle-box .input-group-text{
   background-color: transparent;
   border: 1px solid #8095a8;
 }
-.recoveryImg,]
+.recoveryImg,
 .noDataImg{
   width: 80px;
 }
@@ -10041,6 +10041,10 @@ main .middle-box .input-group-text{
   font-size: 20px;
   margin:0;
 }
+.navbar
+{
+  box-shadow: none;
+}
 .navbar{
   background-color: white;
 }
@@ -10096,6 +10100,16 @@ ul.nav-second-level
   padding:0;
   width: 100%;
 }
+.navbar{
+  box-shadow:none !important;
+}
+.nav-link{
+  padding:  10px 0 0 5px;
+}
+.nav-link a{
+  border-radius: 100px 0 0 100px;
+  transition: all .2s;
+}
 .dropdown-toggle .fas,
 [data-toggle="collapse"][data-parent="#accordion"] i {
   -webkit-transition: transform 150ms ease 0s;
@@ -10111,14 +10125,65 @@ ul.nav-second-level
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-.profile.dropdown .dropdown-menu{
-  width: 100%;
+.dropdown .dropdown-menu{
+  border-radius: 10px;
+}
+.dropdown .dropdown-menu::before{
+  display:none;
+}
+.navbar-top-links .dropdown-toggle i{
+  font-size: 20px;
+  color: #999c9e !important;
+}
+.dropdown-menu .dropdown-item{
+  color: #565656;
+}
+.link-block .dropdown-item{
+  color: #005db5;
+}
+.dropdown-menu.dropdown-messages{
+  padding: 20px 20px;
+}
+.dropdown-messages-box{
+  padding-top: 10px ;
+}
+.dropdown-messages-box .media-body{
+  color: #565656;
+}
+.dropdown-menu.dropdown-setting{
+  padding: 10px 20px;
+}
+.dropdown-menu.dropdown-setting .dropdown-item{
+  padding: 0;
+  font-size: 12px;
+}
+.cog-icon{
+  margin-top: -7px;
+  width: 20px !important;
+}
+.dropdown-menu.dropdown-profile{
   top: 130% !important;
-  padding: 10px;
-  border-radius: 20px;
-  float: none;
-  left: auto !important;
-  right: none;
+  padding: 15px 20px;
+}
+.dropdown-menu.dropdown-profile .dropdown-profile-box
+{
+  border: 2px solid #F0F2F8;
+  padding: 5px;
+}
+.dropdown-menu.dropdown-profile .dropdown-profile-box.active{
+  background-color: #F0F2F8;
+}
+.dropdown-menu.dropdown-profile .dropdown-profile-box .dropdown-item{
+  color: #8095a8;
+  margin: 0;
+  padding: 0 5px;
+}
+.dropdown-menu.dropdown-profile li:not(:first-child)
+{
+  margin-top: 10px;
+}
+.dropdown-menu.dropdown-profile .dropdown-profile-box .dropdown-item:hover{
+  background-color: transparent;
 }
 .profile-img
 {
@@ -10126,38 +10191,8 @@ ul.nav-second-level
   margin: 0 8px;
   border-radius: 50px;
 }
-.navbar
-{
-  box-shadow: none;
-}
-.navbar-top-links i{
-  font-size: 20px;
-}
-.navbar-top-links i,
-.navbar-top-links li > a
-{
-  color: #999c9e !important;
-}
-.dropdown-menu
-{
-  top: 130%;
-}
 .count-info .label{
   border-radius: 50px;
-}
-.navbar{
-  box-shadow:none !important;
-}
-.nav-link{
-  padding:  10px 0 0 5px;
-}
-.nav-link a{
-  border-radius: 100px 0 0 100px;
-  transition: all .2s;
-}
-.cog-icon{
-  margin-top: -7px;
-  width: 20px !important;
 }
 @media (max-width:1470px){
   .search-form{
@@ -10200,17 +10235,6 @@ ul.nav-second-level
     width: 10px;
   }
 }
-.navbar-top-links .dropdown-menu{
-  padding: 10px;
-  border-radius: 20px;
-  float: none;
-  left: -170% !important;
-  width: 200px !important;
-}
-.navbar-top-links .dropdown-menu .dropdown-item{
-  font-weight: 700;
-  color: #808F9D;
-}
 .navbar-top-links .dropdown-menu .role{
   background-color:#005db5;
   color: white;
@@ -10223,27 +10247,6 @@ ul.nav-second-level
   color: white;
   font-weight: 700;
 }
-.navbar-top-links .dropdown-menu:before{
-  display: inline-block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  vertical-align: middle;
-  content: "";
-  top: -3px;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  color: #005db5;
-  border: 4px solid #005DB5;
-  border-radius: 100px;
-}
-.dropdown-item{
-  font-size: 12px !important;
-  text-align: center !important;
-  padding: 0 !important;
-  white-space: normal !important;
-}
-
 /* End Top Navbar and Sidebar */
 
 /* Start Page Heading */
@@ -10444,7 +10447,7 @@ table tbody tr td:not(:nth-child(1)){
   left: 50% !important;
   transform: translateX(-50%) !important;
 }
-.dropdown-menu .dropdown-item{
+.fixed-table-toolbar .dropdown-menu .dropdown-item{
   padding: 5px !important;
   font-size:14px !important;
   color: #6c757d !important;
