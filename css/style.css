@@ -10135,6 +10135,9 @@ ul.nav-second-level
   font-size: 20px;
   color: #999c9e !important;
 }
+.dropdown .dropdown-menu{
+  box-shadow: 0 0 3px 2px #00000020;
+}
 .dropdown-menu .dropdown-item{
   color: #565656;
 }
