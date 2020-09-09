@@ -10533,12 +10533,10 @@ table tbody tr td:not(:nth-child(1)){
   border: 1px solid #F0F2F8;
   border-radius: 100px;
   overflow: hidden;
+  border-right: 0 !important;
 }
 .fixed-table-pagination .pagination .page-item:first-child{
   border-right: 0 !important;
-}
-.fixed-table-pagination .pagination .page-item:last-child{
-  border-left: 0 !important;
 }
 .fixed-table-pagination .pagination .page-item:not(:last-child){
   border-top-right-radius: 0 !important;
