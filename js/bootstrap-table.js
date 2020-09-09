@@ -3274,7 +3274,7 @@
 	    return 'Clear Search';
 	  },
 	  formatNoMatches: function formatNoMatches() {
-	    return 'No matching records found';
+	    return 'Tidak Ditemukan Data';
 	  },
 	  formatPaginationSwitch: function formatPaginationSwitch() {
 	    return 'Hide/Show pagination';
@@ -5664,7 +5664,7 @@
 
 
 	      if (!hasTr) {
-	        this.$body.html("<tr class=\"no-records-found\">".concat(Utils.sprintf('<td colspan="%s">%s</td>', this.getVisibleFields().length, this.options.formatNoMatches()), "</tr>"));
+	        this.$body.html("<tr class=\"no-records-found\">".concat(Utils.sprintf('<td colspan="%s"><img class="mb-4 noDataImg" src="img/no_data_img.png" alt="Recovery Image" draggable="false"> <br>%s</td>', this.getVisibleFields().length, this.options.formatNoMatches()), "</tr>"));
 	      } else {
 	        if (!this.options.virtualScroll) {
 	          this.$body.html(trFragments);

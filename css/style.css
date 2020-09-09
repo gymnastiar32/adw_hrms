@@ -9981,10 +9981,12 @@ main .middle-box .input-group-text{
   background-color: transparent;
   border: 1px solid #8095a8;
 }
-.recoveryImg{
+.recoveryImg,]
+.noDataImg{
   width: 80px;
 }
-.recoveryImg:hover{
+.recoveryImg:hover,
+.noDataImg:hover{
   cursor: unset !important;
 }
 /* End Login Page */
@@ -10343,13 +10345,14 @@ ul.nav-second-level
   padding: 10px 40px;
   box-shadow:0 0 5px 2px #00000015;
   border-radius: 25px;
+  min-height: 500px;
 }
-thead > tr > th:first-child{
+.fixed-table-container thead > tr > th:first-child{
   border-radius: 100px 0 0 100px;
   /* padding-left: 50px !important;  */
   overflow: hidden;
 }
-thead > tr > th:last-child{
+.fixed-table-container thead > tr > th:last-child{
   border-radius:  0 100px 100px 0;
   /* padding-right: 50px !important;  */
   min-width: 250px !important;
@@ -10357,18 +10360,18 @@ thead > tr > th:last-child{
   
 }
 @media (min-width:1200px){
- thead > tr > th:last-child{
+.fixed-table-container thead > tr > th:last-child{
   min-width: 250px !important;
  }
 }
-table{
+.fixed-table-container table{
   width: 100%;
 }
-table tr:hover{
+.fixed-table-container table tr:hover{
   background-color: transparent !important;
 }
-table td,
-table th{
+.fixed-table-container table td,
+.fixed-table-container table th{
   border-width: 2px !important;
   padding: 20px 20px !important;
   text-align: center;
@@ -10384,10 +10387,10 @@ table tbody tr td:last-child{
 table tbody tr td:not(:nth-child(1)){
   padding-right: 50px !important ;
 } */
-table tbody tr:first-child td{
+.fixed-table-container table tbody tr:first-child td{
   border: 0 !important;
 }
-table tbody tr:not(:first-child) td{
+.fixed-table-container table tbody tr:not(:first-child) td{
   border: 0;
   border-top: 2px solid #e7eaec;
 }
@@ -10457,7 +10460,7 @@ table tbody tr:not(:first-child) td{
 .bootstrap-table .fixed-table-container .table thead th .sortable.both{
   padding-right: 50px !important;
 }
-tbody > tr > td > .badge,
+.fixed-table-container tbody > tr > td > .badge,
 .card-view-value > .badge{
   width: 40px;
   height: 40px;
@@ -10467,45 +10470,45 @@ tbody > tr > td > .badge,
   line-height: 45px;
   padding: 0 !important;
 }
-tbody > tr > td > .badge:last-child:hover,
-tbody > tr > td > .badge:last-child:focus,
+.fixed-table-container tbody > tr > td > .badge:last-child:hover,
+.fixed-table-container tbody > tr > td > .badge:last-child:focus,
 .card-view-value > .badge:last-child:hover,
 .card-view-value > .badge:last-child:focus
 {
   background-color: #dd216f !important;
   box-shadow: inset 0 2px 5px #00000015;
 }
-tbody > tr > td > .badge:first-child:hover,
-tbody > tr > td > .badge:first-child:focus,
+.fixed-table-container tbody > tr > td > .badge:first-child:hover,
+.fixed-table-container tbody > tr > td > .badge:first-child:focus,
 .card-view-value > .badge:first-child:hover,
 .card-view-value > .badge:first-child:focus
 {
   background-color: #e0a51a !important;
   box-shadow: inset 0 2px 5px #00000015;
 }
-tbody > tr > td > .badge:last-child,
+.fixed-table-container tbody > tr > td > .badge:last-child,
 .card-view-value > .badge:last-child{
   background-color: #FF257F;
   margin-left: 10px;
 }
-tbody > tr > td > .badge:first-child,
+.fixed-table-container tbody > tr > td > .badge:first-child,
 .card-view-value > .badge:first-child{
   background-color: #FFBB1D;
 }
-tbody > tr > td > .badge i,
+.fixed-table-container tbody > tr > td > .badge i,
 .card-view-value > .badge i{
   color: white !important;
   font-size: 16px;
 }
 @media (max-width:1050px){
-  thead > tr > th:last-child{
+  .fixed-table-container thead > tr > th:last-child{
     min-width: 150px !important;
   }
-  tbody > tr > td > button{
+  .fixed-table-container tbody > tr > td > button{
     width: 25px;
     height :25px;
   }
-  tbody > tr > td > button > i{
+  .fixed-table-container tbody > tr > td > button > i{
     font-size: 12px;
   }
 }
@@ -10617,10 +10620,6 @@ tbody > tr > td > .badge i,
 .middle-box.addPage,
 .middle-box.editPage{
   padding: 20px 100px !important;
-}
-.middle-box.addPage .col-md-6,
-.middle-box.editPage .col-md-6{
-  padding-right: 50px;
 }
 .middle-box.addPage h3,
 .middle-box.editPage h3{
