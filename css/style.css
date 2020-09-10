@@ -10751,7 +10751,7 @@ table tbody tr td:not(:nth-child(1)){
 } 
 .middle-box.addPage .action .kembali,
 .middle-box.editPage .action .kembali{
- color: #808F9D;
+ color: #808F9D !important;
  border: 2px solid #e3e3e3;
  text-transform:none;
  font-size: 16px !important;
@@ -10760,6 +10760,9 @@ table tbody tr td:not(:nth-child(1)){
  height: 40px !important;
  border-radius: 100px;
  padding: 0 !important;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 .middle-box.addPage .action .kembali:hover,
 .middle-box.editPage .action .kembali:hover{
@@ -10777,12 +10780,40 @@ table tbody tr td:not(:nth-child(1)){
 .form-check{
   margin-right: 20px;
 }
-.form-check-radio input[type="radio"]:checked+.form-check-sign::after
-{
+.form-check-radio input[type="radio"]:checked+.form-check-sign::after{
   transform: scale(2.5);
   color: #005DB5 !important;
   background-color: #005DB5 !important;
   border-color: #005db5 !important;
 }
-
+.textarea-form{
+  width: 100%;
+  border-radius: 20px;
+  background-color: #F0F2F8; 
+  border: none; 
+  resize: none; 
+  padding: 6px 12px;
+}
+.textarea-form:focus{
+  border:none;
+  outline: none;
+}
+.custom-file{
+  height: 45px;
+}
+.custom-file .custom-file-label{
+  overflow:hidden;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  background-color: #F0F2F8;
+  border: 0;
+}
+.custom-file .custom-file-label::after{
+  height: auto;
+  display: flex;
+  align-items: center;
+  content: "Telusuri";
+  box-shadow: -2px 0 5px #00000015;
+}
 /* End Add and Edit Page */
