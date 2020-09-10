@@ -204,10 +204,10 @@
                         <a href="tingkat_pddk.html"><span class="nav-label">Tingkat Pendidikan Terakhir</span></a>
                     </li>
                     <li class="nav-link">
-                        <a class="active" href="domisili.html"><span class="nav-label">Domisili</span></a>
+                        <a href="domisili.html"><span class="nav-label">Domisili</span></a>
                     </li>
                     <li class="nav-link">
-                        <a href="hirarki.html"><span class="nav-label">Hirarki</span></a>
+                        <a class="active" href="hirarki.html"><span class="nav-label">Hirarki</span></a>
                     </li>
                     <li class="nav-link">
                         <a href="proyek.html"><span class="nav-label">Proyek</span></a>
@@ -232,136 +232,64 @@
         <div id="page-wrapper">
             <div class="wrapper border-bottom white-bg page-heading p-0 pb-4">
                 <div class="col-sm-12 p-0">
-                    <h2>Domisili</h2>
+                    <h2>Hirarki</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
                             <a href="#">Master Data</a>
                         </li>
+                        <li class="breadcrumb-item">
+                            <a href="hirarki.html">Hirarki</a>
+                        </li>
                         <li class="breadcrumb-item active">
-                            <strong>Domisili</strong>
+                            <strong>Edit Hirarki</strong>
                         </li>
                     </ol>
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRightBig">
-                <!-- <div class="d-flex justify-content-between align-items-center">
-                    <div class="add d-flex align-items-center">
-                        <a href="#" class="d-flex align-items-center">
-                            <div class="rounded-circle inline-block d-flex justify-content-center align-items-center">
-                                <i class="fas fa-plus"></i>
+                <div class="middle-box editPage">
+                    <h3 class="border-bottom">Edit Hirarki</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-6 pl-4 pr-4">
+                                <label for="hirarki_posisi">Posisi</label>
+                                <input type="text" class="form-control no-border" name="hirarki_posisi"
+                                    id="hirarki_posisi" value="example">
                             </div>
-                            <span>Add</span>
-                        </a>
-                    </div>
-                    <div class="d-flex align-center">
-                        <form class="search-form">
-                            <div class="form-group input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fa fa-search"
-                                            style="color:#878F92;"></i></span>
+                            <div class="col-md-6 pl-4 pr-4">
+                                <label for="hirarki_parent_posisi">Parent Posisi</label>
+                                <input type="text" class="form-control no-border" name="hirarki_parent_posisi"
+                                    id="hirarki_parent_posisi" value="example">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12 pl-4 pr-4">
+                                <span>Status</span>
+                                <br>
+                                <div class="form-check form-check-radio form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1"> Aktif
+                                        <span class="form-check-sign"></span>
+                                    </label>
                                 </div>
-                                <input type="text" class="form-control " placeholder="Username">
-                                <div class="input-group-append">
-                                    <div class="input-group-text" style="width: 37px;"></div>
+                                <div class="form-check form-check-radio form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2"> Nonaktif
+                                        <span class="form-check-sign"></span>
+                                    </label>
                                 </div>
                             </div>
-                        </form>
-                        <ul class="table-manage align-items-center">
-                            <li>
-                                <img src="img/refresh.svg" alt="">
-                            </li>
-                            <li>
-                                <img src="img/list.svg" alt="">
-                            </li>
-                            <li>
-                                <img src="img/grid.svg" alt="">
-                            </li>
-                        </ul>
-                    </div>
+                        </div>
+                        <div class="action clearfix">
+                            <button class="btn simpan float-right">Simpan</button>
+                            <button class="btn kembali float-right" type="submit">
+                                <a href="hirarki.html">Kembali</a>
+                            </button>
+                        </div>
+                    </form>
                 </div>
-                <div class="middle-box text-center animated fadeInRightBig ">
-                    <table class="table borderless">
-                        <thead class="thead-light">
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td class="table-action d-flex justify-content-center">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <a href="">
-                                            <i class="far fa-edit"></i>
-                                        </a>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <a href="">
-                                            <i class="fas fa-times"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>tes</div>
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                        </ul>
-                    </nav>
-                </div> -->
-
-
-
-                <div id="toolbar">
-                    <div class="add d-flex align-items-center">
-                        <a href="domisili_add.html" class="d-flex align-items-center">
-                            <div class="rounded-circle inline-block d-flex justify-content-center align-items-center">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <span>Tambah Data</span>
-                        </a>
-                    </div>
-                </div>
-                <table class="table border-0 mt-4 mb-4" id="tablekelas" data-toggle="table" data-search="true"
-                    data-show-refresh="true" data-pagination="true" data-page-size="5" data-page-list="[5,10, All]"
-                    data-show-toggle="true" data-side-pagination="client" data-resizable="false" data-show-export="true"
-                    data-export-types="['pdf', 'csv', 'excel']" data-export-options='{"fileName": "data_kelas"}'
-                    data-click-to-select="true" data-toolbar="#toolbar" data-show-columns="true"
-                    data-show-pagination-switch="true">
-                    <thead>
-                        <tr>
-                            <th data-field="tipe_divisi">Kota/Kabupaten</th>
-                            <th data-field="provinsi">Provinsi</th>
-                            <th data-field="status_domisili">Status</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Jakarta Timur</td>
-                            <td>DKI Jakarta</td>
-                            <td>Aktif</td>
-                            <td>
-                                <a class="badge" href="domisili_edit.html">
-                                    <i class="fas fa-edit"></i>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
     </div>
