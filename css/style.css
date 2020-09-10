@@ -9877,7 +9877,7 @@ main .middle-box .input-group-text{
   width: 400px;
   margin-bottom: 15px;
 }
-.middle-box form button.btn{
+.middle-box.loginscreen form button.btn{
   width: 400px;
   padding:15px;
   border-radius: 100px;
@@ -9885,7 +9885,7 @@ main .middle-box .input-group-text{
   border: 0;
   font-weight: 700;
 }
-.middle-box form a.btn{
+.middle-box.loginscreen form a.btn{
   width: 400px;
   padding:15px;
   border-radius: 100px;
@@ -9988,6 +9988,94 @@ main .middle-box .input-group-text{
 .recoveryImg:hover,
 .noDataImg:hover{
   cursor: unset !important;
+}
+.middle-box.editProfile{
+  width: 600px;
+  box-shadow: 0 0 3px 2px #00000020;
+  border-radius: 10px;
+  padding: 40px;
+  background-color: white;
+}
+@media(max-width:768px){
+  .middle-box.editProfile{
+    width: 100%;
+    box-shadow: none;
+    border-radius: none;
+  }
+}
+.middle-box.editProfile form[role="form"]{
+  padding: 0 50px;
+}
+@media (max-width:576px){
+  .middle-box.editProfile{
+    padding: 10px;
+  }
+  .middle-box.editProfile form[role="form"]{
+    padding: 0 10px;
+  }
+}
+.middle-box.editProfile h2{
+  font-size: 24px;
+}
+.middle-box.editProfile p{
+  font-size: 18px;
+}
+.editProfile .profile-pict{
+  padding: 10px;
+  border: 4px solid #F0F2F8;
+}
+.editProfile .fileinput .btn{
+  border-radius: 50px;
+}
+.editProfile .fileinput{
+  margin:0;
+}
+.editProfile .fileinput .btn{
+  background-color: transparent;
+  color: #005db5;
+  font-weight: 600;
+}
+.editProfile .fileinput .btn:hover{
+  box-shadow: none;
+  background-color: #005db5;
+  color: white !important;
+}
+.middle-box.editProfile .form-group.input-group{
+  width: 100%;
+}
+.editProfile .col-md-6 .btn{
+  width: 100%;
+}
+.editProfile .col-md-6:last-child .btn{
+  background-color: #005db5;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid #005db5;
+}
+.editProfile .col-md-6:last-child .btn:active,
+.editProfile .col-md-6:last-child .btn.active{
+  border: 2px solid #0054a3;
+  background-color: #0054a3 !important;
+  box-shadow: inset 0 0 5px 2px #00000015 !important;
+}
+.editProfile .col-md-6:first-child .btn{
+  background-color: transparent;
+  color: #005db5;
+  font-weight: 600;
+  border: 2px solid #005db5;
+  border-radius: 50px;
+}
+.editProfile .col-md-6:first-child .btn:active,
+.editProfile .col-md-6:first-child .btn.active{
+  background-color: #f1f1f1 !important;
+  color: #005db5 !important;
+  box-shadow: inset 0 0 5px 2px #00000015 !important;
+}
+
+.editProfile .delete-btn{
+  color: #FF2566 !important;
+  font-weight: 600;
+  font-size: 14px !important;
 }
 /* End Login Page */
 
@@ -10171,7 +10259,11 @@ ul.nav-second-level
 .dropdown-menu.dropdown-profile .dropdown-profile-box
 {
   border: 2px solid #F0F2F8;
-  padding: 5px;
+  padding: 5px 8px;
+  border-radius: 50px;
+}
+.dropdown-menu.dropdown-profile .dropdown-profile-box:hover{
+  box-shadow: inset  0 0 15px 5px #00000010;
 }
 .dropdown-menu.dropdown-profile .dropdown-profile-box.active{
   background-color: #F0F2F8;
@@ -10180,6 +10272,7 @@ ul.nav-second-level
   color: #8095a8;
   margin: 0;
   padding: 0 5px;
+  font-size: 14px;
 }
 .dropdown-menu.dropdown-profile li:not(:first-child)
 {
@@ -10400,7 +10493,7 @@ table tbody tr td:not(:nth-child(1)){
   border: 0;
   border-top: 2px solid #e7eaec;
 }
-.fixed-table-toolbar .form-control{
+.fixed-table-toolbar .search-input{
   padding: 10px 12px;
   height: auto; 
   width: 300px;
@@ -10438,27 +10531,20 @@ table tbody tr td:not(:nth-child(1)){
 }
 .fixed-table-toolbar .dropdown-menu{
   border-radius:10px !important;
-  left: -170% !important;
- padding: 10px 30px;
-}
-.fixed-table-toolbar .dropdown-menu:after{
-  border:0 !important;
-  width: 10px !important;
-  height: 10px !important;
-  background-color: #005DB5;
-  border-radius: 100px;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
+  padding: 10px 30px;
 }
 .fixed-table-toolbar .dropdown-menu .dropdown-item{
-  padding: 5px !important;
   font-size:14px !important;
-  color: #6c757d !important;
-  font-weight: 700;
+  color: #565656 !important;
+  margin: 0;
 }
 .dropdown-menu .dropdown-item:not(:first-child){
-  border-top:2px solid #e3e3e3;
+  border-top:1px solid #e3e3e3;
   margin-top: 0;
+}
+.fixed-table-toolbar .export .dropdown-menu .dropdown-item{
+  padding: 5px 10px;
+  text-align: center;
 }
 .th-inner{
   padding: 0 !important;
@@ -10611,6 +10697,7 @@ table tbody tr td:not(:nth-child(1)){
 }
 .keep-open .dropdown-item{
   text-align: left !important;
+  padding: 5px 10px;
 }
 /* End Content */
 
@@ -10628,8 +10715,10 @@ table tbody tr td:not(:nth-child(1)){
 .middle-box.editPage .form-row{
   margin: 20px 0;
 }
-label,
-.form-row span{
+.middle-box.addPage label,
+.middle-box.editPage label,
+.middle-box.addPage .form-row span,
+.middle-box.editPage .form-row span{
   font-weight: 700 !important;
 }
 .middle-box.addPage .form-control,
@@ -10647,6 +10736,7 @@ label,
   color: white;
   border: none ;
   text-transform:none;
+  background-color: #005db5;
   font-size: 16px;
   width: 100px !important;
   height: 40px !important;
