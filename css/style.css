@@ -9823,11 +9823,25 @@ body.md-skin {
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 /* Start Login Page */
-/* html{
+html{
   overflow: hidden;
-} */
+}
 body{
   background-color: white;
+  height: 100%;
+}
+.login-bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/login_bg.svg");
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-position: bottom;
+}
+.login-bg img{
+  width: 100%;
+  height: 100%;
 }
 footer.loginpage
 {
@@ -9852,13 +9866,16 @@ footer.loginpage img{
 .middle-box .form-group.input-group{
   width: 400px;
   height: 46px;
-  background-color: transparent;
+  background-color: white;
+  overflow: hidden !important;
+  border-radius: 50px;
 }
 #showPassword{
   display: none;
 }
 .middle-box .form-control{
   font-size: 13px;
+  background-color: white;
 }
 .middle-box form .btn
 {
@@ -9885,47 +9902,27 @@ main .middle-box .input-group-text{
   border: 0;
   font-weight: 700;
 }
-.middle-box.loginscreen form a.btn{
-  width: 400px;
-  padding:15px;
-  border-radius: 100px;
-  background-color: transparent;
-  font-weight: 700;
-  color: #005db5;
-}
-.loginscreen button.btn:hover{
+.middle-box.loginscreen form button.btn:hover{
   animation: pulse; /* referring directly to the animation's @keyframe declaration */
   animation-duration: .7s; /* don't forget to set a duration! */
   border: 2px solid #005DB5;
   background-color: white;
   color: #005DB5;
 }
-.loginscreen a.btn:hover{
-  animation: pulse; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: .7s; /* don't forget to set a duration! */
-  border: 0;
-  background-color: #005db5;
-  color: white ;
-}
 .dark-link{
   color: #686B6D;
 }
 .dark-link:hover{
   color: #005DB5;
+  text-decoration: underline;
 }
 .blue-link,
 .blue-link:hover{
   color: #005DB5;
   font-weight: 700;
 }
-.login-bg{
-  width: 100%;
-  height: 100vh;
-  background-image: url("../img/login_bg.svg");
-  background-repeat: no-repeat;
-  background-size:100%;
-  background-position: bottom;
-  position: absolute;
+.blue-link:hover{
+  text-decoration: underline;
 }
 .middle-box p{
   font-size: 15px;
@@ -10343,6 +10340,9 @@ ul.nav-second-level
   color: white;
   font-weight: 700;
 }
+.navbar.navbar-static-top{
+  padding: 15px 0 !important;
+}
 /* End Top Navbar and Sidebar */
 
 /* Start Page Heading */
@@ -10644,6 +10644,11 @@ table tbody tr td:not(:nth-child(1)){
   font-size: 16px;
   font-weight: 700;
 }
+.pagination .page-item:hover,
+.pagination .page-item:focus,
+.pagination .page-item.active{
+  border-color: #005db5;
+}
 .pagination .page-item .page-link:hover,
 .pagination .page-item .page-link:focus{
   background-color: #005DB5 !important;
@@ -10663,7 +10668,6 @@ table tbody tr td:not(:nth-child(1)){
 .pagination .page-item.active>.page-link:focus,
 .pagination .page-item.active>.page-link:hover {
   background-color: #005db5 !important;
-  border: none !important;
   color: #FFFFFF !important;
 }
 .pagination-detail .dropdown-toggle{
@@ -10704,7 +10708,7 @@ table tbody tr td:not(:nth-child(1)){
 /* Start Add and Edit Page */
 .middle-box.addPage,
 .middle-box.editPage{
-  padding: 20px 100px !important;
+  padding: 2% 4% !important;
 }
 .middle-box.addPage h3,
 .middle-box.editPage h3{
@@ -10719,7 +10723,7 @@ table tbody tr td:not(:nth-child(1)){
 .middle-box.editPage label,
 .middle-box.addPage .form-row span,
 .middle-box.editPage .form-row span{
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 .middle-box.addPage .form-control,
 .middle-box.editPage .form-control{
@@ -10800,20 +10804,48 @@ table tbody tr td:not(:nth-child(1)){
 }
 .custom-file{
   height: 45px;
+  border-radius: 50px;
+  background-color: white;
+}
+.custom-file:hover{
+  background-color: #f3f3f3;
+  box-shadow: inset 5px 0 10px #00000010;
 }
 .custom-file .custom-file-label{
   overflow:hidden;
   display: flex;
+  justify-content: center;
   height: 100%;
   align-items: center;
-  background-color: #F0F2F8;
-  border: 0;
+  background-color: transparent;
+  border: 3px solid #F0F2F8;
+  color: #808F9D;
 }
 .custom-file .custom-file-label::after{
   height: auto;
-  display: flex;
+  display: none;
   align-items: center;
   content: "Telusuri";
-  box-shadow: -2px 0 5px #00000015;
+  background-color: transparent;
+}
+.add-form-btn{
+  height: 45px;
+  width: 45px;
+  background-color: white;
+  margin: 0;
+  border-radius: 50px;
+  border: 3px solid #F0F2F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+.add-form-btn:hover{
+  background-color: #f3f3f3;
+  box-shadow: inset 2px 0 5px #00000015;
+}
+.add-form-btn i{
+  color: #808F9D;
 }
 /* End Add and Edit Page */

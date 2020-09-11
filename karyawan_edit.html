@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Empty Page</title>
+    <title>adw | HRMS</title>
 
     <!-- <link rel="stylesheet" href="css/now-ui-kit.css"> -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -230,59 +230,62 @@
                     <h3 class="border-bottom">Edit Data Karyawan</h3>
                     <form>
                         <div class="form-row">
-                            <div class="col-md-6 pl-4 pr-4">
+                            <div class="col-md-6 p-4">
                                 <label for="nik">NIK</label>
                                 <input type="text" class="form-control no-border" name="nik" id="nik"
                                     value="35171112010007">
                             </div>
-                            <div class="col-md-6 pl-4 pr-4">
-                                <label for="nama">Nama Karyawan</label>
-                                <input type="text" class="form-control no-border" name="nama" id="nama" value="example">
+                            <div class="col-md-6 p-4">
+                                <label for="nama_karyawan">Nama Karyawan</label>
+                                <input type="text" class="form-control no-border" name="nama_karyawan"
+                                    id="nama_karyawan" value="example">
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-md-6 pl-4 pr-4">
-                                <label for="alamat">Alamat Karyawan</label>
-                                <input type="text" class="form-control no-border" name="alamat" id="alamat"
+                            <div class="col-md-6 p-4">
+                                <label for="alamat_karyawan">Alamat Karyawan</label>
+                                <input type="text" class="form-control no-border" name="alamat_karyawan"
+                                    id="alamat_karyawan"
                                     value="No. 45 RT/RW 001/01 Jl. Jalanan Kel. Lurah Kec. Camat Jakarta Timur DKI Jakarta 13720">
                             </div>
-                            <div class="col-md-6 pl-4 pr-4">
-                                <label for="inputState">Tingkat Pendidikan Akhir</label>
-                                <select id="inputState" class="form-control">
-                                    <option selected>Pilih...</option>
+                            <div class="col-md-6 p-4">
+                                <label for="tingkat_pddk_terakhir">Tingkat Pendidikan Akhir</label>
+                                <select id="tingkat_pddk_terakhir" name="tingkat_pddk_terakhir" class="form-control">
+                                    <option>Pilih...</option>
                                     <option>SD</option>
                                     <option>SMP</option>
                                     <option>SMA</option>
                                     <option>Diploma</option>
-                                    <option>S1</option>
+                                    <option selected>S1</option>
                                     <option>S2</option>
                                     <option>S3</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-md-6 pl-4 pr-4">
+                            <div class="col-md-6 p-4">
                                 <label for="pengalaman">Pengalaman</label>
-                                <textarea class="textarea-form" name="" id=""
+                                <textarea class="textarea-form" name="pengalaman" id="pengalaman"
                                     rows="5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi unde voluptas alias delectus laborum provident natus eos? Dolorum at a tempore temporibus dicta perferendis nihil quasi maxime in, itaque, quae saepe autem sapiente ea perspiciatis deserunt minima error. Consequatur, corporis.</textarea>
                             </div>
-                            <div class="col-md-6 pl-4 pr-4">
-                                <label for="email_karyawan">Email Kantor dan Pribadi</label>
-                                <input type="text" class="form-control no-border" name="email_karyawan"
-                                    id="email_karyawan" value="example@gmail.com">
-                                <input type="text" class="form-control mt-4 no-border" name="email_karyawan"
-                                    id="email_karyawan" value="example@gmail.com">
+                            <div class="col-md-6 p-4">
+                                <label for="email_karyawan_kantor">Email Kantor dan Pribadi</label>
+                                <input type="text" class="form-control no-border" name="email_karyawan_kantor"
+                                    id="email_karyawan_kantor" value="example@gmail.com" placeholder="Email Kantor">
+                                <input type="text" class="form-control mt-4 no-border" name="email_karyawan_pribadi"
+                                    id="email_karyawan_pribadi" value="example@gmail.com" placeholder="Email Pribadi">
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-md-6 pl-4 pr-4">
+                            <div class="col-md-6 p-4">
                                 <label for="no_kontak">No Kontak</label>
                                 <input type="text" class="form-control no-border" name="no_kontak" id="no_kontak"
                                     value="0812768590">
                             </div>
-                            <div class="col-md-6 pl-4 pr-4">
-                                <label for="tipe">Sertifikat</label>
-                                <input type="text" class="form-control no-border mb-4" name="tipe" id="tipe" value="">
+                            <div class="col-md-6 p-4">
+                                <label for="sertifikat">Sertifikat</label>
+                                <input type="text" class="form-control no-border mb-4" name="sertifikat" id="sertifikat"
+                                    value="example">
                                 <div class="custom-file">
                                     <input id="sertifikat" type="file" class="custom-file-input">
                                     <label for="sertifikat" class="custom-file-label b-r-xl">Pilih File...</label>
@@ -290,16 +293,16 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-md-6 pl-4 pr-4">
-                                <label for="kantor">CV</label>
+                            <div class="col-md-6 p-4">
+                                <label for="cv_karyawan">CV</label>
                                 <div class="custom-file">
-                                    <input id="cv" type="file" class="custom-file-input">
-                                    <label for="cv" class="custom-file-label b-r-xl">Pilih File...</label>
+                                    <input id="cv_karyawan" name="cv_karyawan" type="file" class="custom-file-input">
+                                    <label for="cv_karyawan" class="custom-file-label b-r-xl">Pilih File...</label>
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-md-3 pl-4 pr-4">
+                            <div class="col-md-3 p-4">
                                 <div class="form-group" id="data_1">
                                     <label class="font-normal">Start Kontrak</label>
                                     <div class="input-group date">
@@ -311,7 +314,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 pl-4 pr-4">
+                            <div class="col-md-3 p-4">
                                 <label for="tipe">End Kontrak</label>
                                 <div class="form-group" id="data_2">
                                     <div class="input-group date">
@@ -325,7 +328,7 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-12 pl-4 pr-4">
+                            <div class="col-12 p-4">
                                 <span>Status</span>
                                 <br>
                                 <div class="form-check form-check-radio form-check-inline">
