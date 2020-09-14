@@ -9823,9 +9823,7 @@ body.md-skin {
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 /* Start Login Page */
-html{
-  overflow: hidden;
-}
+
 body{
   background-color: white;
   height: 100%;
@@ -10068,7 +10066,6 @@ main .middle-box .input-group-text{
   color: #005db5 !important;
   box-shadow: inset 0 0 5px 2px #00000015 !important;
 }
-
 .editProfile .delete-btn{
   color: #FF2566 !important;
   font-weight: 600;
@@ -10797,6 +10794,7 @@ table tbody tr td:not(:nth-child(1)){
   border: none; 
   resize: none; 
   padding: 6px 12px;
+  height: 100px;
 }
 .textarea-form:focus{
   border:none;
@@ -10808,7 +10806,7 @@ table tbody tr td:not(:nth-child(1)){
   background-color: white;
 }
 .custom-file:hover{
-  background-color: #f3f3f3;
+  background-color: #f8f8f8;
   box-shadow: inset 5px 0 10px #00000010;
 }
 .custom-file .custom-file-label{
@@ -10829,6 +10827,30 @@ table tbody tr td:not(:nth-child(1)){
   background-color: transparent;
 }
 .add-form-btn{
+  background-color: white;
+  color: #808F9D;
+  border-radius: 50px;
+  border: 3px solid #F0F2F8;
+  padding: 8px 15px;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 14px;
+}
+.add-form-btn > div{
+  background-color: #03E612 ;
+  width: 25px;
+  height: 25px;
+}
+.add-form-btn > div > i{
+  color: white;
+  font-size: 12px;
+  margin-top: 2px;
+}
+.add-form-btn:hover{
+  background-color: #f8f8f8;
+  box-shadow: inset 2px 0 5px #00000015;
+}
+.remove-form-btn{
   height: 45px;
   width: 45px;
   background-color: white;
@@ -10838,14 +10860,32 @@ table tbody tr td:not(:nth-child(1)){
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
   cursor: pointer;
+  /* background-color: #FF257F; */
+  padding: 5px !important;
 }
-.add-form-btn:hover{
-  background-color: #f3f3f3;
+.remove-form-btn > div{
+ background-color: #FF257F ;
+ width: 100%;
+ height: 100%;
+ border-radius: 50px;
+}
+.remove-form-btn > div:hover{
+  background-color: #dd216f;
   box-shadow: inset 2px 0 5px #00000015;
 }
-.add-form-btn i{
-  color: #808F9D;
+.remove-form-btn i{
+  color: white;
+}
+.input-group.date input{
+  background-color: #fff !important;
+  border: 2px solid #F0F2F8 !important;
+  border-left: 0 !important;
+}
+.input-group.date .input-group-text 
+{
+  background-color: #fff !important;
+  border:2px solid #F0F2F8 !important;
+  border-right: 0 !important;
 }
 /* End Add and Edit Page */

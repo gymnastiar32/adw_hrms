@@ -35,7 +35,7 @@
                         <li class="mr-1"><a href="ekpi_master">e-KPI</a></li>
                         <li><a href="posisi.html">Master Data</a></li>
                     </ul>
-                    <form class="search-form">
+                    <!-- class="search-form">
                         <div class="form-group input-group no-border flex-nowrap">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fa fa-search"
@@ -43,7 +43,7 @@
                             </div>
                             <input type="text" class="form-control " placeholder="Search...">
                         </div>
-                    </form>
+                    </!--> 
                 </div>
             </div>
             <ul class="nav navbar-top-links navbar-right d-flex align-items-center flex-nowrap">
@@ -213,7 +213,7 @@
         </nav>
         <div id="page-wrapper">
             <div class="wrapper border-bottom white-bg page-heading p-0 pb-4">
-                <div class="col-sm-12 p-0">
+                <div class="col-12 p-0">
                     <h2>Karyawan</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
@@ -233,49 +233,104 @@
                             <div class="col-12 pl-4 pr-4">
                                 <h4><strong>Identitas</strong></h4>
                             </div>
-                            <div class="col-md-6 p-4">
+                            <div class="col-lg-6 p-4">
                                 <label for="nama">Nama Karyawan</label>
                                 <input type="text" class="form-control no-border" name="nama" id="nama">
                             </div>
-                            <div class="col-md-6 p-4">
+                            <div class="col-lg-6 p-4">
                                 <label for="nik">NIK</label>
                                 <input type="text" class="form-control no-border" name="nik" id="nik">
                             </div>
                         </div>
                         <hr class="hr-line-solid">
                         <div class="form-row">
-                            <div class="col-12 pl-4 pr-4">
-                                <h4><strong>Data Alamat</strong></h4>
+                            <div class="col-12 p-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4><strong>Data Diri</strong></h4>
+                                    </div>
+                                    <div class="col-12">
+                                        <h5 class="m-0 mt-4"><strong>Alamat</strong></h5>
+                                    </div>
+                                    <div class="col-lg-12 mt-4">
+                                        <label for="alamat">Alamat Karyawan</label>
+                                        <input type="text" class="form-control no-border" name="alamat" id="alamat">
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <label for="alamat">Kota/Kabupaten</label>
+                                        <input type="text" class="form-control no-border" name="alamat" id="alamat">
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <label for="alamat">Provinsi</label>
+                                        <input type="text" class="form-control no-border" name="alamat" id="alamat">
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <label for="alamat">Kode Pos</label>
+                                        <input type="text" class="form-control no-border" name="alamat" id="alamat">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-12 p-4">
-                                <label for="alamat">Alamat Karyawan</label>
-                                <input type="text" class="form-control no-border" name="alamat" id="alamat">
+                            <div class="col-12 p-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5 class="m-0 mt-2"><strong>Pengalaman</strong></h5>
+                                    </div>
+                                    <div class="col-lg-5 mt-4">
+                                        <label for="alamat">Judul</label>
+                                        <input type="text" class="form-control no-border" name="alamat" id="alamat">
+                                    </div>
+                                    <div class="col-lg-3 mt-4">
+                                        <div class="form-group" id="data_1">
+                                            <label class="font-normal">Start Date</label>
+                                            <div class="input-group date">
+                                                <div class="input-group-prepend ">
+                                                    <span class="input-group-text border-0"
+                                                        style="background-color: #F0F2F8;"><i
+                                                            class="far fa-calendar-alt"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="mm/dd/yy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 mt-4">
+                                        <div class="form-group" id="data_1">
+                                            <label class="font-normal">End Date</label>
+                                            <div class="input-group date">
+                                                <div class="input-group-prepend ">
+                                                    <span class="input-group-text border-0"
+                                                        style="background-color: #F0F2F8;"><i
+                                                            class="far fa-calendar-alt"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="mm/dd/yy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1 mt-lg-4 d-flex align-items-center">
+                                        <div class="remove-form-btn mt-3">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <label for="">Deskripsi</label>
+                                        <textarea name="desk-pengalaman" id="desk-pengalaman"
+                                            class="textarea-form"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 mt-5">
+                                        <div class="add-form-btn d-flex align-items-center">
+                                            <div
+                                                class="rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                            &emsp14;
+                                            Tambah Form
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-4 p-4">
-                                <label for="alamat">Kota/Kabupaten</label>
-                                <input type="text" class="form-control no-border" name="alamat" id="alamat">
-                            </div>
-                            <div class="col-md-4 p-4">
-                                <label for="alamat">Provinsi</label>
-                                <input type="text" class="form-control no-border" name="alamat" id="alamat">
-                            </div>
-                            <div class="col-md-4 p-4">
-                                <label for="alamat">Kode Pos</label>
-                                <input type="text" class="form-control no-border" name="alamat" id="alamat">
-                            </div>
-                            <!-- <div class="col-md-6 p-4">
-                                <label for="inputState">Tingkat Pendidikan Akhir</label>
-                                <select id="inputState" class="form-control">
-                                    <option selected>Pilih...</option>
-                                    <option>SD</option>
-                                    <option>SMP</option>
-                                    <option>SMA</option>
-                                    <option>Diploma</option>
-                                    <option>S1</option>
-                                    <option>S2</option>
-                                    <option>S3</option>
-                                </select>
-                            </div> -->
                         </div>
                         <hr class="hr-line-solid">
                         <div class="form-row">
@@ -286,14 +341,14 @@
                                 <label for="pengalaman">Pengalaman</label>
                                 <textarea class="textarea-form" name="" id="" rows="5"></textarea>
                             </div> -->
-                            <div class="col-md-6 p-4">
+                            <div class="col-lg-6 p-4">
                                 <label for="email_karyawan">Email Kantor dan Pribadi</label>
                                 <input type="email" class="form-control no-border" name="email_karyawan"
                                     id="email_karyawan" placeholder="Email Kantor">
                                 <input type="email" class="form-control mt-4 no-border" name="email_karyawan"
                                     id="email_karyawan" placeholder="Email Pribadi">
                             </div>
-                            <div class="col-md-6 p-4">
+                            <div class="col-lg-6 p-4">
                                 <label for="phone">No Kontak</label>
                                 <input type="text" class="form-control no-border" name="phone" id="phone"
                                     placeholder="No Handphone">
@@ -304,34 +359,61 @@
                             <div class="col-12 pl-4 pr-4">
                                 <h4><strong>Lampiran</strong></h4>
                             </div>
-                            <div class="col-md-12 p-4">
+                            <div class="col-12 p-4">
                                 <label for="tipe">Sertifikat</label>
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-lg-4">
                                         <input type="text" class="form-control no-border mb-4" name="tipe" id="tipe"
                                             value="">
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-lg-3">
                                         <div class="custom-file">
                                             <input id="logo" type="file" class="custom-file-input">
                                             <label for="logo" class="custom-file-label b-r-xl">Pilih File</label>
                                         </div>
                                     </div>
-                                    <div class="col-3">
-                                        <span class="add-form-btn">
-                                            <i class="fa fa-plus"></i>
-                                        </span>
+                                    <div class="col-lg-1 mt-lg-0 mt-3">
+                                        <div class="remove-form-btn">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 mt-lg-0 mt-5">
+                                        <div class="add-form-btn d-flex align-items-center">
+                                            <div
+                                                class="rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                            &emsp14;
+                                            Tambah Form
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 pl-4 pr-4">
+                            <!-- <div class="col-12 pl-4 pr-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="add-form-btn d-flex align-items-center">
+                                            <div class="rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                            &emsp14;
+                                            Tambah Form
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="col-12 p-4">
                                 <label for="kantor">CV</label>
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-lg-4">
                                         <input type="text" class="form-control no-border mb-4" name="tipe" id="tipe"
                                             value="">
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-lg-3">
                                         <div class="custom-file">
                                             <input id="cv" type="file" class="custom-file-input">
                                             <label for="cv" class="custom-file-label b-r-xl">Pilih File</label>
@@ -345,7 +427,7 @@
                             <div class="col-12 pl-4 pr-4">
                                 <h4><strong>Kontrak</strong></h4>
                             </div>
-                            <div class="col-md-4 p-4">
+                            <div class="col-lg-4 p-4">
                                 <span>Status</span>
                                 <br>
                                 <div class="form-check form-check-radio form-check-inline">
@@ -363,27 +445,29 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-md-4 p-4">
-                                <div class="form-group" id="data_1">
+                            <div class="col-lg-4 p-4">
+                                <div class="form-group" id="data_3">
                                     <label class="font-normal">Start Kontrak</label>
                                     <div class="input-group date">
                                         <div class="input-group-prepend ">
                                             <span class="input-group-text border-0"
-                                                style="background-color: #F0F2F8;"><i class="fa fa-calendar"></i></span>
+                                                style="background-color: #F0F2F8;"><i
+                                                    class="far fa-calendar-alt"></i></span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" placeholder="mm/dd/yy">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 p-4">
+                            <div class="col-lg-4 p-4">
                                 <label for="tipe">End Kontrak</label>
-                                <div class="form-group" id="data_2">
+                                <div class="form-group" id="data_4">
                                     <div class="input-group date">
                                         <div class="input-group-prepend ">
                                             <span class="input-group-text border-0"
-                                                style="background-color: #F0F2F8;"><i class="fa fa-calendar"></i></span>
+                                                style="background-color: #F0F2F8;"><i
+                                                    class="far fa-calendar-alt"></i></span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" placeholder="mm/dd/yy">
                                     </div>
                                 </div>
                             </div>
@@ -471,6 +555,22 @@
         });
 
         var mem = $('#data_2 .input-group.date').datepicker({
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: true,
+            autoclose: true
+        });
+
+        var mem = $('#data_3 .input-group.date').datepicker({
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: true,
+            autoclose: true
+        });
+
+        var mem = $('#data_4 .input-group.date').datepicker({
             todayBtn: "linked",
             keyboardNavigation: false,
             forceParse: false,
