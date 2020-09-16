@@ -43,7 +43,7 @@
                             </div>
                             <input type="text" class="form-control " placeholder="Search...">
                         </div>
-                    </!--> 
+                    </!-->
                 </div>
             </div>
             <ul class="nav navbar-top-links navbar-right d-flex align-items-center flex-nowrap">
@@ -249,6 +249,8 @@
                                     <div class="col-12">
                                         <h4><strong>Data Diri</strong></h4>
                                     </div>
+                                </div>
+                                <div class="row">
                                     <div class="col-12">
                                         <h5 class="m-0 mt-4"><strong>Alamat</strong></h5>
                                     </div>
@@ -275,59 +277,88 @@
                                     <div class="col-12">
                                         <h5 class="m-0 mt-2"><strong>Pengalaman</strong></h5>
                                     </div>
-                                    <div class="col-lg-5 mt-4">
-                                        <label for="alamat">Judul</label>
-                                        <input type="text" class="form-control no-border" name="alamat" id="alamat">
-                                    </div>
-                                    <div class="col-lg-3 mt-4">
-                                        <div class="form-group" id="data_1">
-                                            <label class="font-normal">Start Date</label>
-                                            <div class="input-group date">
-                                                <div class="input-group-prepend ">
-                                                    <span class="input-group-text border-0"
-                                                        style="background-color: #F0F2F8;"><i
-                                                            class="far fa-calendar-alt"></i></span>
+                                </div>
+                                <div class="row" id="pengalaman">
+                                    <div class="col-lg-11">
+                                        <div class="row">
+                                            <div class="col-lg-6 mt-4">
+                                                <label for="alamat">Judul</label>
+                                                <input type="text" class="form-control no-border" name="alamat"
+                                                    id="alamat">
+                                            </div>
+                                            <div class="col-lg-3 mt-4">
+                                                <div class="form-group" id="data_1">
+                                                    <label class="font-normal">Start Date</label>
+                                                    <div class="input-group date">
+                                                        <div class="input-group-prepend ">
+                                                            <span class="input-group-text border-0"
+                                                                style="background-color: #F0F2F8;"><i
+                                                                    class="far fa-calendar-alt"></i></span>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="mm/dd/yy">
+                                                    </div>
                                                 </div>
-                                                <input type="text" class="form-control" placeholder="mm/dd/yy">
+                                            </div>
+                                            <div class="col-lg-3 mt-4">
+                                                <div class="form-group" id="data_1">
+                                                    <label class="font-normal">End Date</label>
+                                                    <div class="input-group date">
+                                                        <div class="input-group-prepend ">
+                                                            <span class="input-group-text border-0"
+                                                                style="background-color: #F0F2F8;"><i
+                                                                    class="far fa-calendar-alt"></i></span>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="mm/dd/yy">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <label for="">Deskripsi</label>
+                                                <textarea name="desk-pengalaman" id="desk-pengalaman"
+                                                    class="textarea-form"></textarea>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 mt-4">
-                                        <div class="form-group" id="data_1">
-                                            <label class="font-normal">End Date</label>
-                                            <div class="input-group date">
-                                                <div class="input-group-prepend ">
-                                                    <span class="input-group-text border-0"
-                                                        style="background-color: #F0F2F8;"><i
-                                                            class="far fa-calendar-alt"></i></span>
-                                                </div>
-                                                <input type="text" class="form-control" placeholder="mm/dd/yy">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-1 mt-lg-4 d-flex align-items-center">
-                                        <div class="remove-form-btn mt-3">
-                                            <div class="d-flex align-items-center justify-content-center">
+                                    <div class="col-lg-1 pt-lg-1">
+                                        <a class="remove-form-btn mt-lg-5 mt-3">
+                                            <span class="d-flex align-items-center justify-content-center">
                                                 <i class="fa fa-times"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 mt-4">
-                                        <label for="">Deskripsi</label>
-                                        <textarea name="desk-pengalaman" id="desk-pengalaman"
-                                            class="textarea-form"></textarea>
+                                            </span>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 mt-5">
-                                        <div class="add-form-btn d-flex align-items-center">
-                                            <div
+                                        <a class="add-form-btn d-flex align-items-center">
+                                            <span
                                                 class="rounded-circle d-flex justify-content-center align-items-center">
                                                 <i class="fas fa-plus"></i>
-                                            </div>
+                                            </span>
                                             &emsp14;
                                             Tambah Form
-                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 p-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4 class="m-0 mt-2"><strong>Pendidikan</strong></h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 mt-4">
+                                        <label for="inputState">Tingkat Pendidikan Akhir</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Pilih...</option>
+                                            <option>SD</option>
+                                            <option>SMP</option>
+                                            <option>SMA</option>
+                                            <option>Diploma</option>
+                                            <option>S1</option>
+                                            <option>S2</option>
+                                            <option>S3</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -357,66 +388,62 @@
                         <hr class="hr-line-solid">
                         <div class="form-row">
                             <div class="col-12 pl-4 pr-4">
-                                <h4><strong>Lampiran</strong></h4>
-                            </div>
-                            <div class="col-12 p-4">
-                                <label for="tipe">Sertifikat</label>
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <input type="text" class="form-control no-border mb-4" name="tipe" id="tipe"
-                                            value="">
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="custom-file">
-                                            <input id="logo" type="file" class="custom-file-input">
-                                            <label for="logo" class="custom-file-label b-r-xl">Pilih File</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-1 mt-lg-0 mt-3">
-                                        <div class="remove-form-btn">
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <i class="fa fa-times"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 mt-lg-0 mt-5">
-                                        <div class="add-form-btn d-flex align-items-center">
-                                            <div
-                                                class="rounded-circle d-flex justify-content-center align-items-center">
-                                                <i class="fas fa-plus"></i>
-                                            </div>
-                                            &emsp14;
-                                            Tambah Form
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col-12 pl-4 pr-4">
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="add-form-btn d-flex align-items-center">
-                                            <div class="rounded-circle d-flex justify-content-center align-items-center">
-                                                <i class="fas fa-plus"></i>
-                                            </div>
-                                            &emsp14;
-                                            Tambah Form
-                                        </div>
+                                        <h4><strong>Lampiran</strong></h4>
                                     </div>
                                 </div>
-                            </div> -->
-                            <div class="col-12 p-4">
-                                <label for="kantor">CV</label>
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <input type="text" class="form-control no-border mb-4" name="tipe" id="tipe"
-                                            value="">
+                                <div class="row" id="sertifikat">
+                                    <div class="col-lg-6">
+                                        <label for="tipe">Sertifikat</label>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control no-border mb-4" name="tipe"
+                                                    id="tipe" value="">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="custom-file">
+                                                    <input id="logo" type="file" class="custom-file-input">
+                                                    <label for="logo" class="custom-file-label b-r-xl">Pilih
+                                                        File</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-3">
-                                        <div class="custom-file">
-                                            <input id="cv" type="file" class="custom-file-input">
-                                            <label for="cv" class="custom-file-label b-r-xl">Pilih File</label>
+                                    <div class="col-lg-1 pt-lg-1">
+                                        <a class="remove-form-btn mt-4">
+                                            <span class="d-flex align-items-center justify-content-center">
+                                                <i class="fa fa-times"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a class="add-form-btn mt-lg-0 mt-5 d-flex align-items-center">
+                                            <span
+                                                class="rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-plus"></i>
+                                            </span>
+                                            &emsp14;
+                                            Tambah Form
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row mt-lg-0 mt-4">
+                                    <div class="col-6 p-4">
+                                        <label for="kantor">CV</label>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control no-border mb-4" name="tipe"
+                                                    id="tipe" value="">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="custom-file">
+                                                    <input id="cv" type="file" class="custom-file-input">
+                                                    <label for="cv" class="custom-file-label b-r-xl">Pilih File</label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

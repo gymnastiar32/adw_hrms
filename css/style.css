@@ -9829,20 +9829,26 @@ body{
   height: 100%;
 }
 .login-bg{
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   background-image: url("../img/login_bg.svg");
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size:contain;
   background-position: bottom;
+  z-index: -1;
+}
+.page-header .content{
+  margin-bottom: 165px !important;
 }
 .login-bg img{
   width: 100%;
   height: 100%;
 }
-footer.loginpage
+footer.footer
 {
+  background-color: transparent;
+  border: none;
   z-index: 100;
 }
 footer.loginpage p{
@@ -10015,9 +10021,27 @@ main .middle-box .input-group-text{
 .middle-box.editProfile p{
   font-size: 18px;
 }
-.editProfile .profile-pict{
-  padding: 10px;
+.editProfile .fileinput{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.editProfile .fileinput > .fileinput-new{
   border: 4px solid #F0F2F8;
+  /* overflow: hidden; */
+  padding: 10px;
+}
+.editProfile .fileinput-preview.fileinput-exists{
+  border: 4px solid #F0F2F8;
+  padding: 10px;
+}
+.editProfile .fileinput-preview.fileinput-exists > img{
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateY(-15px) ;
 }
 .editProfile .fileinput .btn{
   border-radius: 50px;
@@ -10030,10 +10054,14 @@ main .middle-box .input-group-text{
   color: #005db5;
   font-weight: 600;
 }
-.editProfile .fileinput .btn:hover{
+.editProfile .fileinput .btn:hover,
+.editProfile .fileinput .btn:active,
+.editProfile .fileinput .btn.active,
+.editProfile .fileinput .btn:focus{
+  background-color: #fff !important;
+  color: #005db5 !important;
   box-shadow: none;
-  background-color: #005db5;
-  color: white !important;
+  text-decoration: underline;
 }
 .middle-box.editProfile .form-group.input-group{
   width: 100%;
@@ -10643,8 +10671,9 @@ table tbody tr td:not(:nth-child(1)){
 }
 .pagination .page-item:hover,
 .pagination .page-item:focus,
+.pagination .page-item:active,
 .pagination .page-item.active{
-  border-color: #005db5;
+  border-color: #005db5 !important;
 }
 .pagination .page-item .page-link:hover,
 .pagination .page-item .page-link:focus{
@@ -10746,8 +10775,12 @@ table tbody tr td:not(:nth-child(1)){
   margin-left: 20px ;
 }
 .middle-box.addPage .action .simpan:hover,
-.middle-box.editPage .action .simpan:hover{
-  background-color: #0057a8;
+.middle-box.addPage .action .simpan:active,
+.middle-box.addPage .action .simpan.active,
+.middle-box.editPage .action .simpan:hover,
+.middle-box.editPage .action .simpan:active,
+.middle-box.editPage .action .simpan.active{
+  background-color: #0057a8 !important;
   box-shadow: inset 2px 0 5px #00000025;
 } 
 .middle-box.addPage .action .kembali,
@@ -10766,8 +10799,12 @@ table tbody tr td:not(:nth-child(1)){
  justify-content: center;
 }
 .middle-box.addPage .action .kembali:hover,
-.middle-box.editPage .action .kembali:hover{
-  background-color: #f3f3f3;
+.middle-box.addPage .action .kembali:active,
+.middle-box.addPage .action .kembali.active,
+.middle-box.editPage .action .kembali:hover,
+.middle-box.editPage .action .kembali:active,
+.middle-box.editPage .action .kembali.active{
+  background-color: #f3f3f3 !important;
   box-shadow: inset 2px 0 5px #00000015;
 }
 .middle-box.addPage .action .kembali a,
@@ -10832,16 +10869,18 @@ table tbody tr td:not(:nth-child(1)){
   border-radius: 50px;
   border: 3px solid #F0F2F8;
   padding: 8px 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   font-weight: 700;
   font-size: 14px;
 }
-.add-form-btn > div{
+.add-form-btn > span{
   background-color: #03E612 ;
   width: 25px;
   height: 25px;
 }
-.add-form-btn > div > i{
+.add-form-btn > span > i{
   color: white;
   font-size: 12px;
   margin-top: 2px;
@@ -10864,13 +10903,13 @@ table tbody tr td:not(:nth-child(1)){
   /* background-color: #FF257F; */
   padding: 5px !important;
 }
-.remove-form-btn > div{
- background-color: #FF257F ;
+.remove-form-btn > span{
+ background-color: #FF257F;
  width: 100%;
  height: 100%;
  border-radius: 50px;
 }
-.remove-form-btn > div:hover{
+.remove-form-btn > span:hover{
   background-color: #dd216f;
   box-shadow: inset 2px 0 5px #00000015;
 }
@@ -10889,3 +10928,11 @@ table tbody tr td:not(:nth-child(1)){
   border-right: 0 !important;
 }
 /* End Add and Edit Page */
+
+/* #pengalaman{
+  flex-direction: column-reverse;
+}
+
+#sertifikat{
+  flex-direction: column-reverse;
+} */

@@ -17,9 +17,10 @@
 </head>
 
 <body class="d-flex flex-column">
-    <div class="login-bg"></div>
+    
     <main class="loginpage my-auto">
-        <div class="middle-box text-center editProfile animated fadeInDown">
+        <div class="login-bg"></div>
+        <div class="middle-box text-center my-4 editProfile animated fadeInDown">
             <div>
                 <div>
                 </div>
@@ -36,12 +37,19 @@
                 </form> -->
 
                 <form class="d-flex justify-content-center align-items-center flex-column" role="form" action="#">
-                    <img src="img/a4.jpg" alt="profile-pict" class="profile-pict rounded-circle">
                     <div class="fileinput fileinput-new" data-provides="fileinput">
-                        <span class="btn btn-file"><span class="fileinput-new">Change Picture</span>
-                            <span class="fileinput-exists">Change</span><input type="file" name="..." /></span>
-                        <span class="fileinput-filename"></span>
-                        <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>
+                        <div class="fileinput-new img-lg rounded-circle" style="width: 125px; height: 125px;">
+                            <img data-src="holder.js/100px100p?bg=#005db5&fg=#fff&text=Picture" class="rounded-circle" alt="" id="myImage">
+                        </div>
+                        <div class="fileinput-preview fileinput-exists img-lg rounded-circle"
+                            style="width: 125px; height: 125px;"></div>
+                        <div>
+                            <span class="btn btn-outline-secondary btn-file"><span class="fileinput-new">Select
+                                    image</span><span class="fileinput-exists">Change</span><input type="file"
+                                    name="..." accept=".jpg"></span>
+                            <a href="#" class="btn btn-outline-secondary fileinput-exists"
+                                data-dismiss="fileinput">Remove</a>
+                        </div>
                     </div>
                     <p>Please write new username, email, or password that you want to change. </p>
                     <div class="form-group input-group">
@@ -86,8 +94,8 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-link delete-btn"><i class="far fa-trash-alt mx-1"></i> Delete
-                        Account</button>
+                    <a class="btn btn-link delete-btn"><i class="far fa-trash-alt mx-1"></i> Delete
+                        Account</a>
                 </form>
             </div>
         </div>
@@ -119,6 +127,10 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
     <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
     <script src="js/now-ui-kit.js?v=1.2.2" type="text/javascript"></script>
+    <!-- Jasny -->
+    <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+    <!-- Holder -->
+    <script src="js/plugins/holder/holder.js"></script>
 
     <!-- Show/Hide Password Function -->
     <script>
@@ -137,6 +149,30 @@
                 hidePassword.style.display = 'block';
             }
         }
+
+        // const inputFile = document.getElementById('inputFile');
+        // const previewWrapper = document.getElementById('profile-pict-wrapper');
+        // const previewImage = previewWrapper.querySelector('.profile-pict');
+        // const previewImageText = previewWrapper.querySelector('.previewImageText');
+
+        // inputFile.addEventListener("change", function() {
+        //     const file = this.files[0];
+        //     if (file) {
+        //         const reader = new FileReader();
+
+        //         previewImageText.style.display = "none";
+        //         previewImage.style.display = "block";
+        //         previewWrapper.style.backgroundColor = "transparent";
+
+        //         reader.addEventListener("load", function() {
+        //             console.log(this);
+        //             previewImage.setAttribute("src", this.result);
+        //         });
+
+        //         reader.readAsDataURL(file);
+        //     }
+        // });
+
     </script>
 
 </body>

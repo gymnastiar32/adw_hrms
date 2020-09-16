@@ -230,123 +230,277 @@
                     <h3 class="border-bottom">Edit Data Karyawan</h3>
                     <form>
                         <div class="form-row">
-                            <div class="col-md-6 p-4">
+                            <div class="col-12 pl-4 pr-4">
+                                <h4><strong>Identitas</strong></h4>
+                            </div>
+                            <div class="col-lg-6 p-4">
+                                <label for="nama">Nama Karyawan</label>
+                                <input type="text" class="form-control no-border" name="nama" id="nama" value="example">
+                            </div>
+                            <div class="col-lg-6 p-4">
                                 <label for="nik">NIK</label>
-                                <input type="text" class="form-control no-border" name="nik" id="nik"
-                                    value="35171112010007">
-                            </div>
-                            <div class="col-md-6 p-4">
-                                <label for="nama_karyawan">Nama Karyawan</label>
-                                <input type="text" class="form-control no-border" name="nama_karyawan"
-                                    id="nama_karyawan" value="example">
+                                <input type="text" class="form-control no-border" name="nik" id="nik" value="35171112010007">
                             </div>
                         </div>
-                        <div class="form-row">
-                            <div class="col-md-6 p-4">
-                                <label for="alamat_karyawan">Alamat Karyawan</label>
-                                <input type="text" class="form-control no-border" name="alamat_karyawan"
-                                    id="alamat_karyawan"
-                                    value="No. 45 RT/RW 001/01 Jl. Jalanan Kel. Lurah Kec. Camat Jakarta Timur DKI Jakarta 13720">
-                            </div>
-                            <div class="col-md-6 p-4">
-                                <label for="tingkat_pddk_terakhir">Tingkat Pendidikan Akhir</label>
-                                <select id="tingkat_pddk_terakhir" name="tingkat_pddk_terakhir" class="form-control">
-                                    <option>Pilih...</option>
-                                    <option>SD</option>
-                                    <option>SMP</option>
-                                    <option>SMA</option>
-                                    <option>Diploma</option>
-                                    <option selected>S1</option>
-                                    <option>S2</option>
-                                    <option>S3</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-6 p-4">
-                                <label for="pengalaman">Pengalaman</label>
-                                <textarea class="textarea-form" name="pengalaman" id="pengalaman"
-                                    rows="5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi unde voluptas alias delectus laborum provident natus eos? Dolorum at a tempore temporibus dicta perferendis nihil quasi maxime in, itaque, quae saepe autem sapiente ea perspiciatis deserunt minima error. Consequatur, corporis.</textarea>
-                            </div>
-                            <div class="col-md-6 p-4">
-                                <label for="email_karyawan_kantor">Email Kantor dan Pribadi</label>
-                                <input type="text" class="form-control no-border" name="email_karyawan_kantor"
-                                    id="email_karyawan_kantor" value="example@gmail.com" placeholder="Email Kantor">
-                                <input type="text" class="form-control mt-4 no-border" name="email_karyawan_pribadi"
-                                    id="email_karyawan_pribadi" value="example@gmail.com" placeholder="Email Pribadi">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-6 p-4">
-                                <label for="no_kontak">No Kontak</label>
-                                <input type="text" class="form-control no-border" name="no_kontak" id="no_kontak"
-                                    value="0812768590">
-                            </div>
-                            <div class="col-md-6 p-4">
-                                <label for="sertifikat">Sertifikat</label>
-                                <input type="text" class="form-control no-border mb-4" name="sertifikat" id="sertifikat"
-                                    value="example">
-                                <div class="custom-file">
-                                    <input id="sertifikat" type="file" class="custom-file-input">
-                                    <label for="sertifikat" class="custom-file-label b-r-xl">Pilih File...</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-6 p-4">
-                                <label for="cv_karyawan">CV</label>
-                                <div class="custom-file">
-                                    <input id="cv_karyawan" name="cv_karyawan" type="file" class="custom-file-input">
-                                    <label for="cv_karyawan" class="custom-file-label b-r-xl">Pilih File...</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-3 p-4">
-                                <div class="form-group" id="data_1">
-                                    <label class="font-normal">Start Kontrak</label>
-                                    <div class="input-group date">
-                                        <div class="input-group-prepend ">
-                                            <span class="input-group-text border-0"
-                                                style="background-color: #F0F2F8;"><i class="fa fa-calendar"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" value="03/04/2014">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 p-4">
-                                <label for="tipe">End Kontrak</label>
-                                <div class="form-group" id="data_2">
-                                    <div class="input-group date">
-                                        <div class="input-group-prepend ">
-                                            <span class="input-group-text border-0"
-                                                style="background-color: #F0F2F8;"><i class="fa fa-calendar"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" value="03/04/2019">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <hr class="hr-line-solid">
                         <div class="form-row">
                             <div class="col-12 p-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4><strong>Data Diri</strong></h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5 class="m-0 mt-4"><strong>Alamat</strong></h5>
+                                    </div>
+                                    <div class="col-lg-12 mt-4">
+                                        <label for="alamat">Alamat Karyawan</label>
+                                        <input type="text" class="form-control no-border" name="alamat" id="alamat" value="Jl. Sesama No. 45 RT/RW 001/01">
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <label for="alamat">Kota/Kabupaten</label>
+                                        <input type="text" class="form-control no-border" name="alamat" id="alamat" value="Jakarta Timur">
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <label for="alamat">Provinsi</label>
+                                        <input type="text" class="form-control no-border" name="alamat" id="alamat" value="DKI Jakarta">
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <label for="alamat">Kode Pos</label>
+                                        <input type="text" class="form-control no-border" name="alamat" id="alamat" value="13820">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 p-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5 class="m-0 mt-2"><strong>Pengalaman</strong></h5>
+                                    </div>
+                                </div>
+                                <div class="row" id="pengalaman">
+                                    <div class="col-lg-11">
+                                        <div class="row">
+                                            <div class="col-lg-6 mt-4">
+                                                <label for="judul_pengalaman">Judul</label>
+                                                <input type="text" class="form-control no-border" name="judul_pengalaman"
+                                                    id="judul_pengalaman" value="Bekerja di Google">
+                                            </div>
+                                            <div class="col-lg-3 mt-4">
+                                                <div class="form-group" id="data_1">
+                                                    <label class="font-normal">Start Date</label>
+                                                    <div class="input-group date">
+                                                        <div class="input-group-prepend ">
+                                                            <span class="input-group-text border-0"
+                                                                style="background-color: #F0F2F8;"><i
+                                                                    class="far fa-calendar-alt"></i></span>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" value="12/12/2012">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 mt-4">
+                                                <div class="form-group" id="data_1">
+                                                    <label class="font-normal">End Date</label>
+                                                    <div class="input-group date">
+                                                        <div class="input-group-prepend ">
+                                                            <span class="input-group-text border-0"
+                                                                style="background-color: #F0F2F8;"><i
+                                                                    class="far fa-calendar-alt"></i></span>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" value="12/12/2017">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <label for="">Deskripsi</label>
+                                                <textarea name="desk-pengalaman" id="desk-pengalaman"
+                                                    class="textarea-form">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde repellendus fugit molestias pariatur facere nesciunt ducimus perferendis, esse quia.
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1 pt-lg-1">
+                                        <a class="remove-form-btn mt-lg-5 mt-3">
+                                            <span class="d-flex align-items-center justify-content-center">
+                                                <i class="fa fa-times"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 mt-5">
+                                        <a class="add-form-btn d-flex align-items-center">
+                                            <span
+                                                class="rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-plus"></i>
+                                            </span>
+                                            &emsp14;
+                                            Tambah Form
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 p-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4 class="m-0 mt-2"><strong>Pendidikan</strong></h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 mt-4">
+                                        <label for="inputState">Tingkat Pendidikan Akhir</label>
+                                        <select id="inputState" class="form-control">
+                                            <option >Pilih...</option>
+                                            <option>SD</option>
+                                            <option>SMP</option>
+                                            <option>SMA</option>
+                                            <option>Diploma</option>
+                                            <option selected>S1</option>
+                                            <option>S2</option>
+                                            <option>S3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr-line-solid">
+                        <div class="form-row">
+                            <div class="col-12 pl-4 pr-4">
+                                <h4><strong>Kontak</strong></h4>
+                            </div>
+                            <!-- <div class="col-md-6 p-4">
+                                <label for="pengalaman">Pengalaman</label>
+                                <textarea class="textarea-form" name="" id="" rows="5"></textarea>
+                            </div> -->
+                            <div class="col-lg-6 p-4">
+                                <label for="email_karyawan">Email Kantor dan Pribadi</label>
+                                <input type="email" class="form-control no-border" name="email_karyawan"
+                                    id="email_karyawan" placeholder="Email Kantor" value="example@adw.co.id">
+                                <input type="email" class="form-control mt-4 no-border" name="email_karyawan"
+                                    id="email_karyawan" placeholder="Email Pribadi" value="example@gmail.com">
+                            </div>
+                            <div class="col-lg-6 p-4">
+                                <label for="phone">No Kontak</label>
+                                <input type="text" class="form-control no-border" name="phone" id="phone"
+                                    placeholder="No Handphone" value="081716302697">
+                            </div>
+                        </div>
+                        <hr class="hr-line-solid">
+                        <div class="form-row">
+                            <div class="col-12 pl-4 pr-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4><strong>Lampiran</strong></h4>
+                                    </div>
+                                </div>
+                                <div class="row" id="sertifikat">
+                                    <div class="col-lg-6 mt-lg-3 mt-4">
+                                        <label for="tipe">Sertifikat</label>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control no-border mb-4" name="tipe"
+                                                    id="tipe" value="Judul Sertifikat">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="custom-file">
+                                                    <input id="logo" type="file" class="custom-file-input">
+                                                    <label for="logo" class="custom-file-label b-r-xl">Pilih
+                                                        File</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1 pt-lg-3">
+                                        <a class="remove-form-btn mt-lg-4 mt-0">
+                                            <span class="d-flex align-items-center justify-content-center">
+                                                <i class="fa fa-times"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a class="add-form-btn mt-lg-0 mt-5 d-flex align-items-center">
+                                            <span
+                                                class="rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-plus"></i>
+                                            </span>
+                                            &emsp14;
+                                            Tambah Form
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row mt-lg-0 mt-4">
+                                    <div class="col-6 p-4">
+                                        <label for="kantor">CV</label>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control no-border mb-4" name="tipe"
+                                                    id="tipe" value="Keterangan CV">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="custom-file">
+                                                    <input id="cv" type="file" class="custom-file-input">
+                                                    <label for="cv" class="custom-file-label b-r-xl">Pilih File</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr-line-solid">
+                        <div class="form-row">
+                            <div class="col-12 pl-4 pr-4">
+                                <h4><strong>Kontrak</strong></h4>
+                            </div>
+                            <div class="col-lg-4 p-4">
                                 <span>Status</span>
                                 <br>
                                 <div class="form-check form-check-radio form-check-inline">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio1" value="option1"> Aktif
+                                            id="inlineRadio1" value="option1" > Freelance
                                         <span class="form-check-sign"></span>
                                     </label>
                                 </div>
                                 <div class="form-check form-check-radio form-check-inline">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio2" value="option2"> Nonaktif
+                                            id="inlineRadio2" value="option2"> Kontrak
                                         <span class="form-check-sign"></span>
                                     </label>
                                 </div>
                             </div>
+                            <div class="col-lg-4 p-4">
+                                <div class="form-group" id="data_3">
+                                    <label class="font-normal">Start Kontrak</label>
+                                    <div class="input-group date">
+                                        <div class="input-group-prepend ">
+                                            <span class="input-group-text border-0"
+                                                style="background-color: #F0F2F8;"><i
+                                                    class="far fa-calendar-alt"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" value="12/12/17">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 p-4">
+                                <label for="tipe">End Kontrak</label>
+                                <div class="form-group" id="data_4">
+                                    <div class="input-group date">
+                                        <div class="input-group-prepend ">
+                                            <span class="input-group-text border-0"
+                                                style="background-color: #F0F2F8;"><i
+                                                    class="far fa-calendar-alt"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" value="12/12/22">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <hr class="hr-line-solid">
                         <div class="action clearfix">
                             <button class="btn simpan float-right" type="submit">Simpan</button>
                             <a href="karyawan.html" class="btn kembali float-right">
