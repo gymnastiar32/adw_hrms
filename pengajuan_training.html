@@ -29,11 +29,11 @@
                 </div>
                 <div class="navbar-header d-flex align-items-center ">
                     <ul class="nav navbar-mainmenu">
-                        <li class="mr-1"><a href="karyawan.html">Talent</a></li>
+                        <li class="mr-1"><a class="active" href="karyawan.html">Talent</a></li>
                         <li class="mr-1"><a href="form_cuti.html">Pengajuan Cuti</a></li>
                         <li class="mr-1"><a href="master_asset.html">Asset</a></li>
                         <li class="mr-1"><a href="ekpi_master">e-KPI</a></li>
-                        <li><a class="active" href="posisi.html">Master Data</a></li>
+                        <li><a href="posisi.html">Master Data</a></li>
                     </ul>
                     <!-- <form class="search-form">
                         <div class="form-group input-group no-border flex-nowrap">
@@ -186,39 +186,21 @@
             <div class="sidebar-collapse d-flex flex-column">
                 <ul class="nav metismenu" id="side-menu">
                     <li>
-                        <h2>Master Data</h2>
+                        <h2>Talent</h2>
                     </li>
                     <li class="nav-link">
-                        <a href="posisi.html"><span class="nav-label">Posisi</span></a>
+                        <a class="active" href="#"><span class="nav-label">Karyawan</span></a>
                     </li>
                     <li class="nav-link">
-                        <a class="active" href="jobtitle.html"><span class="nav-label">Job Title</span></a>
+                        <a href="#"><span class="nav-label">Calon Karyawan</span></a>
                     </li>
                     <li class="nav-link">
-                        <a href="divisi.html"><span class="nav-label">Divisi/Departement</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="template_email.html"><span class="nav-label">Template Email</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="tingkat_pddk.html"><span class="nav-label">Tingkat Pendidikan Terakhir</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="domisili.html"><span class="nav-label">Domisili</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="hirarki.html"><span class="nav-label">Hirarki</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="proyek.html"><span class="nav-label">Proyek</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="menu_management.html"><span class="nav-label">Menu Management</span></a>
+                        <a href="pengajuan_training.html"><span class="nav-label">Pengajuan Training</span></a>
                     </li>
                 </ul>
                 <ul class="nav metismenu">
                     <li class="nav-link">
-                        <a href="">
+                        <a href="login.html">
                             <img class="logout-icon" src="img/logout.svg" alt="">
                             <span class="logout">Log Out</span>
                         </a>
@@ -227,61 +209,71 @@
                 </ul>
             </div>
         </nav>
-        <div id="page-wrapper">
+        <div id="page-wrapper" class="pb-5">
             <div class="wrapper border-bottom white-bg page-heading p-0 pb-4">
                 <div class="col-sm-12 p-0">
-                    <h2>Job Title</h2>
+                    <h2>Karyawan</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="index.html">Master Data</a>
+                            <a href="#">Talent</a>
                         </li>
                         <li class="breadcrumb-item active">
-                            <a href="jobtitle.html">Job Title</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <strong>Edit Job Title</strong>
+                            <strong>Karyawan</strong>
                         </li>
                     </ol>
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRightBig">
-                <div class="middle-box editPage">
-                    <h3 class="border-bottom">Edit Jobtitle</h3>
-                    <form>
-                        <div class="form-row">
-                            <div class="col-md-6 p-4">
-                                <label for="jobtitle">Job Title</label>
-                                <input type="text" class="form-control no-border" name="jobtitle" id="jobtitle"
-                                    value="Designer">
+                <div id="toolbar">
+                    <div class="add d-flex align-items-center">
+                        <a href="karyawan_add.html" class="d-flex align-items-center">
+                            <div class="rounded-circle inline-block d-flex justify-content-center align-items-center">
+                                <i class="fas fa-plus"></i>
                             </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-12 p-4">
-                                <span>Status</span>
-                                <br>
-                                <div class="form-check form-check-radio form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio1" value="option1"> Aktif
-                                        <span class="form-check-sign"></span>
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-radio form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio2" value="option2"> Nonaktif
-                                        <span class="form-check-sign"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="action clearfix">
-                            <button class="btn simpan float-right" type="submit">Simpan</button>
-                            <a href="jobtitle.html" class="btn kembali float-right">
-                                Kembali
-                            </a>
-                        </div>
-                    </form>
+                            <span>Tambah Data</span>
+                        </a>
+                    </div>
+                </div>
+                <table class="table border-0 mt-4 mb-4" id="tablekelas" data-toggle="table" data-search="true"
+                    data-show-refresh="true" data-pagination="true" data-page-size="5" data-page-list="[5,10, All]"
+                    data-show-toggle="true" data-side-pagination="client" data-resizable="false" data-show-export="true"
+                    data-export-types="['pdf', 'csv', 'excel']" data-export-options='{"fileName": "data_kelas"}'
+                    data-click-to-select="true" data-toolbar="#toolbar" data-show-columns="true"
+                    data-show-pagination-switch="true">
+                    <thead>
+                        <tr>
+                            <th data-field="nama_karyawan">Nama Training</th>
+                            <th data-field="nik">Deskripsi</th>
+                            <th data-field="status_karyawan">Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-field="nama_karyawan">example</td>
+                            <td data-field="nik">example</td>
+                            <td data-field="status_karyawan">Disetujui</td>
+                            <td>
+                                <a class="badge badge-warning" href="karyawan_edit.html" data-toggle="tooltip"
+                                    data-placement="top" title="Edit">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                                <a class="badge badge-success" href="karyawan_edit.html" data-toggle="tooltip"
+                                    data-placement="top" title="Setujui">
+                                    <i class="fa fa-check"></i>
+                                </a>
+                                <a class="badge badge-danger" href="#" data-toggle="tooltip" data-placement="top"
+                                    title="Tolak">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="footer">
+                <div class="float-left pl-3 pr-3">
+                    &copy; 2020 <strong>ADW Consulting</strong>, All Rights Reserved
                 </div>
             </div>
         </div>
@@ -298,9 +290,9 @@
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
-
     <script src="js/bootstrap-table.js"></script>
     <script src="js/bootstrap-table-export.js"></script>
+
     <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
     <script src="js/now-ui-kit.js?v=1.2.2" type="text/javascript"></script>
 

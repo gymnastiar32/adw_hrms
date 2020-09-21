@@ -195,7 +195,7 @@
                         <a href="#"><span class="nav-label">Calon Karyawan</span></a>
                     </li>
                     <li class="nav-link">
-                        <a href="#"><span class="nav-label">Pengajuan Training</span></a>
+                        <a href="pengajuan_training.html"><span class="nav-label">Pengajuan Training</span></a>
                     </li>
                 </ul>
                 <ul class="nav metismenu">
@@ -205,13 +205,11 @@
                             <span class="logout">Log Out</span>
                         </a>
                     </li>
-                    <li class="nav-link">
-                        <span class="copy">&copy; 2020 ADW Consulting, All Rights Reserved</span>
-                    </li>
+
                 </ul>
             </div>
         </nav>
-        <div id="page-wrapper">
+        <div id="page-wrapper" class="pb-5">
             <div class="wrapper border-bottom white-bg page-heading p-0 pb-4">
                 <div class="col-sm-12 p-0">
                     <h2>Karyawan</h2>
@@ -244,32 +242,42 @@
                     data-show-pagination-switch="true">
                     <thead>
                         <tr>
-                            <th data-field="nik">NIK</th>
                             <th data-field="nama_karyawan">Nama</th>
-                            <th data-field="alamat_karyawan">Alamat</th>
+                            <th data-field="nik">NIK</th>
+                            <th data-field="email_kantor_pribadi">Email Kantor & Pribadi</th>
                             <th data-field="status_karyawan">Status</th>
+                            <th data-field="start_kontrak">Start Kontrak</th>
+                            <th data-field="end_kontrak">End Kontrak</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-field="nik">35171112010007</td>
                             <td data-field="nama_karyawan">example</td>
-                            <td data-field="alamat_karyawan">No. 45 RT/RW 001/01 Jl. Jalanan Kel. Lurah Kec. Camat
-                                Jakarta Timur DKI Jakarta 13720
+                            <td data-field="nik">35171112010007</td>
+                            <td data-field="email_kantor_pribadi">example@gmail.com <br> example@gmail.com
                             </td>
                             <td data-field="status_karyawan">Aktif</td>
+                            <th data-field="start_kontrak">12/12/2017</th>
+                            <th data-field="end_kontrak">12/12/2023</th>
                             <td>
-                                <a class="badge" href="karyawan_edit.html" data-toggle="tooltip" data-placement="top" title="Edit">
+                                <a class="badge badge-warning" href="karyawan_edit.html" data-toggle="tooltip"
+                                    data-placement="top" title="Edit">
                                     <i class="fa fa-edit"></i>
                                 </a>
-                                <a class="badge" href="#" data-toggle="tooltip" data-placement="top" title="Hapus">
-                                    <i class="fa fa-times"></i>
+                                <a class="badge badge-primary" href="karyawan_detail.html" data-toggle="tooltip" data-placement="top"
+                                    title="Detaik">
+                                    <i class="fa fa-search-plus"></i>
                                 </a>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <div class="footer">
+                <div class="float-left pl-3 pr-3">
+                    &copy; 2020 <strong>ADW Consulting</strong>, All Rights Reserved
+                </div>
             </div>
         </div>
     </div>

@@ -10134,7 +10134,7 @@ main .middle-box .input-group-text{
 }
 .sidebar-collapse .nav:last-child{
   margin-top: auto ;
-  margin-bottom:50px;
+  margin-bottom:5px;
 }
 .sidebar-collapse .nav:last-child .logout{
   font-size: 16px;
@@ -10377,7 +10377,7 @@ ul.nav-second-level
   font-weight: 700;
 }
 #page-wrapper{
-  padding-left: 100px;
+  padding-left: 70px;
 }
 #page-wrapper .border-bottom{
   border-width: 2px !important;
@@ -10471,6 +10471,13 @@ ul.nav-second-level
   border-radius: 25px;
   min-height: 500px;
 }
+@media(max-width:768px){
+  .fixed-table-container{
+    padding: 0;
+    box-shadow:none;
+    border-radius: none;
+  }
+}
 .fixed-table-container thead > tr > th:first-child{
   border-radius: 100px 0 0 100px;
   /* padding-left: 50px !important;  */
@@ -10479,13 +10486,13 @@ ul.nav-second-level
 .fixed-table-container thead > tr > th:last-child{
   border-radius:  0 100px 100px 0;
   /* padding-right: 50px !important;  */
-  min-width: 250px !important;
+  min-width: 200px !important;
   overflow: hidden;
   
 }
 @media (min-width:1200px){
 .fixed-table-container thead > tr > th:last-child{
-  min-width: 250px !important;
+  /* min-width: 250px !important; */
  }
 }
 .fixed-table-container table{
@@ -10497,9 +10504,12 @@ ul.nav-second-level
 .fixed-table-container table td,
 .fixed-table-container table th{
   border-width: 2px !important;
-  padding: 20px 20px !important;
+  padding: 15px 15px !important;
   text-align: center;
   color: #808F9D !important;
+}
+.fixed-table-container table th .th-inner{
+  font-size: 14px;
   font-weight: 700 !important;
 }
 /* table tbody tr td:first-child{
@@ -10579,43 +10589,67 @@ table tbody tr td:not(:nth-child(1)){
 }
 .fixed-table-container tbody > tr > td > .badge,
 .card-view-value > .badge{
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 10px !important;
   outline: 0;
   border: none;
-  line-height: 45px;
+  line-height: 40px;
   padding: 0 !important;
+  margin:0 5px;
 }
-.fixed-table-container tbody > tr > td > .badge:last-child:hover,
-.fixed-table-container tbody > tr > td > .badge:last-child:focus,
-.card-view-value > .badge:last-child:hover,
-.card-view-value > .badge:last-child:focus
+.fixed-table-container tbody > tr > td > .badge.badge-danger:hover,
+.fixed-table-container tbody > tr > td > .badge.badge-danger:focus,
+.card-view-value > .badge.badge-danger:hover,
+.card-view-value > .badge.badge-danger:focus
 {
   background-color: #dd216f !important;
   box-shadow: inset 0 2px 5px #00000015;
 }
-.fixed-table-container tbody > tr > td > .badge:first-child:hover,
-.fixed-table-container tbody > tr > td > .badge:first-child:focus,
-.card-view-value > .badge:first-child:hover,
-.card-view-value > .badge:first-child:focus
+.fixed-table-container tbody > tr > td > .badge.badge-warning:hover,
+.fixed-table-container tbody > tr > td > .badge.badge-warning:focus,
+.card-view-value > .badge.badge-warning:hover,
+.card-view-value > .badge.badge-warning:focus
 {
   background-color: #e0a51a !important;
   box-shadow: inset 0 2px 5px #00000015;
 }
-.fixed-table-container tbody > tr > td > .badge:last-child,
-.card-view-value > .badge:last-child{
-  background-color: #FF257F;
-  margin-left: 10px;
+.fixed-table-container tbody > tr > td > .badge.badge-primary:hover,
+.fixed-table-container tbody > tr > td > .badge.badge-primary:focus,
+.card-view-value > .badge.badge-primary:hover,
+.card-view-value > .badge.badge-primary:focus
+{
+  background-color: #004d96 !important;
+  box-shadow: inset 0 2px 5px #00000015;
 }
-.fixed-table-container tbody > tr > td > .badge:first-child,
-.card-view-value > .badge:first-child{
+.fixed-table-container tbody > tr > td > .badge.badge-success:hover,
+.fixed-table-container tbody > tr > td > .badge.badge-success:focus,
+.card-view-value > .badge.badge-success:hover,
+.card-view-value > .badge.badge-success:focus
+{
+  background-color: #02cc10 !important;
+  box-shadow: inset 0 2px 5px #00000015;
+}
+.fixed-table-container tbody > tr > td > .badge.badge-danger,
+.card-view-value > .badge.badge-danger{
+  background-color: #FF257F;
+}
+.fixed-table-container tbody > tr > td > .badge.badge-warning,
+.card-view-value > .badge.badge-warning{
   background-color: #FFBB1D;
+}
+.fixed-table-container tbody > tr > td > .badge.badge-primary,
+.card-view-value > .badge.badge-primary{
+  background-color: #005db5;
+}
+.fixed-table-container tbody > tr > td > .badge.badge-success,
+.card-view-value > .badge.badge-success{
+  background-color: #03E612;
 }
 .fixed-table-container tbody > tr > td > .badge i,
 .card-view-value > .badge i{
   color: white !important;
-  font-size: 16px;
+  font-size: 14px;
 }
 @media (max-width:1050px){
   .fixed-table-container thead > tr > th:last-child{
@@ -10735,6 +10769,18 @@ table tbody tr td:not(:nth-child(1)){
 .middle-box.addPage,
 .middle-box.editPage{
   padding: 2% 4% !important;
+  box-shadow:  0 0 5px 2px #00000015;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+@media (max-width:768px){
+  .middle-box.addPage,
+  .middle-box.editPage{
+    box-shadow:  none;
+    padding: 0 !important;
+    margin: 0;
+  }
 }
 .middle-box.addPage h3,
 .middle-box.editPage h3{
@@ -10761,8 +10807,8 @@ table tbody tr td:not(:nth-child(1)){
 .middle-box.editPage .action{
  margin-top: 50px;
 }
-.middle-box.addPage .action .simpan,
-.middle-box.editPage .action .simpan{
+.middle-box .action .simpan,
+.middle-box .action .simpan{
   color: white;
   border: none ;
   text-transform:none;
@@ -10774,17 +10820,17 @@ table tbody tr td:not(:nth-child(1)){
   padding: 0 !important;
   margin-left: 20px ;
 }
-.middle-box.addPage .action .simpan:hover,
-.middle-box.addPage .action .simpan:active,
-.middle-box.addPage .action .simpan.active,
-.middle-box.editPage .action .simpan:hover,
-.middle-box.editPage .action .simpan:active,
-.middle-box.editPage .action .simpan.active{
+.middle-box .action .simpan:hover,
+.middle-box .action .simpan:active,
+.middle-box .action .simpan.active,
+.middle-box .action .simpan:hover,
+.middle-box .action .simpan:active,
+.middle-box .action .simpan.active{
   background-color: #0057a8 !important;
   box-shadow: inset 2px 0 5px #00000025;
 } 
-.middle-box.addPage .action .kembali,
-.middle-box.editPage .action .kembali{
+.middle-box .action .kembali,
+.middle-box .action .kembali{
  color: #808F9D !important;
  border: 2px solid #e3e3e3;
  text-transform:none;
@@ -10798,17 +10844,17 @@ table tbody tr td:not(:nth-child(1)){
  align-items: center;
  justify-content: center;
 }
-.middle-box.addPage .action .kembali:hover,
-.middle-box.addPage .action .kembali:active,
-.middle-box.addPage .action .kembali.active,
-.middle-box.editPage .action .kembali:hover,
-.middle-box.editPage .action .kembali:active,
-.middle-box.editPage .action .kembali.active{
+.middle-box .action .kembali:hover,
+.middle-box .action .kembali:active,
+.middle-box .action .kembali.active,
+.middle-box .action .kembali:hover,
+.middle-box .action .kembali:active,
+.middle-box .action .kembali.active{
   background-color: #f3f3f3 !important;
   box-shadow: inset 2px 0 5px #00000015;
 }
-.middle-box.addPage .action .kembali a,
-.middle-box.editPage .action .kembali a{
+.middle-box .action .kembali a,
+.middle-box .action .kembali a{
   color: #808F9D !important;
 }
 .addPage .form-check-label,
@@ -10848,13 +10894,14 @@ table tbody tr td:not(:nth-child(1)){
 }
 .custom-file .custom-file-label{
   overflow:hidden;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   height: 100%;
-  align-items: center;
+  line-height: 25px;
   background-color: transparent;
   border: 3px solid #F0F2F8;
   color: #808F9D;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .custom-file .custom-file-label::after{
   height: auto;
@@ -10936,3 +10983,84 @@ table tbody tr td:not(:nth-child(1)){
 #sertifikat{
   flex-direction: column-reverse;
 } */
+
+/* Start Detail Karyawan  */
+#page-wrapper .middle-box .nav-pills .nav-link{
+  border-radius: 0 ;
+  background-color: transparent;
+  color: #005db5;
+  padding: 5px;
+  font-weight: 600;
+}
+#page-wrapper .middle-box .nav-pills .nav-link.active{
+  box-shadow: 0 2px 0 #005db5;
+}
+#page-wrapper .middle-box .nav-pills 
+{
+  padding-bottom: 25px;
+  box-shadow: 0 8px 6px -6px #00000015;
+}
+#page-wrapper .middle-box .tab-content{
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.middle-box.detailKaryawan .form-control{
+  border-color: #F0F2F8 ;
+  color: #808F9D;
+}
+.middle-box.detailKaryawan h4,
+.middle-box.detailKaryawan h5,
+.middle-box.detailKaryawan h6,
+.middle-box.detailKaryawan p,
+.middle-box.detailKaryawan label{
+  color: #808F9D;
+  text-transform: none;
+}
+.middle-box.detailKaryawan .pengalaman-review{
+  box-shadow: 1px 2px 5px 3px #00000015;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+.middle-box.detailKaryawan h6{
+  font-size: 15px;
+}
+.pengalaman-location{
+  font-size: 12px;
+  color: #808F9D;
+  display: block;
+  margin-bottom: 8px;
+}
+.middle-box.detailKaryawan p{
+  font-weight: 500;
+  font-size: 12px;
+}
+@media (max-width:991px){
+  .pengalaman-review{
+    flex-direction: column;
+  }
+  .pengalaman img{
+    margin-right: 0;
+  }
+}
+.sertifikat-review,
+.cv-review{
+  border-radius: 20px;
+  box-shadow: 1px 2px 5px 3px #00000015;
+  padding: 20px 30px;
+}
+.nama-lampiran{
+  font-weight: 600;
+  display: block;
+}
+.ancor-lampiran{
+  border-radius: 50px;
+  border: 2px solid #005db5;
+  padding: 4px 15px;
+  font-size: 12px;
+  color: #005db5;
+}
+.ancor-lampiran:hover{
+  color: #005db5;
+  text-decoration: underline;
+}
+/* End Detail Karyawan */
