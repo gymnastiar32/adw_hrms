@@ -9832,11 +9832,38 @@ body{
   position: fixed;
   width: 100%;
   height: 100%;
-  background-image: url("../img/login_bg.svg");
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+  transition: all .5s;
+}
+.man-bg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/man.svg");
   background-repeat: no-repeat;
-  background-size:contain;
-  background-position: bottom;
-  z-index: -1;
+  background-size:450px;
+  background-position: bottom left;
+  transition: all .5s;
+  z-index: -100;
+}
+.woman-bg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/woman.svg");
+  background-repeat: no-repeat;
+  background-size:450px;
+  background-position: bottom right;
+  transition: all .5s;
+  z-index: -100;
+}
+@media (max-width:991px){
+  .woman-bg,
+  .man-bg{
+    background-size: 300px;
+  }
 }
 .page-header .content{
   margin-bottom: 165px !important;
@@ -9845,7 +9872,7 @@ body{
   width: 100%;
   height: 100%;
 }
-footer.footer
+footer.loginpage
 {
   background-color: transparent;
   border: none;
@@ -9922,7 +9949,7 @@ main .middle-box .input-group-text{
 }
 .blue-link,
 .blue-link:hover{
-  color: #005DB5;
+  color: #005DB5 !important;
   font-weight: 700;
 }
 .blue-link:hover{
@@ -9955,7 +9982,7 @@ main .middle-box .input-group-text{
 {
   .login-bg
   {
-    display: none;
+    opacity: 0;
   }
 } 
 .loginscreen .btn-primary:not(:disabled):not(.disabled):active,
@@ -10118,6 +10145,11 @@ main .middle-box .input-group-text{
     width: 270px;
   }
 }
+@media (max-width:991px){
+  .navbar-static-side {
+    display: none;
+  }
+}
 .nav > .nav-link > a,
 .nav > .nav-link > span {
   color: white;
@@ -10161,7 +10193,11 @@ main .middle-box .input-group-text{
 .navbar-brand{
   margin-left: 1rem;
   width: calc(270px - 32px);
-  
+}
+@media (max-width:991px){
+  .navbar-brand{
+    display: none !important;
+  }
 }
 .navbar-mainmenu > li > a{
   color: #878F92 !important;
@@ -10172,6 +10208,43 @@ main .middle-box .input-group-text{
 .navbar-mainmenu > li > a.active,
 .navbar-mainmenu > li > a:hover{
   box-shadow: 0 2px 0 #005db5;
+}
+@media (max-width:991px){
+  .navbar-mainmenu{
+    flex-direction: column;
+    padding: 20px;
+  }
+  .navbar-mainmenu > li > a.active,
+  .navbar-mainmenu > li > a:hover{
+    box-shadow: none;
+  }
+  .navbar-mainmenu > li > a{
+    color:white !important;
+  }
+  .dropdown-menu{
+    background-color: white !important;
+    border-radius: 5px !important;
+  }
+  .dropdown-menu::-webkit-scrollbar{
+    width: 5px;
+  }
+  .dropdown-menu::-webkit-scrollbar-track{
+    background: white;
+    border-radius: 0 5px 5px 0 !important;
+  }
+  .dropdown-menu::-webkit-scrollbar-thumb{
+    background: #eaeaea;
+    border-radius: 0 5px 5px 0 !important;
+  }
+  .dropdown-menu::-webkit-scrollbar-thumb:hover{
+    background: #dedede;
+  }
+  .dropdown-menu .dropdown-item{
+    color: #565656 !important;
+  }
+}
+.dropdown-menu.dropdown-navs{
+  padding: 10px 20px;
 }
 .search-form{
   padding: 14px 20px 14px 25px;
@@ -10247,6 +10320,7 @@ ul.nav-second-level
 }
 .dropdown .dropdown-menu{
   box-shadow: 0 0 3px 2px #00000020;
+  z-index: 100000;
 }
 .dropdown-menu .dropdown-item{
   color: #565656;
@@ -10326,7 +10400,7 @@ ul.nav-second-level
     font-size:14px !important;
   }
 }
-@media (max-width:1280px){
+/* @media (max-width:1280px){
   #page-wrapper{
     width :calc(100% - 200px);
   }
@@ -10336,7 +10410,7 @@ ul.nav-second-level
   .navbar-static-side{
     width: 200px;
   }
-}
+} */
 @media (max-width:1280px){
   .navbar-mainmenu > li > a{
     font-size:12px !important;
@@ -10368,6 +10442,19 @@ ul.nav-second-level
 .navbar.navbar-static-top{
   padding: 15px 0 !important;
 }
+.navbar-header .navbar-toggler {
+  padding: 3px 4px;
+  background-color: transparent;
+}
+.navbar-header .navbar-toggler > i {
+  font-size:18px;
+  color: #878F9C;
+}
+@media (min-width:992px){
+  .navbar-header .navbar-toggler{
+    display: none;
+  }
+}
 /* End Top Navbar and Sidebar */
 
 /* Start Page Heading */
@@ -10385,7 +10472,7 @@ ul.nav-second-level
 .p-0{
   padding: 0;
 }
-@media(max-width:768px){
+@media(max-width:991px){
   #page-wrapper{
     padding: 0 30px;
     width: 100%;
