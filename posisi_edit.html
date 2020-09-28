@@ -27,14 +27,24 @@
                 <div class="navbar-brand d-flex align-items-center justify-content-center">
                     <span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
                 </div>
-                <div class="navbar-header d-flex align-items-center ">
-                    <ul class="nav navbar-mainmenu">
-                        <li class="mr-1"><a href="karyawan.html">Talent</a></li>
-                        <li class="mr-1"><a href="form_cuti.html">Pengajuan Cuti</a></li>
-                        <li class="mr-1"><a href="master_asset.html">Asset</a></li>
-                        <li class="mr-1"><a href="ekpi_master">e-KPI</a></li>
-                        <li><a class="active" href="posisi.html">Master Data</a></li>
-                    </ul>
+                <div class="navbar-header d-flex">
+                    <div>
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-link " href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <div class="navbar-brand-small d-flex align-items-center justify-content-center">
+                            <span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="nav navbar-mainmenu">
+                            <li class="mr-1"><a href="karyawan.html">Talent</a></li>
+                            <li class="mr-1"><a href="form_cuti.html">Pengajuan Cuti</a></li>
+                            <li class="mr-1"><a href="master_asset.html">Asset</a></li>
+                            <li class="mr-1"><a href="ekpi_master">e-KPI</a></li>
+                            <li><a class="active" href="posisi.html">Master Data</a></li>
+                        </ul>
+                    </div>
                     <!-- <form class="search-form">
                         <div class="form-group input-group no-border flex-nowrap">
                             <div class="input-group-prepend">
@@ -184,7 +194,7 @@
     <div id="wrapper">
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse d-flex flex-column">
-                <ul class="nav metismenu" id="side-menu">
+                <ul class="nav metismenu">
                     <li>
                         <h2>Master Data</h2>
                     </li>
@@ -216,9 +226,28 @@
                         <a href="menu_management.html"><span class="nav-label">Menu Management</span></a>
                     </li>
                 </ul>
-                <ul class="nav metismenu">
-                    <li class="nav-link">
-                        <a href="">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-link navbar-side-small">
+                        <a><i class="fa fa-briefcase" style="color: white; font-size: 14px;"></i> <span
+                                class="nav-label" style="font-size: 14px; color: white;">Ganti Posisi</span><span
+                                class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="">Posisi 1</a></li>
+                            <li><a href="">Posisi 2</a></li>
+                            <li><a href="">Posisi 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link navbar-side-small">
+                        <a href="messages.html"><i class="far fa-envelope" style="width: 16px;"></i> Messages</a>
+                    </li>
+                    <li class="nav-link navbar-side-small">
+                        <a href="alerts.html"><i class="far fa-bell" style="width: 16px;"></i> Alerts</a>
+                    </li>
+                    <li class="nav-link navbar-side-small">
+                        <a href="edit_profile.html"><i class="far fa-user" style="width: 16px;"></i> Edit Profile</a>
+                    </li>
+                    <li class="nav-link logout-link">
+                        <a href="login.html">
                             <img class="logout-icon" src="img/logout.svg" alt="">
                             <span class="logout">Log Out</span>
                         </a>

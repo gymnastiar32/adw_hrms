@@ -10241,6 +10241,9 @@ ul.nav-second-level
 {
   background-color: #005DB5;
 }
+.navbar-default .nav > li{
+  overflow: hidden !important;
+}
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus,
 .navbar-default .nav > li > a.active{
@@ -10520,7 +10523,7 @@ body.mini-navbar .profile-element, body.mini-navbar .nav-label, body.mini-navbar
 @media(max-width:991px){
   #page-wrapper{
     padding: 0 30px;
-    width: 100%;
+    min-width: 100%;
   }
 }
 @media (max-width:991px){
