@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>adw | HRMS</title>
+
+    <!-- <link rel="stylesheet" href="css/now-ui-kit.css"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/all.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <link href="css/bootstrap-table.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="d-flex">
+        <nav class="navbar navbar-static-top border-bottom" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header d-flex align-items-center justify-content-center pl-3 pr-3">
+                <span style="color: #005eb596; font-weight:700; font-size:36px;">Pendaftaran Calon Karyawan</span>
+            </div>
+            <div class="navbar-brand">
+                <span class="float-right" style="font-family: 'Segoe UI'; color: #005eb5; font-weight:700; font-size:36px; text-transform: lowercase;">adw</span>
+            </div>
+        </nav>
+    </div>
+    <div id="wrapper">
+        <div id="page-wrapper" class="pb-5 pl-3 pr-3 gray-bg" style="width:100%;">
+            <div class="wrapper wrapper-content animated fadeInRightBig">
+                <div class="middle-box editPage">
+                    <h3 class="border-bottom">Form Register Calon Karyawan</h3>
+                    <div class="form-timeline">
+                        <ul class="nav">
+                            <li class="mr-3 "><a href="calon_karyawan_register_identitas.html">1. Identitas</a></li>
+                            <li class="mr-3"><a href="calon_karyawan_register_sertifikat.html">2. Sertifikat</a>
+                            </li>
+                            <li class="active"><a href="calon_karyawan_register_pengalaman.html">3. Pengalaman</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <form action="">
+                                        <div class="form-row" id="pengalaman">
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-6 mt-lg-0 mt-4">
+                                                        <label for="alamat">Judul</label>
+                                                        <input type="text" class="form-control no-border" name="alamat"
+                                                            id="alamat">
+                                                    </div>
+                                                    <div class="col-lg-3 mt-lg-0 mt-4">
+                                                        <div class="form-group" id="data_1">
+                                                            <label class="font-normal">Start Date</label>
+                                                            <div class="input-group date">
+                                                                <div class="input-group-prepend ">
+                                                                    <span class="input-group-text border-0"
+                                                                        style="background-color: #F0F2F8;"><i
+                                                                            class="far fa-calendar-alt"></i></span>
+                                                                </div>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="mm/dd/yy">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 mt-lg-0 mt-4">
+                                                        <div class="form-group" id="data_1">
+                                                            <label class="font-normal">End Date</label>
+                                                            <div class="input-group date">
+                                                                <div class="input-group-prepend ">
+                                                                    <span class="input-group-text border-0"
+                                                                        style="background-color: #F0F2F8; width: 37px;"></span>
+                                                                </div>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="mm/dd/yy">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mt-4">
+                                                        <label for="">Deskripsi</label>
+                                                        <textarea name="desk-pengalaman" id="desk-pengalaman"
+                                                            class="textarea-form"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="action mt-0 clearfix">
+                                                    <button class="btn simpan float-right">Tambah</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <table class="table border-0 mt-4 mb-4" id="tablekelas"
+                                                    data-toggle="table" data-pagination="true" data-page-size="5"
+                                                    data-page-list="[5,10, All]" data-side-pagination="client"
+                                                    data-resizable="false">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Colum</th>
+                                                            <th>Colum</th>
+                                                            <th>Colum</th>
+                                                            <th>Colum</th>
+                                                            <th>Colum</th>
+                                                            <th>Colum</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <td>Data</td>
+                                                        <td>Data</td>
+                                                        <td>Data</td>
+                                                        <td>Data</td>
+                                                        <td>Data</td>
+                                                        <td>
+                                                            <a class="badge badge-primary" href="karyawan_edit.html"
+                                                                data-toggle="tooltip" data-placement="top" title="Edit">
+                                                                <i class="fa fa-file-alt"></i>
+                                                            </a>
+                                                            <a class="badge badge-danger" href="karyawan_detail.html"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Detail">
+                                                                <i class="fa fa-trash"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="action mt-4 border-top clearfix">
+                                            <button class="btn simpan float-right" type="submit">Selesai</button>
+                                            <a href="calon_karyawan_register_sertifikat.html"
+                                                class="btn kembali float-right">
+                                                Kembali
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="float-left pl-3 pr-3">
+                    &copy; 2020 <strong>ADW Consulting</strong>, All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <script src="js/bootstrap-table.js"></script>
+    <script src="js/bootstrap-table-export.js"></script>
+
+    <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+    <script src="js/now-ui-kit.js?v=1.2.2" type="text/javascript"></script>
+
+    <script>
+        $('.custom-file-input').on('change', function () {
+            let fileName = $(this).val().split('\\').pop();
+            $(this).next('.custom-file-label').addClass("selected").html(fileName);
+        }); 
+    </script>
+
+</body>
+
+</html>

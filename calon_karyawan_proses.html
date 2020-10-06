@@ -15,7 +15,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/now-ui-kit.css">
     <link href="css/bootstrap-table.css" rel="stylesheet">
-    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
 
 </head>
 
@@ -38,11 +38,11 @@
                     </div>
                     <div>
                         <ul class="nav navbar-mainmenu">
-                            <li class="mr-1"><a href="karyawan.html">Talent</a></li>
+                            <li class="mr-1"><a class="active" href="karyawan.html">Talent</a></li>
                             <li class="mr-1"><a href="form_cuti.html">Pengajuan Cuti</a></li>
                             <li class="mr-1"><a href="master_asset.html">Asset</a></li>
                             <li class="mr-1"><a href="ekpi_master">e-KPI</a></li>
-                            <li><a class="active" href="posisi.html">Master Data</a></li>
+                            <li><a href="posisi.html">Master Data</a></li>
                         </ul>
                     </div>
                     <!-- <form class="search-form">
@@ -199,10 +199,10 @@
                         <h2>Talent</h2>
                     </li>
                     <li class="nav-link">
-                        <a class="active" href="#"><span class="nav-label">Karyawan</span></a>
+                        <a href="#"><span class="nav-label">Karyawan</span></a>
                     </li>
                     <li class="nav-link">
-                        <a href="calon_karyawan.html"><span class="nav-label">Calon Karyawan</span></a>
+                        <a class="active" href="calon_karyawan.html"><span class="nav-label">Calon Karyawan</span></a>
                     </li>
                     <li class="nav-link">
                         <a href="pengajuan_training.html"><span class="nav-label">Pengajuan Training</span></a>
@@ -238,141 +238,68 @@
                 </ul>
             </div>
         </nav>
-        <div id="page-wrapper">
+        <div id="page-wrapper" class="pb-5">
             <div class="wrapper border-bottom white-bg page-heading p-0 pb-4">
                 <div class="col-sm-12 p-0">
-                    <h2>Karyawan</h2>
+                    <h2>Calon Karyawan</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
                             <a href="#">Talent</a>
                         </li>
+                        <li class="breadcrumb-item">
+                            <a href="calon_karyawan.html">Calon Karyawan</a>
+                        </li>
                         <li class="breadcrumb-item active">
-                            <strong>Karyawan</strong>
+                            <strong>Detail Calon Karyawan</strong>
                         </li>
                     </ol>
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRightBig">
-                <div class="middle-box detailKaryawan">
-                    <h3>Detail Karyawan</h3>
-                    <hr class="hr-line-solid">
-                    <ul class="nav nav-pills nav-pills-primary">
-                        <li class="nav-item"><a class="nav-link" href="karyawan_detail_identitas.html">Identitas
-                                Karyawan</a></li>
-                        <li class="nav-item"><a class="nav-link" href="karyawan_detail_lampiran.html">Lampiran</a></li>
-                        <li class="nav-item"><a class="nav-link active"
-                                href="karyawan_detail_pengalaman.html">Pengalaman</a></li>
-                        <li class="nav-item"><a class="nav-link" href="karyawan_detail_kontrak.html">Kontrak</a></li>
-                    </ul>
-                    <div class="tab-content tab-space">
-                        <div class="tab-pane active" id="pill3">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h4><strong>Pengalaman</strong></h4>
-                                    </div>
+
+                <div class="middle-box editPage">
+                    <div class="container">
+                        <h3 class="border-bottom">Form Komentar</h3>
+                        <form action="">
+                            <div class="form-row">
+                                <div class="col-lg-6 ">
+                                    <label for="inputState">Aksi</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected disabled>Pilih...</option>
+                                        <option>Setuju</option>
+                                        <option>Revisi</option>
+                                        <option>Tolak</option>
+                                    </select>
                                 </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <table class="table border-0 mt-4 mb-4" id="tablekelas" data-toggle="table"
-                                            data-search="true" data-show-refresh="true" data-pagination="true"
-                                            data-page-size="5" data-page-list="[5,10, All]" data-show-toggle="true"
-                                            data-side-pagination="client" data-resizable="false" data-show-export="true"
-                                            data-export-types="['pdf', 'csv', 'excel']"
-                                            data-export-options='{"fileName": "data_kelas"}' data-click-to-select="true"
-                                            data-toolbar="#toolbar" data-show-columns="true"
-                                            data-show-pagination-switch="true">
-                                            <thead>
-                                                <tr>
-                                                    <th>Colum</th>
-                                                    <th>Colum</th>
-                                                    <th>Colum</th>
-                                                    <th>Colum</th>
-                                                    <th>Colum</th>
-                                                    <th>Colum</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <td>Data</td>
-                                                <td>Data</td>
-                                                <td>Data</td>
-                                                <td>Data</td>
-                                                <td>Data</td>
-                                                <td>
-                                                    <a class="badge badge-warning" href="karyawan_edit.html"
-                                                        data-toggle="tooltip" data-placement="top" title="Edit">
-                                                        <i class="fa fa-edit"></i>
-                                                    </a>
-                                                    <a class="badge badge-primary" href="karyawan_detail.html"
-                                                        data-toggle="tooltip" data-placement="top" title="Detail">
-                                                        <i class="fa fa-search-plus"></i>
-                                                    </a>
-                                                </td>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <hr class="hr-line-solid">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <form action="">
-                                            <div class="row mt-2 mb-5">
-                                                <div class="col-lg-6 mt-4">
-                                                    <label for="alamat">Judul</label>
-                                                    <input type="text" class="form-control no-border" name="alamat"
-                                                        id="alamat">
-                                                </div>
-                                                <div class="col-lg-3 mt-4">
-                                                    <div class="form-group" id="data_1">
-                                                        <label class="font-normal">Start Date</label>
-                                                        <div class="input-group date">
-                                                            <div class="input-group-prepend ">
-                                                                <span class="input-group-text border-0"
-                                                                    style="background-color: #F0F2F8;"><i
-                                                                        class="far fa-calendar-alt"></i></span>
-                                                            </div>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="mm/dd/yy">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 mt-4">
-                                                    <div class="form-group" id="data_1">
-                                                        <label class="font-normal">End Date</label>
-                                                        <div class="input-group date">
-                                                            <div class="input-group-prepend ">
-                                                                <span class="input-group-text border-0"
-                                                                    style="background-color: #F0F2F8; width: 37px;"></span>
-                                                            </div>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="mm/dd/yy">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 mt-4">
-                                                    <label for="">Deskripsi</label>
-                                                    <textarea name="desk-pengalaman" id="desk-pengalaman"
-                                                        class="textarea-form"></textarea>
-                                                </div>
-                                            </div>
-                                            <hr class="hr-line-solid">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="action clearfix">
-                                                        <button class="btn simpan float-right"
-                                                            type="submit">Simpan</button>
-                                                        <a href="karyawan.html" class="btn kembali float-right">
-                                                            Kembali
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
+                                <div class="col-lg-6 mt-4 mt-lg-0 pl-lg-5">
+                                    <label for="lampiran_komen">Lampiran</label>
+                                    <div class="custom-file">
+                                        <input id="lampiran_komen" type="file" class="custom-file-input">
+                                        <label for="lampiran_komen" class="custom-file-label b-r-xl">Pilih
+                                            File</label>
                                     </div>
                                 </div>
                             </div>
+                            <div class="form-row">
+                                <div class="col-lg-12">
+                                    <label for="komentar">Komentar</label>
+                                    <textarea name="komentar" id="komentar" class="textarea-form">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde repellendus fugit molestias pariatur facere nesciunt ducimus perferendis, esse quia.
+                                                </textarea>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="action mt-0 border-top clearfix">
+                            <button class="btn simpan float-right" type="submit">Simpan</button>
+                            <a href="calon_karyawan.html" class="btn kembali float-right">
+                                Kembali
+                            </a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="float-left pl-3 pr-3">
+                    &copy; 2020 <strong>ADW Consulting</strong>, All Rights Reserved
                 </div>
             </div>
         </div>
@@ -389,72 +316,13 @@
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
-
     <script src="js/bootstrap-table.js"></script>
     <script src="js/bootstrap-table-export.js"></script>
+
     <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
     <script src="js/now-ui-kit.js?v=1.2.2" type="text/javascript"></script>
 
-    <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
-
     <script>
-        function numberFormatter(value, row, index) {
-            var options = $('#tablekelas').bootstrapTable('getOptions')
-            // alert(options["pageNumber"] + " " + options["pageSize"])
-            //  console.log(options["pageSize"]);
-            var tes = 0
-            if (!isNaN(options['pageSize'])) { //cek pagesize angka atau tidak, klo angka jalankan kode dibawah
-                tes = ((options["pageNumber"] - 1) * options["pageSize"])
-            }
-            return index + 1 + tes;
-        }
-
-        function actionFormatter(value, row, index) {
-            return [
-                '<a href="<?= site_url("Kelas/detail_kelas/") ?>' + value + '" class="btn btn-primary ">Detail</a>',
-                ' ',
-                '<a href="<?= site_url("Kelas/updateform/") ?>' + value + '" class="btn btn-success ">Edit</a>',
-                ' ',
-                '<a href="<?= site_url("Kelas/delete_kelas/") ?>' + value + '" class="btn btn-danger"  >Hapus</a>',
-            ].join('');
-        }
-
-        function detailFormatter(index, row) {
-            var html = []
-            const excludeType = ["Undefined", "object"];
-            $.each(row, function (key, value) {
-                if (!excludeType.includes(typeof value)) {
-                    html.push('<p><b>' + key + ':</b>' + value + '</p>')
-                }
-            })
-            return html.join('')
-        }
-
-        $(document).ready(function () {
-            var table = $('#tablekelas')
-            var $button = $('#button')
-
-            $button.click(function () {
-                alert('Kelasnnya :  ' + JSON.stringify(table.bootstrapTable('getSelections')[0]["nama_kelas"]))
-            })
-        })
-
-        var mem = $('#data_1 .input-group.date').datepicker({
-            todayBtn: "linked",
-            keyboardNavigation: false,
-            forceParse: false,
-            calendarWeeks: true,
-            autoclose: true
-        });
-
-        var mem = $('#data_2 .input-group.date').datepicker({
-            todayBtn: "linked",
-            keyboardNavigation: false,
-            forceParse: false,
-            calendarWeeks: true,
-            autoclose: true
-        });
-
         $('.custom-file-input').on('change', function () {
             let fileName = $(this).val().split('\\').pop();
             $(this).next('.custom-file-label').addClass("selected").html(fileName);

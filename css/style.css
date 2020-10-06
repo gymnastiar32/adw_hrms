@@ -10539,6 +10539,7 @@ body.mini-navbar .profile-element, body.mini-navbar .nav-label, body.mini-navbar
   padding: 40px;
   border-radius: 20px;
   margin: 20px 0;
+  background-color: white;
 }
 .wrapper-content .search-form{
   width: 300px !important;
@@ -10621,20 +10622,12 @@ body.mini-navbar .profile-element, body.mini-navbar .nav-label, body.mini-navbar
 }
 .fixed-table-container thead > tr > th:first-child{
   border-radius: 100px 0 0 100px;
-  /* padding-left: 50px !important;  */
   overflow: hidden;
 }
 .fixed-table-container thead > tr > th:last-child{
   border-radius:  0 100px 100px 0;
-  /* padding-right: 50px !important;  */
-  /* min-width: 150px !important; */
   overflow: hidden;
   
-}
-@media (min-width:1200px){
-.fixed-table-container thead > tr > th:last-child{
-  /* min-width: 250px !important; */
- }
 }
 .fixed-table-container table{
   width: 100%;
@@ -10759,7 +10752,7 @@ table tbody tr td:not(:nth-child(1)){
   border: none;
   line-height: 40px;
   padding: 0 !important;
-  margin:0 5px;
+  margin:4px 5px;
 }
 .fixed-table-container tbody > tr > td > .badge.badge-danger:hover,
 .fixed-table-container tbody > tr > td > .badge.badge-danger:focus,
@@ -10940,8 +10933,8 @@ table tbody tr td:not(:nth-child(1)){
 @media (max-width:768px){
   .middle-box.addPage,
   .middle-box.editPage{
-    box-shadow:  none;
-    padding: 0 !important;
+    /* box-shadow:  none; */
+    padding: 10px  !important;
     margin: 0;
   }
 }
@@ -10982,6 +10975,9 @@ table tbody tr td:not(:nth-child(1)){
   border-radius: 100px;
   padding: 0 !important;
   margin-left: 20px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .middle-box .action .simpan:hover,
 .middle-box .action .simpan:active,
@@ -11167,6 +11163,21 @@ table tbody tr td:not(:nth-child(1)){
   max-height: 400px;
   overflow-y: scroll;
 }
+.tab-content::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+  position: absolute;
+}
+.tab-content::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+.tab-content::-webkit-scrollbar-thumb{
+  background-color: #00000040;
+  border-radius: 50px;
+}
+.tab-content::-webkit-scrollbar-thumb:hover{
+  background-color: #00000060;
+}
 .middle-box.detailKaryawan .nav.nav-pills{
   transition: all 1s;
 }
@@ -11250,3 +11261,58 @@ table tbody tr td:not(:nth-child(1)){
   text-decoration: underline;
 }
 /* End Detail Karyawan */
+
+/* Start Register Calon Karyawan */
+.register-content{
+  height: 400px;
+  overflow-y: scroll;
+}
+.form-timeline{
+  margin-bottom: 20px;
+  box-shadow: 0 3px 5px -5px;
+  padding: 5px 15px 15px 15px;
+}
+.form-timeline ul li {
+  background-color: #00000015;
+  padding: 10px 15px;
+  border-radius: 50px;
+  transition: all .4s;
+}
+.form-timeline ul li.active {
+  background-color: #005db5;
+  border: 0;
+}
+.form-timeline ul li a{
+  padding:0;
+}
+.form-timeline ul li.active a{
+  padding:0;
+  color: white;
+}
+@media (max-width:567px){
+  .form-timeline ul{
+    flex-wrap: nowrap;
+  }
+  .form-timeline ul li {
+    width: 30%;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-timeline ul li a
+  {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:450px){
+  .form-timeline ul{
+    flex-direction: column;
+  }
+  .form-timeline ul li {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+/* End Register Calon Karyawan */
