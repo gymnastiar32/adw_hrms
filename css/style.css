@@ -11263,6 +11263,14 @@ table tbody tr td:not(:nth-child(1)){
 /* End Detail Karyawan */
 
 /* Start Register Calon Karyawan */
+.register-title{
+  font-size: 30px;
+}
+@media (max-width:576px){
+  .register-title{
+    font-size: 24px;
+  }
+}
 .register-content{
   height: 400px;
   overflow-y: scroll;
@@ -11305,7 +11313,6 @@ table tbody tr td:not(:nth-child(1)){
     font-size: 12px;
   }
 }
-
 @media (max-width:450px){
   .form-timeline ul{
     flex-direction: column;
@@ -11315,4 +11322,115 @@ table tbody tr td:not(:nth-child(1)){
     margin-top: 10px;
   }
 }
+.register-confirm .action .btn{
+  width: 300px !important;
+  margin: 0;
+  border-radius: 50px;
+  background-color: #005db5;
+  font-size: 14px;
+}
+.register-confirm .action .btn:hover,
+.register-confirm .action .btn:active,
+.register-confirm .action .btn.active{
+  background-color: #004d96;
+  box-shadow: inset 0 2px 5px #00000015 !;
+}
+.register-confirm .action .btn:active{
+  background-color: #004d96 !important;
+}
+
+.register-confirm img{
+  width: 300px;
+}
+.register-confirm h1{
+ color: #464646;
+
+}@media(max-width:450px){
+  .register-confirm img{
+    width: 100%;
+  }
+  .register-confirm .action .btn{
+    width: 100% !important;
+  }
+  .register-confirm h1{
+    font-size: 20px;
+  }
+}
 /* End Register Calon Karyawan */
+
+
+.cd-h-timeline__events {
+  position: relative;
+}
+
+.cd-h-timeline__event {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+  opacity: 0;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+}
+
+.cd-h-timeline__event--selected {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.cd-h-timeline__event--enter-right, 
+.cd-h-timeline__event--leave-right {
+   animation-name: cd-enter-right;
+}
+
+.cd-h-timeline__event--enter-left,  
+.cd-h-timeline__event--leave-left {
+   animation-name: cd-enter-left;
+}
+
+.cd-h-timeline__event--leave-right, 
+.cd-h-timeline__event--leave-left {
+   animation-direction: reverse;
+}
+
+@keyframes cd-enter-right {
+   0% {
+      opacity: 0;
+      transform: translateX(100%);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateX(0%);
+   }
+}
+
+@keyframes cd-enter-left {
+   0% {
+      opacity: 0;
+      transform: translateX(-100%);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateX(0%);
+   }
+}
+
+.identitas{
+  left: 80px !important;
+}
+.sertifikat{
+  left: 250px !important;
+}
+.pengalaman{
+  left: 410px !important;
+}
+
+.cd-h-timeline__line ol li a{
+  cursor: default;
+}
