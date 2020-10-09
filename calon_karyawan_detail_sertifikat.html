@@ -15,7 +15,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/now-ui-kit.css">
     <link href="css/bootstrap-table.css" rel="stylesheet">
-
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
 
 </head>
 
@@ -38,11 +38,11 @@
                     </div>
                     <div>
                         <ul class="nav navbar-mainmenu">
-                            <li class="mr-1"><a href="karyawan.html" class="active">Talent</a></li>
+                            <li class="mr-1"><a href="karyawan.html">Talent</a></li>
                             <li class="mr-1"><a href="form_cuti.html">Pengajuan Cuti</a></li>
                             <li class="mr-1"><a href="master_asset.html">Asset</a></li>
                             <li class="mr-1"><a href="ekpi_master">e-KPI</a></li>
-                            <li><a href="posisi.html">Master Data</a></li>
+                            <li><a class="active" href="posisi.html">Master Data</a></li>
                         </ul>
                     </div>
                     <!-- <form class="search-form">
@@ -199,16 +199,17 @@
                         <h2>Talent</h2>
                     </li>
                     <li class="nav-link">
-                        <a class="active" href="#"><span class="nav-label">Karyawan</span></a>
+                        <a href="karyawan.html"><span class="nav-label">Karyawan</span></a>
                     </li>
                     <li class="nav-link">
-                        <a href="calon_karyawan.html"><span class="nav-label">Calon Karyawan</span></a>
+                        <a href="calon_karyawan.html" class="active"><span class="nav-label">Calon Karyawan</span></a>
                     </li>
                     <li class="nav-link">
                         <a href="pengajuan_training.html"><span class="nav-label">Pengajuan Training</span></a>
                     </li>
                     <li class="nav-link">
-                        <a href="daftar_pekerjaan_talent.html"><span class="nav-label">Daftar Pekerjaan</span></a>
+                        <a href="daftar_pekerjaan_talent.html"><span class="nav-label">Daftar
+                                Pekerjaan</span></a>
                     </li>
                 </ul>
                 <ul class="nav metismenu" id="side-menu">
@@ -241,74 +242,84 @@
                 </ul>
             </div>
         </nav>
-        <div id="page-wrapper" class="pb-5">
+        <div id="page-wrapper">
             <div class="wrapper border-bottom white-bg page-heading p-0 pb-4">
                 <div class="col-sm-12 p-0">
-                    <h2>Karyawan</h2>
+                    <h2>Calon Karyawan</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
                             <a href="#">Talent</a>
                         </li>
+                        <li class="breadcrumb-item">
+                            <a href="calon_karyawan.html">Calon Karyawan</a>
+                        </li>
                         <li class="breadcrumb-item active">
-                            <strong>Karyawan</strong>
+                            <strong>Detail Calon Karyawan</strong>
                         </li>
                     </ol>
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRightBig">
-                <div id="toolbar">
-                    <div class="add d-flex align-items-center">
-                        <a href="karyawan_add.html" class="d-flex align-items-center">
-                            <div class="rounded-circle inline-block d-flex justify-content-center align-items-center">
-                                <i class="fas fa-plus"></i>
+                <div class="middle-box detailKaryawan">
+                    <h3>Detail Karyawan</h3>
+                    <hr class="hr-line-solid">
+                    <ul class="nav nav-pills nav-pills-primary">
+                        <li class="nav-item"><a class="nav-link"
+                                href="calon_karyawan_detail_identitas.html">Identitas</a></li>
+                        <li class="nav-item"><a class="nav-link active"
+                                href="calon_karyawan_detail_sertifikat.html">Sertifikat</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="calon_karyawan_detail_pengalaman.html">Pengalaman</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content tab-space">
+                        <div class="tab-pane active" id="pill2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4><strong>Sertifikat</strong></h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <table class="table border-0 mt-4 mb-4" id="tablekelas" data-toggle="table"
+                                            data-search="true" data-show-refresh="true" data-pagination="true"
+                                            data-page-size="5" data-page-list="[5,10, All]" data-show-toggle="true"
+                                            data-side-pagination="client" data-resizable="false"
+                                            data-show-columns="true">
+                                            <thead>
+                                                <tr>
+                                                    <th>Colum</th>
+                                                    <th>Colum</th>
+                                                    <th>Colum</th>
+                                                    <th>Colum</th>
+                                                    <th>Colum</th>
+                                                    <th>Colum</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <td>Data</td>
+                                                <td>Data</td>
+                                                <td>Data</td>
+                                                <td>Data</td>
+                                                <td>Data</td>
+                                                <td>
+                                                    <a class="badge badge-warning" href="karyawan_edit.html"
+                                                        data-toggle="tooltip" data-placement="top" title="Edit">
+                                                        <i class="fa fa-edit"></i>
+                                                    </a>
+                                                    <a class="badge badge-primary" href="karyawan_detail.html"
+                                                        data-toggle="tooltip" data-placement="top" title="Detail">
+                                                        <i class="fa fa-search-plus"></i>
+                                                    </a>
+                                                </td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
-                            <span>Tambah Data</span>
-                        </a>
+                        </div>
                     </div>
-                </div>
-                <table class="table border-0 mt-4 mb-4" id="tablekelas" data-toggle="table" data-search="true"
-                    data-show-refresh="true" data-pagination="true" data-page-size="5" data-page-list="[5,10, All]"
-                    data-show-toggle="true" data-side-pagination="client" data-resizable="false" data-show-export="true"
-                    data-export-types="['pdf', 'csv', 'excel']" data-export-options='{"fileName": "data_kelas"}'
-                    data-click-to-select="true" data-toolbar="#toolbar" data-show-columns="true"
-                    data-show-pagination-switch="true">
-                    <thead>
-                        <tr>
-                            <th data-field="nama_karyawan">Nama</th>
-                            <th data-field="nik">NIK</th>
-                            <th data-field="email_kantor_pribadi">Email Kantor & Pribadi</th>
-                            <th data-field="status_karyawan">Status</th>
-                            <th data-field="start_kontrak">Start Kontrak</th>
-                            <th data-field="end_kontrak">End Kontrak</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-field="nama_karyawan">example</td>
-                            <td data-field="nik">35171112010007</td>
-                            <td data-field="email_kantor_pribadi">example@gmail.com <br> example@gmail.com
-                            </td>
-                            <td data-field="status_karyawan">Aktif</td>
-                            <th data-field="start_kontrak">12/12/2017</th>
-                            <th data-field="end_kontrak">12/12/2023</th>
-                            <td>
-                                <a class="badge badge-warning" href="karyawan_edit.html" data-toggle="tooltip"
-                                    data-placement="top" title="Edit">
-                                    <i class="fa fa-edit"></i>
-                                </a>
-                                <a class="badge badge-primary" href="karyawan_detail_identitas.html"
-                                    data-toggle="tooltip" data-placement="top" title="Detail">
-                                    <i class="fa fa-search-plus"></i>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="footer">
-                <div class="float-left pl-3 pr-3">
-                    &copy; 2020 <strong>ADW Consulting</strong>, All Rights Reserved
                 </div>
             </div>
         </div>
@@ -325,11 +336,13 @@
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
+
     <script src="js/bootstrap-table.js"></script>
     <script src="js/bootstrap-table-export.js"></script>
-
     <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
     <script src="js/now-ui-kit.js?v=1.2.2" type="text/javascript"></script>
+
+    <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
 
     <script>
         function numberFormatter(value, row, index) {
@@ -372,6 +385,27 @@
                 alert('Kelasnnya :  ' + JSON.stringify(table.bootstrapTable('getSelections')[0]["nama_kelas"]))
             })
         })
+
+        var mem = $('#data_1 .input-group.date').datepicker({
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: true,
+            autoclose: true
+        });
+
+        var mem = $('#data_2 .input-group.date').datepicker({
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: true,
+            autoclose: true
+        });
+
+        $('.custom-file-input').on('change', function () {
+            let fileName = $(this).val().split('\\').pop();
+            $(this).next('.custom-file-label').addClass("selected").html(fileName);
+        }); 
     </script>
 
 </body>

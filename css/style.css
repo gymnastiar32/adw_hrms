@@ -10612,6 +10612,13 @@ body.mini-navbar .profile-element, body.mini-navbar .nav-label, body.mini-navbar
   border-radius: 25px;
   min-height: 500px;
 }
+.middle-box .fixed-table-container{
+  margin: 0;
+  box-shadow: none;
+  border-radius: none;
+  padding: 0;
+  min-height: 0px;
+}
 @media(max-width:768px){
   .fixed-table-container{
     padding: 0;
@@ -10671,8 +10678,9 @@ table tbody tr td:not(:nth-child(1)){
 .fixed-table-toolbar .search-input{
   padding: 10px 12px;
   height: auto; 
-  width: 300px;
+  width: 200px;
   transition: all .5s;
+  font-size:12px ;
 }
 @media (max-width:450px){
   .fixed-table-toolbar .columns{
@@ -10750,7 +10758,9 @@ table tbody tr td:not(:nth-child(1)){
   border-radius: 10px !important;
   outline: 0;
   border: none;
-  line-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0 !important;
   margin:4px 5px;
 }
@@ -10807,6 +10817,11 @@ table tbody tr td:not(:nth-child(1)){
   color: white !important;
   font-size: 14px;
 }
+.btn-proses{
+  width: 50px !important;
+  text-transform: none !important;
+  font-size: 12px !important;
+}
 @media (max-width:1050px){
   .fixed-table-container thead > tr > th:last-child{
     min-width: 150px !important;
@@ -10834,7 +10849,10 @@ table tbody tr td:not(:nth-child(1)){
   border: 1px solid #F0F2F8;
   border-radius: 100px;
   overflow: hidden;
-  border-right: 0 !important;
+  border-right: 0;
+}
+.fixed-table-pagination .pagination .page-next{
+  border-right: 1px solid #f0f2f8;
 }
 .fixed-table-pagination .pagination .page-item:first-child{
   border-right: 0 !important;
@@ -11358,6 +11376,12 @@ table tbody tr td:not(:nth-child(1)){
 }
 /* End Register Calon Karyawan */
 
+/* Start Proses Calon Karyawan */
+.middle-box .form-control-static{
+  font-size: 13px;
+  font-weight: 400;
+}
+/* End Proses Calon Karyawan */
 
 .cd-h-timeline__events {
   position: relative;
